@@ -1,52 +1,33 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../../../">
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>3.1. UQ: Uncertainty Quantification &mdash; Quantified Uncertainty with Optimization for the FEM  documentation</title>
-  
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=66b6668b" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/custom.css?v=4b5bf716" />
 
   
-  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/tabs.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/sphinxcontrib-images\LightBox2\lightbox2\dist\css\lightbox.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
-  <!--[if lt IE 9]>
-    <script src="../../../../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
-        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
-        <script src="../../../../_static/jquery.js"></script>
-        <script src="../../../../_static/underscore.js"></script>
-        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../../../_static/doctools.js"></script>
-        <script src="../../../../_static/design-tabs.js"></script>
-        <script src="../../../../_static/sphinxcontrib-images\LightBox2\lightbox2\dist\js\lightbox-plus-jquery.min.js"></script>
-        <script src="../../../../_static/sphinxcontrib-images\LightBox2\lightbox2-customize\jquery-noconflict.js"></script>
-    
-    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
-
-    
+      <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../../../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../_static/copybutton.js?v=f281be69"></script>
+      <script src="../../../../_static/design-tabs.js?v=36754332"></script>
+      <script src="../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js?v=ffc8af2d"></script>
+      <script src="../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js?v=12818e64"></script>
+      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
     <link rel="next" title="3.1.2.1. Forward Propagation" href="DakotaSampling.html" />
@@ -59,54 +40,35 @@
 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search"  style="background: #F2F2F2" >
-          
 <a href="https://simcenter.designsafe-ci.org/" style="margin-bottom: 0px;">
   <img src="../../../../_static/img/SimCenter-Only.png" class="logo" alt="Org-Logo" />
 </a>
 <hr style="margin: 0px;">
 
-  <a href="../../../../index.html">
+  <a href="../../../../index.html" class="icon icon-home"> Quantified Uncertainty with Optimization for the FEM
 
 
-
-  
-  <img src="../../../../_static/quoFEM-Logo.png" class="logo" alt="Logo"/>
 
 </a>
 
-
-  
-  
 
 
 
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
 
 
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">About</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../about/quoFEM/about.html">1. About</a></li>
@@ -125,7 +87,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../about/quoFEM/quoFEMtutorial.html">2. Getting Started Tutorial</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="usage.html">3. User Interface</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">3.1. UQ: Uncertainty Quantification</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#uq-features-at-a-glance">3.1.1. UQ Features At-a-Glance</a></li>
+<li><a class="reference internal" href="#uq-features-at-a-glance">3.1.1. UQ Features At-a-Glance</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#dakota-uq-engine">3.1.2. Dakota UQ Engine</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="DakotaSampling.html">3.1.2.1. Forward Propagation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="DakotaSensitivity.html">3.1.2.2. Global Sensitivity Analysis</a></li>
@@ -143,16 +105,9 @@
 <li class="toctree-l4"><a class="reference internal" href="SimCenterUQMF.html">3.1.3.5. Multi-fidelity Monte Carlo</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#ucsd-uq-engine">3.1.4. UCSD UQ Engine</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="UCSD_UQ_TMCMC.html">3.1.4.1. Calibration of Non-hierarchical Model</a></li>
-<li class="toctree-l4"><a class="reference internal" href="UCSD_UQ_Hierarchical.html">3.1.4.2. Calibration of Hierarchical Model</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#custom-uq-engine">3.1.5. Custom UQ Engine</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Configuring_CustomUQ.html">3.1.5.1. Configuring CustomUQ Engine</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#video-resources">3.1.6. Video Resources</a></li>
+<li><a class="reference internal" href="#ucsd-uq-engine">3.1.4. UCSD UQ Engine</a></li>
+<li><a class="reference internal" href="#custom-uq-engine">3.1.5. Custom UQ Engine</a></li>
+<li><a class="reference internal" href="#video-resources">3.1.6. Video Resources</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="quoFEM/FEM.html">3.2. FEM: Finite Element Method</a></li>
@@ -163,11 +118,12 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="quoFEM/tools.html">4. Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../examples/desktop/examples.html">5. Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/desktop/troubleshooting.html">6. Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../reqments/reqQUOFE.html">7. Requirements</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bugs.html">8. Bugs &amp; Feature Requests</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../dcv/quoFEM/quoFEM.html">9. Running in Your Browser</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quoFEM/usage_video.html">10. Video Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jobs.html">6. Jobs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/desktop/troubleshooting.html">7. Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../reqments/reqQUOFE.html">8. Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bugs.html">9. Bugs &amp; Feature Requests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dcv/quoFEM/quoFEM.html">10. Running in Your Browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quoFEM/usage_video.html">11. Video Overview</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Technical Manual</span></p>
 <ul>
@@ -182,86 +138,44 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../developer_manual/verification/desktop/verification.html">3. Verification</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #F2F2F2" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../../index.html">Quantified Uncertainty with Optimization for the FEM</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
-        
-          <li><a href="usage.html"><span class="section-number">3. </span>User Interface</a> &raquo;</li>
-        
-      <li><span class="section-number">3.1. </span>UQ: Uncertainty Quantification</li>
-    
-    
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="usage.html"><span class="section-number">3. </span>User Interface</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">3.1. </span>UQ: Uncertainty Quantification</li>
       <li class="wy-breadcrumbs-aside">
-        
-          
             <a href="../../../../_sources/common/user_manual/usage/desktop/UQ.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="uq-uncertainty-quantification">
-<span id="lbluq"></span><h1><span class="section-number">3.1. </span>UQ: Uncertainty Quantification<a class="headerlink" href="#uq-uncertainty-quantification" title="Permalink to this heading">¶</a></h1>
+             
+  <section id="uq-uncertainty-quantification">
+<span id="lbluq"></span><h1><span class="section-number">3.1. </span>UQ: Uncertainty Quantification<a class="headerlink" href="#uq-uncertainty-quantification" title="Link to this heading"></a></h1>
 <p>The <strong>UQ</strong> tab is the panel where users select the <strong>UQ Engine</strong> for uncertainty quantification calculations. The <strong>UQ Engine</strong> encompasses algorithms for various uncertainty analysis and optimization problems.</p>
 <p>The <strong>UQ Engine</strong> options currently available are Dakota, SimCenterUQ, and UCSD-UQ. Users can also configure quoFEM app to use their own UQ methods and algorithms in the quoFEM app workflow by selecting the CustomUQ option.</p>
-<div class="section" id="uq-features-at-a-glance">
-<h2><span class="section-number">3.1.1. </span>UQ Features At-a-Glance<a class="headerlink" href="#uq-features-at-a-glance" title="Permalink to this heading">¶</a></h2>
+<section id="uq-features-at-a-glance">
+<h2><span class="section-number">3.1.1. </span>UQ Features At-a-Glance<a class="headerlink" href="#uq-features-at-a-glance" title="Link to this heading"></a></h2>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
 <div class="sd-col sd-d-flex-row sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <a class=""
-               data-lightbox="group-a67c856d-f60f-4be9-933c-a7efbcded350"
+               data-lightbox="group-9cace071-2ad1-4e8d-82fe-5593c8abae14"
                href="../../../../_images/method_forward1.png"
                title=""
                data-title=""
@@ -303,7 +217,7 @@ Forward propagation</div>
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <a class=""
-               data-lightbox="group-d0478dd3-3450-4de8-8f14-5013a086dd6a"
+               data-lightbox="group-a81b6d35-9171-4330-949e-f7ff3c632345"
                href="../../../../_images/method_sensitivity1.png"
                title=""
                data-title=""
@@ -344,7 +258,7 @@ Global Sensitivity Analysis</div>
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <a class=""
-               data-lightbox="group-9491e825-80fa-4ea1-ba41-4dafa30b40fa"
+               data-lightbox="group-b8c13dcb-cfa5-40e2-bec2-3e62059ce7b7"
                href="../../../../_images/method_reliability1.png"
                title=""
                data-title=""
@@ -384,7 +298,7 @@ Reliability Analysis</div>
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <a class=""
-               data-lightbox="group-ac2427ef-f54e-45f4-bb9e-f561f0c2fa2b"
+               data-lightbox="group-07147f6c-730b-4a8e-80e1-4108da7af5d7"
                href="../../../../_images/method_Bayesian1.png"
                title=""
                data-title=""
@@ -425,7 +339,7 @@ Bayesian Calibration</div>
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <a class=""
-               data-lightbox="group-f4f1f71c-7240-400f-b172-d5dc237a8859"
+               data-lightbox="group-a2ee34bd-cf92-4387-ac4a-612d8f08f782"
                href="../../../../_images/method_deterministic1.png"
                title=""
                data-title=""
@@ -466,7 +380,7 @@ Deterministic Calibration</div>
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <a class=""
-               data-lightbox="group-ef9f1937-95a5-41f1-8a5c-4ecb845f58b6"
+               data-lightbox="group-7c5a2d66-6b45-419d-b122-efac9679e7e4"
                href="../../../../_images/method_surrogate1.png"
                title=""
                data-title=""
@@ -507,7 +421,7 @@ Surrogate Modeling</div>
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <a class=""
-               data-lightbox="group-97f9a913-2663-49cd-95e4-ebea09f430e3"
+               data-lightbox="group-6f9eb797-871c-431c-a81b-fa593a3dc8d1"
                href="../../../../_images/method_custom1.png"
                title=""
                data-title=""
@@ -538,18 +452,21 @@ Custom UQ</div>
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="dakota-uq-engine">
-<h2><span class="section-number">3.1.2. </span>Dakota UQ Engine<a class="headerlink" href="#dakota-uq-engine" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="dakota-uq-engine">
+<h2><span class="section-number">3.1.2. </span>Dakota UQ Engine<a class="headerlink" href="#dakota-uq-engine" title="Link to this heading"></a></h2>
 <p>This UQ engine utilizes the <a class="reference external" href="https://dakota.sandia.gov/">Dakota Software</a>, a state-of-the-art research application that is robust and provides many methods for optimization and UQ, a selection of which we utilize in this application. <strong>Dakota</strong> provides the user with several methods for different kinds of analyses. For this reason, we have divided the methods into categories through a pull-down menu, as shown below. Once the category has been selected, a few different methods are made available to the user.</p>
 <ul class="simple">
 <li><p>By checking the <code class="docutils literal notranslate"><span class="pre">Parallel</span> <span class="pre">Execution</span></code>, the UQ analysis will be performed in parallel. It will try to use all the processors available on the machine.</p></li>
 <li><p>By checking the <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Working</span> <span class="pre">dirs</span></code>, individual working directories will be saved in the Local Jobs Directory. Local Jobs Directory is defined at <code class="docutils literal notranslate"><span class="pre">File</span></code>-<code class="docutils literal notranslate"><span class="pre">Preference</span></code> in the menubar. Otherwise, individual simulation files will be deleted after each simulation run. Users might uncheck this box when a large number of simulations is requested, to manage driver space.</p></li>
 </ul>
-<div class="align-center figure" id="id1">
-<span id="figdakota"></span><a class="reference internal image-reference" href="../../../../_images/dakotaUQ.png"><img alt="../../../../_images/dakotaUQ.png" src="../../../../_images/dakotaUQ.png" style="width: 1200px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 3.1.2.1 </span><span class="caption-text">Dakota engine and category selection.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
+<figure class="align-center" id="id1">
+<span id="figdakota"></span><a class="reference internal image-reference" href="../../../../_images/dakotaUQ.png"><img alt="../../../../_images/dakotaUQ.png" src="../../../../_images/dakotaUQ.png" style="width: 1200px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.2.1 </span><span class="caption-text">Dakota engine and category selection.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>The following categories are available:</p>
 <div class="toctree-wrapper compound">
 <ul>
@@ -561,14 +478,17 @@ Custom UQ</div>
 <li class="toctree-l1"><a class="reference internal" href="DakotaGradientFreeOptimization.html">3.1.2.6. Gradient-free Parameter Estimation</a></li>
 </ul>
 </div>
-</div>
-<div class="section" id="simcenter-uq-engine">
-<h2><span class="section-number">3.1.3. </span>SimCenter UQ Engine<a class="headerlink" href="#simcenter-uq-engine" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="simcenter-uq-engine">
+<h2><span class="section-number">3.1.3. </span>SimCenter UQ Engine<a class="headerlink" href="#simcenter-uq-engine" title="Link to this heading"></a></h2>
 <p>The <strong>SimCenterUQ</strong> engine is a UQ engine developed in-house at the SimCenter that accommodates different UQ methods, which are organized into categories that can be accessed through a pull-down menu, as shown below:</p>
-<div class="align-center figure" id="id2">
-<span id="figsimcenteruq"></span><a class="reference internal image-reference" href="../../../../_images/SimCenterUQ.png"><img alt="../../../../_images/SimCenterUQ.png" src="../../../../_images/SimCenterUQ.png" style="width: 1200px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 3.1.3.1 </span><span class="caption-text">SimCenterUQ engine and category selection.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
-</div>
+<figure class="align-center" id="id2">
+<span id="figsimcenteruq"></span><a class="reference internal image-reference" href="../../../../_images/SimCenterUQ.png"><img alt="../../../../_images/SimCenterUQ.png" src="../../../../_images/SimCenterUQ.png" style="width: 1200px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.3.1 </span><span class="caption-text">SimCenterUQ engine and category selection.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>The following category options are available:</p>
 <div class="toctree-wrapper compound">
 <ul>
@@ -579,14 +499,17 @@ Custom UQ</div>
 <li class="toctree-l1"><a class="reference internal" href="SimCenterUQMF.html">3.1.3.5. Multi-fidelity Monte Carlo</a></li>
 </ul>
 </div>
-</div>
-<div class="section" id="ucsd-uq-engine">
-<h2><span class="section-number">3.1.4. </span>UCSD UQ Engine<a class="headerlink" href="#ucsd-uq-engine" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="ucsd-uq-engine">
+<h2><span class="section-number">3.1.4. </span>UCSD UQ Engine<a class="headerlink" href="#ucsd-uq-engine" title="Link to this heading"></a></h2>
 <p>The <strong>UCSD-UQ</strong> engine is a module developed at the SimCenter in collaboration with UCSD. It provides algorithms for Bayesian estimation, which can be accessed through a pull-down menu, as shown in <a class="reference internal" href="#figucsduq"><span class="std std-numref">Fig. 3.1.4.1</span></a>.</p>
-<div class="align-center figure" id="id3">
-<span id="figucsduq"></span><a class="reference internal image-reference" href="../../../../_images/UCSDUQ.png"><img alt="../../../../_images/UCSDUQ.png" src="../../../../_images/UCSDUQ.png" style="width: 1200px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 3.1.4.1 </span><span class="caption-text">UCSD-UQ engine and category selection.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
-</div>
+<figure class="align-center" id="id3">
+<span id="figucsduq"></span><a class="reference internal image-reference" href="../../../../_images/UCSDUQ.png"><img alt="../../../../_images/UCSDUQ.png" src="../../../../_images/UCSDUQ.png" style="width: 1200px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.4.1 </span><span class="caption-text">UCSD-UQ engine and category selection.</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>This module currently offers support for Bayesian estimation of the parameters of a traditional (non-hierarchical) model using the Transitional Markov chain Monte Carlo (TMCMC) algorithm and of a hierarchical model using an adaptive Metropolis-within-Gibbs sampling algorithm.</p>
 <div class="toctree-wrapper compound">
 <ul>
@@ -594,14 +517,17 @@ Custom UQ</div>
 <li class="toctree-l1"><a class="reference internal" href="UCSD_UQ_Hierarchical.html">3.1.4.2. Calibration of Hierarchical Model</a></li>
 </ul>
 </div>
-</div>
-<div class="section" id="custom-uq-engine">
-<h2><span class="section-number">3.1.5. </span>Custom UQ Engine<a class="headerlink" href="#custom-uq-engine" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="custom-uq-engine">
+<h2><span class="section-number">3.1.5. </span>Custom UQ Engine<a class="headerlink" href="#custom-uq-engine" title="Link to this heading"></a></h2>
 <p>The <strong>CustomUQ</strong> option enables users to switch out the UQ engine in the quoFEM app workflow such that different methods and tools can be applied within the SimCenter framework with minimal effort on the part of the user. The CustomUQ option can be accessed as shown below:</p>
-<div class="align-center figure" id="id4">
-<span id="figcustomuq"></span><a class="reference internal image-reference" href="../../../../_images/customUQ.png"><img alt="../../../../_images/customUQ.png" src="../../../../_images/customUQ.png" style="width: 1200px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 3.1.5.1 </span><span class="caption-text">CustomUQ engine selection.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
-</div>
+<figure class="align-center" id="id4">
+<span id="figcustomuq"></span><a class="reference internal image-reference" href="../../../../_images/customUQ.png"><img alt="../../../../_images/customUQ.png" src="../../../../_images/customUQ.png" style="width: 1200px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.5.1 </span><span class="caption-text">CustomUQ engine selection.</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>In order to use the CustomUQ engine option, two steps are required:</p>
 <ul class="simple">
 <li><p>Configuring the UQ tab to accept the required inputs</p></li>
@@ -613,70 +539,52 @@ Custom UQ</div>
 <li class="toctree-l1"><a class="reference internal" href="Configuring_CustomUQ.html">3.1.5.1. Configuring CustomUQ Engine</a></li>
 </ul>
 </div>
-</div>
-<div class="section" id="video-resources">
-<h2><span class="section-number">3.1.6. </span>Video Resources<a class="headerlink" href="#video-resources" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="video-resources">
+<h2><span class="section-number">3.1.6. </span>Video Resources<a class="headerlink" href="#video-resources" title="Link to this heading"></a></h2>
 <p>Recorded in tool training, 2022.</p>
 <div style="text-align: center;">
    <video controls src="../../../../_static/videos/quoFEM/youtube_UQ_Day1_TestClip.mp4" width="560" height="315"> </video>
-</div></div>
-</div>
+</div></section>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2018-2025, The Regents of the University of California.
-
-    </p>
+    <p>&#169; Copyright 2018-2025, The Regents of the University of California.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-
-  
-  
-    
     <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158130480-4"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    ga('create', 'UA-158130480-4', 'auto');
-    
-    ga('send', 'pageview');
-    </script>
-
-    
-    
+      gtag('config', 'UA-158130480-4', {
+          'anonymize_ip': false,
+      });
+    </script>  
 
   <style>
          .wy-nav-content { max-width: none; }

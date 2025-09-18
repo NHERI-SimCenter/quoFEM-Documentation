@@ -1,54 +1,36 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../../../../">
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>Surrogate Modeling for One Story Building Earthquake Response &mdash; Quantified Uncertainty with Optimization for the FEM  documentation</title>
-  
+  <title>5.7. Surrogate Modeling for One Story Building Earthquake Response &mdash; Quantified Uncertainty with Optimization for the FEM  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/css/theme.css?v=66b6668b" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/css/custom.css?v=4b5bf716" />
 
   
-  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../../_static/tabs.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../../_static/sphinxcontrib-images\LightBox2\lightbox2\dist\css\lightbox.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../../_static/css/custom.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
-  <!--[if lt IE 9]>
-    <script src="../../../../../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../../../../" src="../../../../../_static/documentation_options.js"></script>
-        <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
-        <script src="../../../../../_static/jquery.js"></script>
-        <script src="../../../../../_static/underscore.js"></script>
-        <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../../../../_static/doctools.js"></script>
-        <script src="../../../../../_static/design-tabs.js"></script>
-        <script src="../../../../../_static/sphinxcontrib-images\LightBox2\lightbox2\dist\js\lightbox-plus-jquery.min.js"></script>
-        <script src="../../../../../_static/sphinxcontrib-images\LightBox2\lightbox2-customize\jquery-noconflict.js"></script>
-    
-    <script type="text/javascript" src="../../../../../_static/js/theme.js"></script>
-
-    
+      <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../../../../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../../_static/copybutton.js?v=f281be69"></script>
+      <script src="../../../../../_static/design-tabs.js?v=36754332"></script>
+      <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js?v=ffc8af2d"></script>
+      <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js?v=12818e64"></script>
+    <script src="../../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../../search.html" />
+    <link rel="next" title="5.8. Surrogate Modeling to Predict Mean and Variance of Earthquake Response" href="../qfem-0016/README.html" />
+    <link rel="prev" title="5.6. Steel Frame: Bayesian Calibration using TMCMC" href="../qfem-0014/README.html" />
 <script src="https://cdn.jsdelivr.net/npm/vega@5.12.1"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.13.1"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.8.0"></script>
@@ -57,54 +39,35 @@
 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search"  style="background: #F2F2F2" >
-          
 <a href="https://simcenter.designsafe-ci.org/" style="margin-bottom: 0px;">
   <img src="../../../../../_static/img/SimCenter-Only.png" class="logo" alt="Org-Logo" />
 </a>
 <hr style="margin: 0px;">
 
-  <a href="../../../../../index.html">
+  <a href="../../../../../index.html" class="icon icon-home"> Quantified Uncertainty with Optimization for the FEM
 
 
-
-  
-  <img src="../../../../../_static/quoFEM-Logo.png" class="logo" alt="Logo"/>
 
 </a>
 
-
-  
-  
 
 
 
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
 
 
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">About</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../about/quoFEM/about.html">1. About</a></li>
@@ -118,17 +81,46 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../front-matter/abbreviations.html">9. Abbreviations</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../../installation/desktop/installation.html">1. Running Application</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../about/quoFEM/quoFEMtutorial.html">2. Getting Started Tutorial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../usage/desktop/usage.html">3. User Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../usage/desktop/quoFEM/tools.html">4. Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../examples.html">5. Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../troubleshooting/desktop/troubleshooting.html">6. Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../reqments/reqQUOFE.html">7. Requirements</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../bugs.html">8. Bugs &amp; Feature Requests</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../dcv/quoFEM/quoFEM.html">9. Running in Your Browser</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../usage/desktop/quoFEM/usage_video.html">10. Video Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../examples.html">5. Examples</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0001/README.html">5.1. Two-Dimensional Truss: Sampling, Reliability and Sensitivity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0002/README.html">5.2. Forward Propagation - OpenSeesPy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0005/README.html">5.3. Basic modeling with Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0007/README.html">5.4. Steel Frame: Conventional Calibration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0009/README.html">5.5. Two-Dimensional Truss: Global Sensitivity Analysis using SimCenterUQ Engine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0014/README.html">5.6. Steel Frame: Bayesian Calibration using TMCMC</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">5.7. Surrogate Modeling for One Story Building Earthquake Response</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#outline">5.7.1. Outline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#problem-description">5.7.2. Problem description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#input-files">5.7.3. Input files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#uq-workflow">5.7.4. UQ Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verification-of-the-surrogate-model">5.7.5. Verification of the Surrogate model</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0016/README.html">5.8. Surrogate Modeling to Predict Mean and Variance of Earthquake Response</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0017/README.html">5.9. Custom UQ for UQpy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0019/README.html">5.10. Bayesian Calibration of Material Model Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0022/README.html">5.11. Two-Dimensional Truss: PLoM Modeling and Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0023/README.html">5.12. Global Sensitivity Analysis for Field QoI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0025/README.html">5.13. Heteroscedastic Gaussian Process modeling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0027/README.html">5.14. Forward propagation of uncertainty with multiple simulation models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0028/README.html">5.15. Bayesian calibration of hierarchical models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0031/README.html">5.16. PM4Sand - Bayesian Calibration using Cyclic Direct Simple Shear Test Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0032/README.html">5.17. PM4Sand - Forward Propagation to Lateral Spreading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0033/README.html">5.18. PM4Sand - Sensitivity Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0034/README.html">5.19. Surrogate-aided Bayesian Calibration of a Reinforced Concrete Column Using Experimental Cyclic Test Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../usage/desktop/jobs.html">6. Jobs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../troubleshooting/desktop/troubleshooting.html">7. Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../reqments/reqQUOFE.html">8. Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bugs.html">9. Bugs &amp; Feature Requests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../dcv/quoFEM/quoFEM.html">10. Running in Your Browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../usage/desktop/quoFEM/usage_video.html">11. Video Overview</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Technical Manual</span></p>
 <ul>
@@ -143,81 +135,37 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../developer_manual/verification/desktop/verification.html">3. Verification</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #F2F2F2" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../../../index.html">Quantified Uncertainty with Optimization for the FEM</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../../../../index.html" class="icon icon-home"></a> &raquo;</li>
-        
-      <li>Surrogate Modeling for One Story Building Earthquake Response</li>
-    
-    
+      <li><a href="../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../examples.html"><span class="section-number">5. </span>Examples</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">5.7. </span>Surrogate Modeling for One Story Building Earthquake Response</li>
       <li class="wy-breadcrumbs-aside">
-        
-          
             <a href="../../../../../_sources/common/user_manual/examples/desktop/qfem-0015/README.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="surrogate-modeling-for-one-story-building-earthquake-response">
-<span id="qfem-0015"></span><h1>Surrogate Modeling for One Story Building Earthquake Response<a class="headerlink" href="#surrogate-modeling-for-one-story-building-earthquake-response" title="Permalink to this heading">¶</a></h1>
+             
+  <section id="surrogate-modeling-for-one-story-building-earthquake-response">
+<span id="qfem-0015"></span><h1><span class="section-number">5.7. </span>Surrogate Modeling for One Story Building Earthquake Response<a class="headerlink" href="#surrogate-modeling-for-one-story-building-earthquake-response" title="Link to this heading"></a></h1>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 28%" />
-<col style="width: 72%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Problem files</p></td>
-<td><p><a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples/qfem-0015/">Github</a></p></td>
+<td><p><a class="extlink-github reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples/qfem-0015/">Github</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -225,29 +173,28 @@
 <p class="admonition-title">Note</p>
 <p>This example may run up to 20 minutes depending on the computer performance. For a quick test run, the user may want to reduce the <strong>Max Computation Time</strong> or <strong>Max Number of model Runs</strong>.</p>
 </div>
-<div class="section" id="outline">
-<h2>Outline<a class="headerlink" href="#outline" title="Permalink to this heading">¶</a></h2>
+<section id="outline">
+<h2><span class="section-number">5.7.1. </span>Outline<a class="headerlink" href="#outline" title="Link to this heading"></a></h2>
 <p>This example constructs a Gaussian process-based surrogate model for the response of a building structure given a ground motion time history. We are interested in the maximum inter-story drift/acceleration response determined in 14 structural parameters.</p>
-<div class="align-center figure" id="id2">
-<a class="reference internal image-reference" href="../../../../../_images/SUR-Concept.PNG"><img alt="../../../../../_images/SUR-Concept.PNG" src="../../../../../_images/SUR-Concept.PNG" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-text">Conceptual illustration of surrogate modeling</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
-</div>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../../../../../_images/SUR-Concept.PNG"><img alt="../../../../../_images/SUR-Concept.PNG" src="../../../../../_images/SUR-Concept.PNG" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.7.1.1 </span><span class="caption-text">Conceptual illustration of surrogate modeling</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>The building model based on the work described in <a class="reference internal" href="#zou2020" id="id1"><span>[Zou2020]</span></a>.</p>
-<dl class="citation">
-<dt class="label" id="zou2020"><span class="brackets"><a class="fn-backref" href="#id1">Zou2020</a></span></dt>
-<dd><p>Zou, J., Welch, D. P., Zsarnoczay, A., Taflanidis, A., &amp; Deierlein, G. G. (2020). Surrogate Modeling for the Seismic Response Estimation of Residential Wood Frame Structures. In Proceedings of the 17th World Conference on Earthquake Engineering, Japan. [<a class="reference external" href="https://www.researchgate.net/publication/344803660_Surrogate_Modeling_for_the_Seismic_Response_Estimation_of_Residential_Wood_Frame_Structures">link</a>]</p>
-</dd>
-</dl>
+<div role="list" class="citation-list">
+<div class="citation" id="zou2020" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">Zou2020</a><span class="fn-bracket">]</span></span>
+<p>Zou, J., Welch, D. P., Zsarnoczay, A., Taflanidis, A., &amp; Deierlein, G. G. (2020). Surrogate Modeling for the Seismic Response Estimation of Residential Wood Frame Structures. In Proceedings of the 17th World Conference on Earthquake Engineering, Japan. [<a class="reference external" href="https://www.researchgate.net/publication/344803660_Surrogate_Modeling_for_the_Seismic_Response_Estimation_of_Residential_Wood_Frame_Structures">link</a>]</p>
 </div>
-<div class="section" id="problem-description">
-<h2>Problem description<a class="headerlink" href="#problem-description" title="Permalink to this heading">¶</a></h2>
-<p>The structure (<a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0015/src/CWH.py">single story building with a cripple wall</a>) has the following uncertain properties:</p>
+</div>
+</section>
+<section id="problem-description">
+<h2><span class="section-number">5.7.2. </span>Problem description<a class="headerlink" href="#problem-description" title="Link to this heading"></a></h2>
+<p>The structure (<a class="extlink-qfem-0015 reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0015/src/CWH.py">single story building with a cripple wall</a>) has the following uncertain properties:</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 44%" />
-<col style="width: 29%" />
-<col style="width: 27%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Random Variable</p></th>
 <th class="head"><p>lower bound</p></th>
@@ -314,12 +261,13 @@
 </tbody>
 </table>
 <p>Below is the time history of the ground motion excitation.</p>
-<div class="align-center figure">
-<a class="reference internal image-reference" href="../../../../../_images/SUR-GM.PNG"><img alt="../../../../../_images/SUR-GM.PNG" src="../../../../../_images/SUR-GM.PNG" style="width: 600px;" /></a>
-</div>
-</div>
-<div class="section" id="input-files">
-<h2>Input files<a class="headerlink" href="#input-files" title="Permalink to this heading">¶</a></h2>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/SUR-GM.PNG"><img alt="../../../../../_images/SUR-GM.PNG" src="../../../../../_images/SUR-GM.PNG" style="width: 600px;" />
+</a>
+</figure>
+</section>
+<section id="input-files">
+<h2><span class="section-number">5.7.3. </span>Input files<a class="headerlink" href="#input-files" title="Link to this heading"></a></h2>
 <p>Once the user selects OpenSeesPy as FEM applications, below three fields are requested.</p>
 <ol class="arabic simple">
 <li><p><strong>Input Script</strong> - <code class="docutils literal notranslate"><span class="pre">CWH.py</span></code>: This file is the main Python script that builds the model and runs the analysis. It is supplied to the Input Script field of the FEM tab. Because this file writes directly to results.out, it obviates the need for supplying a post-process script.</p></li>
@@ -327,27 +275,30 @@
 <li><p><strong>Parameters File</strong> - <code class="docutils literal notranslate"><span class="pre">params.py</span></code>: This file is a Python script that defines the problem’s random variables. The <strong>RV tab</strong> will be auto-populated when this file is loaded. The literal values which are assigned to variables in this file will be varied at runtime by the UQ engine.</p></li>
 </ol>
 <p><strong>The other subsidiary scripts (including ground motion time history) are stored in the same directory of the main input script.</strong></p>
-</div>
-<div class="section" id="uq-workflow">
-<h2>UQ Workflow<a class="headerlink" href="#uq-workflow" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="uq-workflow">
+<h2><span class="section-number">5.7.4. </span>UQ Workflow<a class="headerlink" href="#uq-workflow" title="Link to this heading"></a></h2>
 <ol class="arabic simple">
 <li><p>Start the application, and the <strong>UQ</strong> Selection will be highlighted. Change the UQ Engine to <strong>SimCenterUQ</strong> and the Method Category to <strong>Training GP Surrogate Model</strong>. Since the model is provided, the Training Dataset will be obtained by <strong>Sampling and Simulation</strong>. Default settings are used for the advanced options.</p></li>
 </ol>
-<div class="align-center figure">
-<a class="reference internal image-reference" href="../../../../../_images/SUR-UQtab1.png"><img alt="../../../../../_images/SUR-UQtab1.png" src="../../../../../_images/SUR-UQtab1.png" style="width: 1200px;" /></a>
-</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/SUR-UQtab1.png"><img alt="../../../../../_images/SUR-UQtab1.png" src="../../../../../_images/SUR-UQtab1.png" style="width: 1200px;" />
+</a>
+</figure>
 <ol class="arabic simple" start="2">
 <li><p>Select the <strong>FEM</strong> tab from the input panel. Choose the engine to be OpenSeesPy. For the main script, copy the path to <code class="docutils literal notranslate"><span class="pre">CWH.py</span></code> or click choose and navigate to the file. Post-process script field can remain empty and <code class="docutils literal notranslate"><span class="pre">params.py</span></code> file is called in the Parameters File field.</p></li>
 </ol>
-<div class="align-center figure">
-<a class="reference internal image-reference" href="../../../../../_images/SUR-FEMtab.png"><img alt="../../../../../_images/SUR-FEMtab.png" src="../../../../../_images/SUR-FEMtab.png" style="width: 1200px;" /></a>
-</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/SUR-FEMtab.png"><img alt="../../../../../_images/SUR-FEMtab.png" src="../../../../../_images/SUR-FEMtab.png" style="width: 1200px;" />
+</a>
+</figure>
 <ol class="arabic simple" start="3">
 <li><p>Select the <strong>RV</strong> tab from the input panel. This should be pre-populated with 14 random variables once <code class="docutils literal notranslate"><span class="pre">params.py</span></code> is imported. For each variable, distribution is fixed to be <strong>Uniform</strong> and only the lower and upper bounds should be specified by users.</p></li>
 </ol>
-<div class="align-center figure">
-<a class="reference internal image-reference" href="../../../../../_images/SUR-RVtab.png"><img alt="../../../../../_images/SUR-RVtab.png" src="../../../../../_images/SUR-RVtab.png" style="width: 1200px;" /></a>
-</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/SUR-RVtab.png"><img alt="../../../../../_images/SUR-RVtab.png" src="../../../../../_images/SUR-RVtab.png" style="width: 1200px;" />
+</a>
+</figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>When user need to manually specify random variables with <strong>add</strong> button, eg. when using a custom FEM application, the user should use drop-down menu to set the distribution as Uniform.</p>
@@ -355,9 +306,10 @@
 <ol class="arabic simple" start="4">
 <li><p>Select the <strong>QoI</strong> tab. Here, enter two output names as <code class="docutils literal notranslate"><span class="pre">InterstoryDrift_x</span></code> and <code class="docutils literal notranslate"><span class="pre">Accel_Roof_x</span></code>.</p></li>
 </ol>
-<div class="align-center figure">
-<a class="reference internal image-reference" href="../../../../../_images/SUR-QoItab.png"><img alt="../../../../../_images/SUR-QoItab.png" src="../../../../../_images/SUR-QoItab.png" style="width: 1200px;" /></a>
-</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/SUR-QoItab.png"><img alt="../../../../../_images/SUR-QoItab.png" src="../../../../../_images/SUR-QoItab.png" style="width: 1200px;" />
+</a>
+</figure>
 <ol class="arabic simple" start="5">
 <li><p>Click on the <strong>Run</strong> button. This will cause the back-end application to run SimCenterUQ Engine.</p></li>
 <li><p>When done, the <strong>RES</strong> tab will be selected and the results will be displayed.</p></li>
@@ -365,34 +317,39 @@
 <ul class="simple">
 <li><p>Summary of Results:</p></li>
 </ul>
-<div class="align-center figure">
-<a class="reference internal image-reference" href="../../../../../_images/SUR-REStab1st1.png"><img alt="../../../../../_images/SUR-REStab1st1.png" src="../../../../../_images/SUR-REStab1st1.png" style="width: 1200px;" /></a>
-</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/SUR-REStab1st1.png"><img alt="../../../../../_images/SUR-REStab1st1.png" src="../../../../../_images/SUR-REStab1st1.png" style="width: 1200px;" />
+</a>
+</figure>
 <ul class="simple">
 <li><p>Leave-one-out cross-validation (LOOCV) predictions:</p></li>
 </ul>
-<div class="align-center figure">
-<a class="reference internal image-reference" href="../../../../../_images/SUR-REStab1st2.png"><img alt="../../../../../_images/SUR-REStab1st2.png" src="../../../../../_images/SUR-REStab1st2.png" style="width: 1200px;" /></a>
-</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/SUR-REStab1st2.png"><img alt="../../../../../_images/SUR-REStab1st2.png" src="../../../../../_images/SUR-REStab1st2.png" style="width: 1200px;" />
+</a>
+</figure>
 <p>Well-trained model will form a clear diagonal line while poorly trained model are more scattered around. The detailed parameter values of the trained Gaussian process model can be found by clicking <strong>Save GP Info</strong> button below the scatter plot.</p>
-<div class="align-center figure">
-<a class="reference internal image-reference" href="../../../../../_images/SUR-REStab3.png"><img alt="../../../../../_images/SUR-REStab3.png" src="../../../../../_images/SUR-REStab3.png" style="width: 600px;" /></a>
-</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/SUR-REStab3.png"><img alt="../../../../../_images/SUR-REStab3.png" src="../../../../../_images/SUR-REStab3.png" style="width: 600px;" />
+</a>
+</figure>
 <ol class="arabic simple" start="7">
 <li><p><strong>Continue Analysis</strong>: If the users are not satisfied with the convergence status, they can continue training by saving the current sample points by clicking <strong>RV Data</strong> and <strong>QoI Data</strong> buttons. Then the user may go back to <strong>UQ tab</strong> and activate <strong>Start with Existing Dataset</strong> option. The user can directly import the sample tables generated by quoFEM.</p></li>
 </ol>
-<div class="align-center figure">
-<a class="reference internal image-reference" href="../../../../../_images/SUR-UQtab2.png"><img alt="../../../../../_images/SUR-UQtab2.png" src="../../../../../_images/SUR-UQtab2.png" style="width: 1200px;" /></a>
-</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/SUR-UQtab2.png"><img alt="../../../../../_images/SUR-UQtab2.png" src="../../../../../_images/SUR-UQtab2.png" style="width: 1200px;" />
+</a>
+</figure>
 <div class="line-block">
 <div class="line">Click on the <strong>Run</strong> button, and surrogate model training will be continued. Followings are the results after 150 more simulations.</div>
 </div>
 <ul class="simple">
 <li><p>Summary:</p></li>
 </ul>
-<div class="align-center figure">
-<a class="reference internal image-reference" href="../../../../../_images/SUR-REStab2nd1.png"><img alt="../../../../../_images/SUR-REStab2nd1.png" src="../../../../../_images/SUR-REStab2nd1.png" style="width: 1200px;" /></a>
-</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/SUR-REStab2nd1.png"><img alt="../../../../../_images/SUR-REStab2nd1.png" src="../../../../../_images/SUR-REStab2nd1.png" style="width: 1200px;" />
+</a>
+</figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Note that in the second training period, 150 initial samples were provided from the data files and 150 more simulations were conducted. However, the number of total samples used to train the surrogate model is displayed as 299 since one simulation is consumed to check the consistency between the user provided model (in the <strong>FEM tab</strong>) and the dataset (in the <strong>UQ tab</strong>).</p>
@@ -400,20 +357,22 @@
 <ul class="simple">
 <li><p>Leave-one-out cross-validation (LOOCV) predictions:</p></li>
 </ul>
-<div class="align-c figure align-center">
-<a class="reference internal image-reference" href="../../../../../_images/SUR-REStab2nd2.png"><img alt="../../../../../_images/SUR-REStab2nd2.png" src="../../../../../_images/SUR-REStab2nd2.png" style="width: 1200px;" /></a>
-</div>
+<figure class="align-c align-center">
+<a class="reference internal image-reference" href="../../../../../_images/SUR-REStab2nd2.png"><img alt="../../../../../_images/SUR-REStab2nd2.png" src="../../../../../_images/SUR-REStab2nd2.png" style="width: 1200px;" />
+</a>
+</figure>
 <p>Users may want to perform additional simulations in a similar way.</p>
-</div>
-<div class="section" id="verification-of-the-surrogate-model">
-<h2>Verification of the Surrogate model<a class="headerlink" href="#verification-of-the-surrogate-model" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="verification-of-the-surrogate-model">
+<h2><span class="section-number">5.7.5. </span>Verification of the Surrogate model<a class="headerlink" href="#verification-of-the-surrogate-model" title="Link to this heading"></a></h2>
 <p>Once surrogate model is constructed, it can be used for various UQ/optimization applications. Here we perform a simple forward analysis to verify the constructed surrogate model.</p>
 <ol class="arabic simple">
 <li><p>The constructed surrogate model can be saved by <strong>Save GP Model</strong> button. Two files and a folder will be saved which are <strong>SurroateGP Info File</strong> (default name: <code class="docutils literal notranslate"><span class="pre">SimGpModel.json</span></code>), <strong>SurroateGP model file</strong> (default name: <code class="docutils literal notranslate"><span class="pre">SimGpModel.pkl</span></code>) and <strong>Simulation template directory</strong> which contains the simulation model information (<code class="docutils literal notranslate"><span class="pre">templatedir_SIM</span></code>).</p></li>
 </ol>
-<div class="align-center figure">
-<a class="reference internal image-reference" href="../../../../../_images/SUR-VER1.png"><img alt="../../../../../_images/SUR-VER1.png" src="../../../../../_images/SUR-VER1.png" style="width: 1200px;" /></a>
-</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/SUR-VER1.png"><img alt="../../../../../_images/SUR-VER1.png" src="../../../../../_images/SUR-VER1.png" style="width: 1200px;" />
+</a>
+</figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
@@ -428,27 +387,31 @@
 <ol class="arabic simple" start="2">
 <li><p>Restart the quoFEM (or press <strong>UQ tab</strong>) and select Dakota Forward Propagation method.</p></li>
 </ol>
-<div class="align-center figure">
-<a class="reference internal image-reference" href="../../../../../_images/SUR-VER2.png"><img alt="../../../../../_images/SUR-VER2.png" src="../../../../../_images/SUR-VER2.png" style="width: 1200px;" /></a>
-</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/SUR-VER2.png"><img alt="../../../../../_images/SUR-VER2.png" src="../../../../../_images/SUR-VER2.png" style="width: 1200px;" />
+</a>
+</figure>
 <ol class="arabic simple" start="3">
 <li><p>Select the <strong>FEM tab</strong>  from the input panel and choose <strong>SurrogateGP</strong> application. For the <strong>SurrogateGP Info</strong> field, copy the path to the <code class="docutils literal notranslate"><span class="pre">SimGpModel.json</span></code> or click choose and navigate to the file. Similarly, the  <strong>SurroateGP Model field</strong> calls <code class="docutils literal notranslate"><span class="pre">SimGpModel.pkl</span></code> file. Once the first file is imported, additional options will be visible. Here, the user can specify the Maximum Allowable Normalized Variance level. The exceedance percentage is provided to help users decision along with the pre-informed accuracy of the surrogate model obtained right after the training session. In this example, we would like to compare two cases: <strong>(CASE 1)</strong> (Ignore the precision tolerance and) <strong>Continue</strong> analysis, <strong>(CASE 2)</strong> <strong>Run Exact FEM simulation</strong> for those samples prediction variance is high. The Maximum Allowable Normalized Variance level is set as 0.15.</p></li>
 </ol>
-<div class="align-center figure">
-<a class="reference internal image-reference" href="../../../../../_images/SUR-VER3.png"><img alt="../../../../../_images/SUR-VER3.png" src="../../../../../_images/SUR-VER3.png" style="width: 1200px;" /></a>
-</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/SUR-VER3.png"><img alt="../../../../../_images/SUR-VER3.png" src="../../../../../_images/SUR-VER3.png" style="width: 1200px;" />
+</a>
+</figure>
 <ol class="arabic simple" start="4">
 <li><p>Once the SurrogateGP Info field in the <strong>FEM</strong> tab is entered, the <strong>RV tab</strong> is automatically populated. The user can select the distribution and its parameters. This example applied the following conditions.</p></li>
 </ol>
-<div class="align-center figure">
-<a class="reference internal image-reference" href="../../../../../_images/SUR-VER4.png"><img alt="../../../../../_images/SUR-VER4.png" src="../../../../../_images/SUR-VER4.png" style="width: 1200px;" /></a>
-</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/SUR-VER4.png"><img alt="../../../../../_images/SUR-VER4.png" src="../../../../../_images/SUR-VER4.png" style="width: 1200px;" />
+</a>
+</figure>
 <ol class="arabic simple" start="5">
 <li><p>Users need to manually fill in the <strong>QoI tab</strong>. Users do not need to include here all the QoIs used for the training, but the users may not add new QoIs or modify the names of existing QoIs. [Tip] List of the trained QoI names can be found and copied in the <strong>FEM tab</strong>.</p></li>
 </ol>
-<div class="align-center figure">
-<a class="reference internal image-reference" href="../../../../../_images/SUR-VER5.png"><img alt="../../../../../_images/SUR-VER5.png" src="../../../../../_images/SUR-VER5.png" style="width: 1200px;" /></a>
-</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/SUR-VER5.png"><img alt="../../../../../_images/SUR-VER5.png" src="../../../../../_images/SUR-VER5.png" style="width: 1200px;" />
+</a>
+</figure>
 <ol class="arabic simple" start="5">
 <li><p>Click on the <strong>Run</strong> button. This will cause the back-end application to launch dakota.</p></li>
 <li><p>When done, the <strong>RES</strong> tab will be selected and the results will be displayed. Below tables compare the results from the two cases.</p></li>
@@ -457,12 +420,6 @@
 <li><p>InterstoryDrift_x</p></li>
 </ul>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 16%" />
-<col style="width: 27%" />
-<col style="width: 22%" />
-<col style="width: 35%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Prob. Moments</p></th>
 <th class="head"><p>Reference (only simulation)</p></th>
@@ -497,12 +454,6 @@
 <li><p>Accel_Roof_x</p></li>
 </ul>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 16%" />
-<col style="width: 27%" />
-<col style="width: 22%" />
-<col style="width: 35%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Prob. Moments</p></th>
 <th class="head"><p>Reference (only simulation)</p></th>
@@ -536,78 +487,62 @@
 <ul class="simple">
 <li><p>CASE1:</p></li>
 </ul>
-<div class="align-center figure">
-<a class="reference internal image-reference" href="../../../../../_images/SUR-VER6.png"><img alt="../../../../../_images/SUR-VER6.png" src="../../../../../_images/SUR-VER6.png" style="width: 1200px;" /></a>
-</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/SUR-VER6.png"><img alt="../../../../../_images/SUR-VER6.png" src="../../../../../_images/SUR-VER6.png" style="width: 1200px;" />
+</a>
+</figure>
 <ul class="simple">
 <li><p>CASE2:</p></li>
 </ul>
-<div class="align-center figure">
-<a class="reference internal image-reference" href="../../../../../_images/SUR-VER7.png"><img alt="../../../../../_images/SUR-VER7.png" src="../../../../../_images/SUR-VER7.png" style="width: 1200px;" /></a>
-</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/SUR-VER7.png"><img alt="../../../../../_images/SUR-VER7.png" src="../../../../../_images/SUR-VER7.png" style="width: 1200px;" />
+</a>
+</figure>
 <p>The peak drifts are well-predicted with the surrogate model (CASE1), while the acceleration predictions are improved by alternating between the surrogate and simulation model (CASE2).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If the user wants to inspect the simulation status or check error/warning messages related to the surrogate model, they can refer to the messages written at: <code class="docutils literal notranslate"><span class="pre">{Local</span> <span class="pre">Jobs</span> <span class="pre">Directory}/tmp.SimCenter/surrogateLog.err</span></code>. (Note: <code class="docutils literal notranslate"><span class="pre">{Local</span> <span class="pre">Jobs</span> <span class="pre">Directory}</span></code> is specified from the file-preference in the menu bar.)</p>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2018-2025, The Regents of the University of California.
-
-    </p>
+    <p>&#169; Copyright 2018-2025, The Regents of the University of California.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-
-  
-  
-    
     <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158130480-4"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    ga('create', 'UA-158130480-4', 'auto');
-    
-    ga('send', 'pageview');
-    </script>
-
-    
-    
+      gtag('config', 'UA-158130480-4', {
+          'anonymize_ip': false,
+      });
+    </script>  
 
   <style>
          .wy-nav-content { max-width: none; }

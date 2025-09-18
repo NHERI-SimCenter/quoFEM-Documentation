@@ -1,55 +1,36 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../../../">
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>5. Examples &mdash; Quantified Uncertainty with Optimization for the FEM  documentation</title>
-  
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=66b6668b" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/custom.css?v=4b5bf716" />
 
   
-  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/tabs.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/sphinxcontrib-images\LightBox2\lightbox2\dist\css\lightbox.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
-  <!--[if lt IE 9]>
-    <script src="../../../../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
-        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
-        <script src="../../../../_static/jquery.js"></script>
-        <script src="../../../../_static/underscore.js"></script>
-        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../../../_static/doctools.js"></script>
-        <script src="../../../../_static/design-tabs.js"></script>
-        <script src="../../../../_static/sphinxcontrib-images\LightBox2\lightbox2\dist\js\lightbox-plus-jquery.min.js"></script>
-        <script src="../../../../_static/sphinxcontrib-images\LightBox2\lightbox2-customize\jquery-noconflict.js"></script>
-    
-    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
-
-    
+      <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../../../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../_static/copybutton.js?v=f281be69"></script>
+      <script src="../../../../_static/design-tabs.js?v=36754332"></script>
+      <script src="../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js?v=ffc8af2d"></script>
+      <script src="../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js?v=12818e64"></script>
+      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
-    <link rel="next" title="6. Troubleshooting" href="../../troubleshooting/desktop/troubleshooting.html" />
+    <link rel="next" title="5.1. Two-Dimensional Truss: Sampling, Reliability and Sensitivity" href="qfem-0001/README.html" />
     <link rel="prev" title="4. Tools" href="../../usage/desktop/quoFEM/tools.html" />
 <script src="https://cdn.jsdelivr.net/npm/vega@5.12.1"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.13.1"></script>
@@ -59,54 +40,35 @@
 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search"  style="background: #F2F2F2" >
-          
 <a href="https://simcenter.designsafe-ci.org/" style="margin-bottom: 0px;">
   <img src="../../../../_static/img/SimCenter-Only.png" class="logo" alt="Org-Logo" />
 </a>
 <hr style="margin: 0px;">
 
-  <a href="../../../../index.html">
+  <a href="../../../../index.html" class="icon icon-home"> Quantified Uncertainty with Optimization for the FEM
 
 
-
-  
-  <img src="../../../../_static/quoFEM-Logo.png" class="logo" alt="Logo"/>
 
 </a>
 
-
-  
-  
 
 
 
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
 
 
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">About</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../about/quoFEM/about.html">1. About</a></li>
@@ -125,14 +87,34 @@
 <li class="toctree-l1"><a class="reference internal" href="../../about/quoFEM/quoFEMtutorial.html">2. Getting Started Tutorial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../usage/desktop/usage.html">3. User Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../usage/desktop/quoFEM/tools.html">4. Tools</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">5. Examples</a><ul class="simple">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5. Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="qfem-0001/README.html">5.1. Two-Dimensional Truss: Sampling, Reliability and Sensitivity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qfem-0002/README.html">5.2. Forward Propagation - OpenSeesPy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qfem-0005/README.html">5.3. Basic modeling with Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qfem-0007/README.html">5.4. Steel Frame: Conventional Calibration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qfem-0009/README.html">5.5. Two-Dimensional Truss: Global Sensitivity Analysis using SimCenterUQ Engine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qfem-0014/README.html">5.6. Steel Frame: Bayesian Calibration using TMCMC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qfem-0015/README.html">5.7. Surrogate Modeling for One Story Building Earthquake Response</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qfem-0016/README.html">5.8. Surrogate Modeling to Predict Mean and Variance of Earthquake Response</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qfem-0017/README.html">5.9. Custom UQ for UQpy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qfem-0019/README.html">5.10. Bayesian Calibration of Material Model Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qfem-0022/README.html">5.11. Two-Dimensional Truss: PLoM Modeling and Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qfem-0023/README.html">5.12. Global Sensitivity Analysis for Field QoI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qfem-0025/README.html">5.13. Heteroscedastic Gaussian Process modeling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qfem-0027/README.html">5.14. Forward propagation of uncertainty with multiple simulation models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qfem-0028/README.html">5.15. Bayesian calibration of hierarchical models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qfem-0031/README.html">5.16. PM4Sand - Bayesian Calibration using Cyclic Direct Simple Shear Test Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qfem-0032/README.html">5.17. PM4Sand - Forward Propagation to Lateral Spreading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qfem-0033/README.html">5.18. PM4Sand - Sensitivity Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qfem-0034/README.html">5.19. Surrogate-aided Bayesian Calibration of a Reinforced Concrete Column Using Experimental Cyclic Test Data</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/desktop/troubleshooting.html">6. Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../reqments/reqQUOFE.html">7. Requirements</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bugs.html">8. Bugs &amp; Feature Requests</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../dcv/quoFEM/quoFEM.html">9. Running in Your Browser</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../usage/desktop/quoFEM/usage_video.html">10. Video Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage/desktop/jobs.html">6. Jobs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/desktop/troubleshooting.html">7. Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../reqments/reqQUOFE.html">8. Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bugs.html">9. Bugs &amp; Feature Requests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dcv/quoFEM/quoFEM.html">10. Running in Your Browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage/desktop/quoFEM/usage_video.html">11. Video Overview</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Technical Manual</span></p>
 <ul>
@@ -147,74 +129,34 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../developer_manual/verification/desktop/verification.html">3. Verification</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #F2F2F2" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../../index.html">Quantified Uncertainty with Optimization for the FEM</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
-        
-      <li><span class="section-number">5. </span>Examples</li>
-    
-    
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">5. </span>Examples</li>
       <li class="wy-breadcrumbs-aside">
-        
-          
             <a href="../../../../_sources/common/user_manual/examples/desktop/examples.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="examples">
-<span id="lbl-examples"></span><h1><span class="section-number">5. </span>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h1>
-<p>The following are a few examples showing the usage of quoFEM. Video companions showing these examples are also provided for selected problems. The files for the examples are available on GitHub.</p>
+             
+  <section id="examples">
+<span id="lbl-examples"></span><h1><span class="section-number">5. </span>Examples<a class="headerlink" href="#examples" title="Link to this heading"></a></h1>
+<p>The examples in this section can be accessed from the application by selecting Examples in the Main Menu. They demonstrate the range of workflows that can be executed with the application and serve as ready-to-use <strong>prototypes</strong> that may be modified to create custom workflows. Each example is designed to run quickly, with the primary goal of demonstrating how workflows can be assembled. To achieve this, certain settings—such as the number of samples, the finite element model, and the number of assets—have been intentionally kept small and simplified.</p>
+<p>The files for the examples are available in the <a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples">quoFEM GitHub repository</a>.</p>
 <div class="toctree-wrapper compound">
 </div>
 
@@ -229,7 +171,7 @@
   <div class="row g-0 mb-3">
     <div class="card-header">
         <p>
-        <a href=".\qfem-0001\README.html"> 
+        <a href="./qfem-0001/README.html"> 
               <h5 style="--bs-gutter-x: 1.5em;">Two-Dimensional Truss: Sampling, Reliability and Sensitivity</h5>
           </a>
         </p>
@@ -253,7 +195,7 @@
   <div class="row g-0 mb-3">
     <div class="card-header">
         <p>
-        <a href=".\qfem-0002\README.html"> 
+        <a href="./qfem-0002/README.html"> 
               <h5 style="--bs-gutter-x: 1.5em;">Forward Propagation - OpenSeesPy</h5>
           </a>
         </p>
@@ -277,7 +219,7 @@
   <div class="row g-0 mb-3">
     <div class="card-header">
         <p>
-        <a href=".\qfem-0005\README.html"> 
+        <a href="./qfem-0005/README.html"> 
               <h5 style="--bs-gutter-x: 1.5em;">Basic modeling with Python</h5>
           </a>
         </p>
@@ -301,7 +243,7 @@
   <div class="row g-0 mb-3">
     <div class="card-header">
         <p>
-        <a href=".\qfem-0007\README.html"> 
+        <a href="./qfem-0007/README.html"> 
               <h5 style="--bs-gutter-x: 1.5em;">Steel Frame: Conventional Calibration</h5>
           </a>
         </p>
@@ -325,7 +267,7 @@
   <div class="row g-0 mb-3">
     <div class="card-header">
         <p>
-        <a href=".\qfem-0009\README.html"> 
+        <a href="./qfem-0009/README.html"> 
               <h5 style="--bs-gutter-x: 1.5em;">Two-Dimensional Truss: Global Sensitivity Analysis using SimCenterUQ Engine</h5>
           </a>
         </p>
@@ -349,7 +291,7 @@
   <div class="row g-0 mb-3">
     <div class="card-header">
         <p>
-        <a href=".\qfem-0014\README.html"> 
+        <a href="./qfem-0014/README.html"> 
               <h5 style="--bs-gutter-x: 1.5em;">Steel Frame: Bayesian Calibration using TMCMC</h5>
           </a>
         </p>
@@ -373,7 +315,7 @@
   <div class="row g-0 mb-3">
     <div class="card-header">
         <p>
-        <a href=".\qfem-0015\README.html"> 
+        <a href="./qfem-0015/README.html"> 
               <h5 style="--bs-gutter-x: 1.5em;">Surrogate Modeling for One Story Building Earthquake Response</h5>
           </a>
         </p>
@@ -397,7 +339,7 @@
   <div class="row g-0 mb-3">
     <div class="card-header">
         <p>
-        <a href=".\qfem-0016\README.html"> 
+        <a href="./qfem-0016/README.html"> 
               <h5 style="--bs-gutter-x: 1.5em;">Surrogate Modeling to Predict Mean and Variance of Earthquake Response</h5>
           </a>
         </p>
@@ -421,7 +363,7 @@
   <div class="row g-0 mb-3">
     <div class="card-header">
         <p>
-        <a href=".\qfem-0017\README.html"> 
+        <a href="./qfem-0017/README.html"> 
               <h5 style="--bs-gutter-x: 1.5em;">Custom UQ for UQpy</h5>
           </a>
         </p>
@@ -445,7 +387,7 @@
   <div class="row g-0 mb-3">
     <div class="card-header">
         <p>
-        <a href=".\qfem-0019\README.html"> 
+        <a href="./qfem-0019/README.html"> 
               <h5 style="--bs-gutter-x: 1.5em;">Bayesian Calibration of Material Model Parameters</h5>
           </a>
         </p>
@@ -473,7 +415,7 @@ stress - a non-scalar response quantity.
   <div class="row g-0 mb-3">
     <div class="card-header">
         <p>
-        <a href=".\qfem-0022\README.html"> 
+        <a href="./qfem-0022/README.html"> 
               <h5 style="--bs-gutter-x: 1.5em;">Two-Dimensional Truss: PLoM Modeling and Simulation</h5>
           </a>
         </p>
@@ -498,7 +440,7 @@ stress - a non-scalar response quantity.
   <div class="row g-0 mb-3">
     <div class="card-header">
         <p>
-        <a href=".\qfem-0023\README.html"> 
+        <a href="./qfem-0023/README.html"> 
               <h5 style="--bs-gutter-x: 1.5em;">Global Sensitivity Analysis for Field QoI</h5>
           </a>
         </p>
@@ -526,7 +468,7 @@ stress - a non-scalar response quantity.
   <div class="row g-0 mb-3">
     <div class="card-header">
         <p>
-        <a href=".\qfem-0025\README.html"> 
+        <a href="./qfem-0025/README.html"> 
               <h5 style="--bs-gutter-x: 1.5em;">Heteroscedastic Gaussian Process modeling</h5>
           </a>
         </p>
@@ -551,7 +493,7 @@ stress - a non-scalar response quantity.
   <div class="row g-0 mb-3">
     <div class="card-header">
         <p>
-        <a href=".\qfem-0027\README.html"> 
+        <a href="./qfem-0027/README.html"> 
               <h5 style="--bs-gutter-x: 1.5em;">Forward propagation of uncertainty with multiple simulation models</h5>
           </a>
         </p>
@@ -576,7 +518,7 @@ stress - a non-scalar response quantity.
   <div class="row g-0 mb-3">
     <div class="card-header">
         <p>
-        <a href=".\qfem-0028\README.html"> 
+        <a href="./qfem-0028/README.html"> 
               <h5 style="--bs-gutter-x: 1.5em;">Bayesian calibration of hierarchical models</h5>
           </a>
         </p>
@@ -601,33 +543,8 @@ stress - a non-scalar response quantity.
   <div class="row g-0 mb-3">
     <div class="card-header">
         <p>
-        <a href=".\qfem-0033\README.html"> 
-              <h5 style="--bs-gutter-x: 1.5em;">Sensitivity Analysis of PM4Sand Model</h5>
-          </a>
-        </p>
-    </div>
-    <div class="col-md-6"> 
-      <div class="card-body">
-        <p class="card-text bg-light">PM4Sand example series (1): Sensitivity analysis is performed to identify the important parameters in a liquefaction-capable soil constitutive model, PM4Sand model.
-</p>
-          
-      </div>
-    </div>
-        
-      <div class="col-md-5 ml-auto mr-2 my-3">
-       <img src="../../../../_images/qfem0033-fig0.png"  style="margin-left:auto; margin-right:auto;display:block;max-width:275px;max-height:220px;width:auto;height:auto;">
-      </div>
-        
-  </div>
-</div>
-
-  
-<div class="card shadow-sm mb-3  gallery-item" style="max-width: 50em; background-color: #f8f9fa;" >
-  <div class="row g-0 mb-3">
-    <div class="card-header">
-        <p>
-        <a href=".\qfem-0031\README.html"> 
-              <h5 style="--bs-gutter-x: 1.5em;">Bayesian Calibration of PM4Sand Model using Cyclic Direct Simple Shear Test Data</h5>
+        <a href="./qfem-0031/README.html"> 
+              <h5 style="--bs-gutter-x: 1.5em;">PM4Sand - Bayesian Calibration using Cyclic Direct Simple Shear Test Data</h5>
           </a>
         </p>
     </div>
@@ -651,8 +568,8 @@ stress - a non-scalar response quantity.
   <div class="row g-0 mb-3">
     <div class="card-header">
         <p>
-        <a href=".\qfem-0032\README.html"> 
-              <h5 style="--bs-gutter-x: 1.5em;">Forward Propagation of PM4Sand using samples of random variables</h5>
+        <a href="./qfem-0032/README.html"> 
+              <h5 style="--bs-gutter-x: 1.5em;">PM4Sand - Forward Propagation to Lateral Spreading</h5>
           </a>
         </p>
     </div>
@@ -666,6 +583,56 @@ stress - a non-scalar response quantity.
         
       <div class="col-md-5 ml-auto mr-2 my-3">
        <img src="../../../../_images/qfem0032-fig2.png"  style="margin-left:auto; margin-right:auto;display:block;max-width:275px;max-height:220px;width:auto;height:auto;">
+      </div>
+        
+  </div>
+</div>
+
+  
+<div class="card shadow-sm mb-3  gallery-item" style="max-width: 50em; background-color: #f8f9fa;" >
+  <div class="row g-0 mb-3">
+    <div class="card-header">
+        <p>
+        <a href="./qfem-0033/README.html"> 
+              <h5 style="--bs-gutter-x: 1.5em;">PM4Sand - Sensitivity Analysis</h5>
+          </a>
+        </p>
+    </div>
+    <div class="col-md-6"> 
+      <div class="card-body">
+        <p class="card-text bg-light">PM4Sand example series (1): Sensitivity analysis is performed to identify the important parameters in a liquefaction-capable soil constitutive model, PM4Sand model.
+</p>
+          
+      </div>
+    </div>
+        
+      <div class="col-md-5 ml-auto mr-2 my-3">
+       <img src="../../../../_images/qfem0033-fig0.png"  style="margin-left:auto; margin-right:auto;display:block;max-width:275px;max-height:220px;width:auto;height:auto;">
+      </div>
+        
+  </div>
+</div>
+
+  
+<div class="card shadow-sm mb-3  gallery-item" style="max-width: 50em; background-color: #f8f9fa;" >
+  <div class="row g-0 mb-3">
+    <div class="card-header">
+        <p>
+        <a href="./qfem-0034/README.html"> 
+              <h5 style="--bs-gutter-x: 1.5em;">Surrogate-aided Bayesian Calibration of a Reinforced Concrete Column Using Experimental Cyclic Test Data</h5>
+          </a>
+        </p>
+    </div>
+    <div class="col-md-6"> 
+      <div class="card-body">
+        <p class="card-text bg-light">This example demonstrates surrogate-aided Bayesian calibration of a reinforced concrete column model in OpenSeesPy. A Gaussian process surrogate model approximating the finite element model's response is iteratively refined using adaptive design of experiments to improve the accuracy of the posterior approximation. The trained surrogate model is used to accelerate the calibration of three key parameters (crack factor, yield moment, and capping moment) using experimental force-displacement data from cyclic loading tests.
+</p>
+          
+      </div>
+    </div>
+        
+      <div class="col-md-5 ml-auto mr-2 my-3">
+       <img src="../../../../_images/column_configuration.png"  style="margin-left:auto; margin-right:auto;display:block;max-width:275px;max-height:220px;width:auto;height:auto;">
       </div>
         
   </div>
@@ -742,63 +709,45 @@ for (const filter of filters) {
 };
 */
 </script>
-</div>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2018-2025, The Regents of the University of California.
-
-    </p>
+    <p>&#169; Copyright 2018-2025, The Regents of the University of California.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-
-  
-  
-    
     <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158130480-4"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    ga('create', 'UA-158130480-4', 'auto');
-    
-    ga('send', 'pageview');
-    </script>
-
-    
-    
+      gtag('config', 'UA-158130480-4', {
+          'anonymize_ip': false,
+      });
+    </script>  
 
   <style>
          .wy-nav-content { max-width: none; }

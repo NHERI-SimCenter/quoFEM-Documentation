@@ -20,6 +20,7 @@ Scenario-specific Earthquake
 This option is for analyzing an earthquake scenario that consists of one or more ruptures
 based on the description of a past or hypothetical event. Some use cases
 for this option are:
+
     #. Analysis of a single rupture. For example, running the "Hayward-Rodgers Creek; HN+HS" segment, which is a specific rupture location, length, characteristics, etc.
     #. Broader analysis of a scenario. For example, running "an M7 earthquake on the San Andreas Fault." This would include realizations with different ruptures, all describing an M7 on the San Andreas.
     #. Multiple specified ruptures. This would be used when a user already has a defined set of ruptures they are interested in studying. This option does not fully capture the probabilistic seismic hazard of a region.

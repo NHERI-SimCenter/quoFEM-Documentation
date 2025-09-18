@@ -1,52 +1,32 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../../../">
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>3.1.4.2. Calibration of Hierarchical Model &mdash; Quantified Uncertainty with Optimization for the FEM  documentation</title>
-  
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=66b6668b" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/custom.css?v=4b5bf716" />
 
   
-  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/tabs.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/sphinxcontrib-images\LightBox2\lightbox2\dist\css\lightbox.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
-  <!--[if lt IE 9]>
-    <script src="../../../../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
-        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
-        <script src="../../../../_static/jquery.js"></script>
-        <script src="../../../../_static/underscore.js"></script>
-        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../../../_static/doctools.js"></script>
-        <script src="../../../../_static/design-tabs.js"></script>
-        <script src="../../../../_static/sphinxcontrib-images\LightBox2\lightbox2\dist\js\lightbox-plus-jquery.min.js"></script>
-        <script src="../../../../_static/sphinxcontrib-images\LightBox2\lightbox2-customize\jquery-noconflict.js"></script>
-    
-    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
-
-    
+      <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../../../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../_static/copybutton.js?v=f281be69"></script>
+      <script src="../../../../_static/design-tabs.js?v=36754332"></script>
+      <script src="../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js?v=ffc8af2d"></script>
+      <script src="../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js?v=12818e64"></script>
+    <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
     <link rel="next" title="3.1.5.1. Configuring CustomUQ Engine" href="Configuring_CustomUQ.html" />
@@ -59,54 +39,35 @@
 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search"  style="background: #F2F2F2" >
-          
 <a href="https://simcenter.designsafe-ci.org/" style="margin-bottom: 0px;">
   <img src="../../../../_static/img/SimCenter-Only.png" class="logo" alt="Org-Logo" />
 </a>
 <hr style="margin: 0px;">
 
-  <a href="../../../../index.html">
+  <a href="../../../../index.html" class="icon icon-home"> Quantified Uncertainty with Optimization for the FEM
 
 
-
-  
-  <img src="../../../../_static/quoFEM-Logo.png" class="logo" alt="Logo"/>
 
 </a>
 
-
-  
-  
 
 
 
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
 
 
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">About</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../about/quoFEM/about.html">1. About</a></li>
@@ -120,36 +81,18 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../front-matter/abbreviations.html">9. Abbreviations</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../../installation/desktop/installation.html">1. Running Application</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../about/quoFEM/quoFEMtutorial.html">2. Getting Started Tutorial</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="usage.html">3. User Interface</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="UQ.html">3.1. UQ: Uncertainty Quantification</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="UQ.html#uq-features-at-a-glance">3.1.1. UQ Features At-a-Glance</a></li>
-<li class="toctree-l3"><a class="reference internal" href="UQ.html#dakota-uq-engine">3.1.2. Dakota UQ Engine</a></li>
-<li class="toctree-l3"><a class="reference internal" href="UQ.html#simcenter-uq-engine">3.1.3. SimCenter UQ Engine</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="UQ.html#ucsd-uq-engine">3.1.4. UCSD UQ Engine</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="UCSD_UQ_TMCMC.html">3.1.4.1. Calibration of Non-hierarchical Model</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">3.1.4.2. Calibration of Hierarchical Model</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="UQ.html#custom-uq-engine">3.1.5. Custom UQ Engine</a></li>
-<li class="toctree-l3"><a class="reference internal" href="UQ.html#video-resources">3.1.6. Video Resources</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="quoFEM/FEM.html">3.2. FEM: Finite Element Method</a></li>
-<li class="toctree-l2"><a class="reference internal" href="RV.html">3.3. RV: Random Variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="quoFEM/QuantitiesOfInterest.html">3.4. QoI: Quantities of Interest</a></li>
-<li class="toctree-l2"><a class="reference internal" href="quoFEM/resQUO.html">3.5. RES: Results</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">3. User Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quoFEM/tools.html">4. Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../examples/desktop/examples.html">5. Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/desktop/troubleshooting.html">6. Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../reqments/reqQUOFE.html">7. Requirements</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bugs.html">8. Bugs &amp; Feature Requests</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../dcv/quoFEM/quoFEM.html">9. Running in Your Browser</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quoFEM/usage_video.html">10. Video Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jobs.html">6. Jobs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/desktop/troubleshooting.html">7. Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../reqments/reqQUOFE.html">8. Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bugs.html">9. Bugs &amp; Feature Requests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dcv/quoFEM/quoFEM.html">10. Running in Your Browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quoFEM/usage_video.html">11. Video Overview</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Technical Manual</span></p>
 <ul>
@@ -164,91 +107,50 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../developer_manual/verification/desktop/verification.html">3. Verification</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #F2F2F2" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../../index.html">Quantified Uncertainty with Optimization for the FEM</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
-        
-          <li><a href="usage.html"><span class="section-number">3. </span>User Interface</a> &raquo;</li>
-        
-          <li><a href="UQ.html"><span class="section-number">3.1. </span>UQ: Uncertainty Quantification</a> &raquo;</li>
-        
-      <li><span class="section-number">3.1.4.2. </span>Calibration of Hierarchical Model</li>
-    
-    
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="usage.html"><span class="section-number">3. </span>User Interface</a></li>
+          <li class="breadcrumb-item"><a href="UQ.html"><span class="section-number">3.1. </span>UQ: Uncertainty Quantification</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">3.1.4.2. </span>Calibration of Hierarchical Model</li>
       <li class="wy-breadcrumbs-aside">
-        
-          
             <a href="../../../../_sources/common/user_manual/usage/desktop/UCSD_UQ_Hierarchical.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="calibration-of-hierarchical-model">
-<span id="lblucsdhierarchical"></span><h1><span class="section-number">3.1.4.2. </span>Calibration of Hierarchical Model<a class="headerlink" href="#calibration-of-hierarchical-model" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">¶</a></h2>
+             
+  <section id="calibration-of-hierarchical-model">
+<span id="lblucsdhierarchical"></span><h1><span class="section-number">3.1.4.2. </span>Calibration of Hierarchical Model<a class="headerlink" href="#calibration-of-hierarchical-model" title="Link to this heading"></a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h2>
 <p>Bayesian calibration of a hierarchical model is performed using the Adaptive Metropolis-within-Gibbs sampling algorithm in quoFEM. Adaptive Metropolis-within-Gibbs is an advanced Markov chain Monte Carlo (MCMC) method that is designed to efficiently sample from complex, high-dimensional distributions, especially when direct sampling of these distributions is impractical.</p>
 <p>The sampler is initialized with a set of reasonable values for the variables (i.e., parameters of the hierarchical model). The hierarchical model that is used in the UCSD_UQ engine (refer the <a class="reference internal" href="../../../technical_manual/desktop/UCSDUQTechnical.html#lbluqucsd-hierarchical"><span class="std std-ref">Technical Manual</span></a> for more details) results in a structure where the variables can be grouped into blocks. For example, the parameters of the computational model for each dataset have strong interactions/dependencies among themselves, while they are independent of the parameters of the model for other datasets or the hyperparameters or the prediction error variances that are also part of the variables calibrated in the hierarchical model. After the variables have been grouped into blocks, Gibbs sampling involves updating the variables within each block sequentially, conditioned on the current values of variables in other blocks, and generating a sample from the updated distribution. For all the blocks where it is not possible to directly generate a sample from the updated distribution, adaptive Metropolis steps are used. In this step, a new state is proposed for all the variables within the block based on the current values using an adaptive proposal distribution. The acceptance probability for the proposed state is computed using the Metropolis-Hastings criterion and the proposed state is accepted or rejected based on this probability. The proposal distributions are adapted based on the accept/reject decisions made during the previous adaptive Metropolis steps. The adaptation is performed to improve the efficiency of the sampling process by adjusting the proposal distributions to better match the target distribution. This process is repeated for numerous iterations, after which the sampler generates values from the updated distributions of the parameters of the hierarchical model.</p>
-</div>
-<div class="section" id="usage">
-<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
 <p>To use the Adaptive Metropolis-within-Gibbs algorithm, select the <strong>UCSD-UQ</strong> engine in the <strong>UQ</strong> panel and select the <strong>Hierarchical</strong> Model.</p>
 <p>The required inputs to perform Bayesian calibration of a hierarchical model in quoFEM are <strong>Sample Size</strong>, <strong>Random State</strong>, <strong>Calibration Data File Name</strong>, and <strong>Calibration Datasets Directory</strong>.</p>
 <p>The optional inputs are <strong>Restart File Name</strong>, <strong>Adaptation Duration</strong>, and <strong>Adaptation Frequency</strong>. Figure <a class="reference internal" href="#fighierarchicalpanel"><span class="std std-numref">Fig. 3.1.4.2.1</span></a> shows the input panel that is presented when the Hierarchical model is selected. Each of the options on this panel will be explained next.</p>
-<div class="align-center figure" id="id1">
+<figure class="align-center" id="id1">
 <span id="fighierarchicalpanel"></span><img alt="../../../../_images/UCSD_Hierarchical.png" src="../../../../_images/UCSD_Hierarchical.png" />
-<p class="caption"><span class="caption-number">Fig. 3.1.4.2.1 </span><span class="caption-text">Input panel for Bayesian calibration of a hierarchical model.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.4.2.1 </span><span class="caption-text">Input panel for Bayesian calibration of a hierarchical model.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <ol class="arabic simple">
 <li><p><strong>Sample Size</strong> defines the number of values to be sampled from the posterior probability distribution of the parameters of the computational model.</p></li>
 <li><p><strong>Random State</strong> is an integer that is used to specify the seed value of the pseudorandom number generator used in the Bayesian updating algorithm. Setting the same seed as in a previous analysis ensures that the same result is reproduced if the analysis is run again with the same inputs used in the previous analysis.</p></li>
@@ -258,64 +160,46 @@
 <li><p><strong>Calibration Data File Name</strong> is the name of a text file that contains the data of the measured values of the output quantity of interest.</p></li>
 <li><p><strong>Calibration Datasets Directory</strong> is the path to the directory that contains the datasets from multiple measurements.</p></li>
 </ol>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2018-2025, The Regents of the University of California.
-
-    </p>
+    <p>&#169; Copyright 2018-2025, The Regents of the University of California.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-
-  
-  
-    
     <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158130480-4"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    ga('create', 'UA-158130480-4', 'auto');
-    
-    ga('send', 'pageview');
-    </script>
-
-    
-    
+      gtag('config', 'UA-158130480-4', {
+          'anonymize_ip': false,
+      });
+    </script>  
 
   <style>
          .wy-nav-content { max-width: none; }

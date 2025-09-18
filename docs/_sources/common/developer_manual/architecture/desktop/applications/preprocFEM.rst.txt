@@ -2,8 +2,8 @@
 FEM Pre-processors
 ------------------
 
-
 .. raw:: html
-    :file: _static/html/quoFEM/preprocFEM.html
 
+    <iframe src="_static/html/quoFEM/preprocFEM.html" width="100%" height="600px"></iframe>
+    
 

@@ -1,55 +1,37 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../../../../">
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>Heteroscedastic Gaussian Process modeling &mdash; Quantified Uncertainty with Optimization for the FEM  documentation</title>
-  
+  <title>5.13. Heteroscedastic Gaussian Process modeling &mdash; Quantified Uncertainty with Optimization for the FEM  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/css/theme.css?v=66b6668b" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/css/custom.css?v=4b5bf716" />
 
   
-  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../../_static/tabs.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../../_static/sphinxcontrib-images\LightBox2\lightbox2\dist\css\lightbox.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../../_static/css/custom.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
-  <!--[if lt IE 9]>
-    <script src="../../../../../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../../../../" src="../../../../../_static/documentation_options.js"></script>
-        <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
-        <script src="../../../../../_static/jquery.js"></script>
-        <script src="../../../../../_static/underscore.js"></script>
-        <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../../../../_static/doctools.js"></script>
-        <script src="../../../../../_static/design-tabs.js"></script>
-        <script src="../../../../../_static/sphinxcontrib-images\LightBox2\lightbox2\dist\js\lightbox-plus-jquery.min.js"></script>
-        <script src="../../../../../_static/sphinxcontrib-images\LightBox2\lightbox2-customize\jquery-noconflict.js"></script>
-        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    
-    <script type="text/javascript" src="../../../../../_static/js/theme.js"></script>
-
-    
+      <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../../../../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../../_static/copybutton.js?v=f281be69"></script>
+      <script src="../../../../../_static/design-tabs.js?v=36754332"></script>
+      <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js?v=ffc8af2d"></script>
+      <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js?v=12818e64"></script>
+      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../../search.html" />
+    <link rel="next" title="5.14. Forward propagation of uncertainty with multiple simulation models" href="../qfem-0027/README.html" />
+    <link rel="prev" title="5.12. Global Sensitivity Analysis for Field QoI" href="../qfem-0023/README.html" />
 <script src="https://cdn.jsdelivr.net/npm/vega@5.12.1"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.13.1"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.8.0"></script>
@@ -58,54 +40,35 @@
 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search"  style="background: #F2F2F2" >
-          
 <a href="https://simcenter.designsafe-ci.org/" style="margin-bottom: 0px;">
   <img src="../../../../../_static/img/SimCenter-Only.png" class="logo" alt="Org-Logo" />
 </a>
 <hr style="margin: 0px;">
 
-  <a href="../../../../../index.html">
+  <a href="../../../../../index.html" class="icon icon-home"> Quantified Uncertainty with Optimization for the FEM
 
 
-
-  
-  <img src="../../../../../_static/quoFEM-Logo.png" class="logo" alt="Logo"/>
 
 </a>
 
-
-  
-  
 
 
 
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
 
 
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">About</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../about/quoFEM/about.html">1. About</a></li>
@@ -119,17 +82,45 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../front-matter/abbreviations.html">9. Abbreviations</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../../installation/desktop/installation.html">1. Running Application</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../about/quoFEM/quoFEMtutorial.html">2. Getting Started Tutorial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../usage/desktop/usage.html">3. User Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../usage/desktop/quoFEM/tools.html">4. Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../examples.html">5. Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../troubleshooting/desktop/troubleshooting.html">6. Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../reqments/reqQUOFE.html">7. Requirements</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../bugs.html">8. Bugs &amp; Feature Requests</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../dcv/quoFEM/quoFEM.html">9. Running in Your Browser</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../usage/desktop/quoFEM/usage_video.html">10. Video Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../examples.html">5. Examples</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0001/README.html">5.1. Two-Dimensional Truss: Sampling, Reliability and Sensitivity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0002/README.html">5.2. Forward Propagation - OpenSeesPy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0005/README.html">5.3. Basic modeling with Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0007/README.html">5.4. Steel Frame: Conventional Calibration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0009/README.html">5.5. Two-Dimensional Truss: Global Sensitivity Analysis using SimCenterUQ Engine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0014/README.html">5.6. Steel Frame: Bayesian Calibration using TMCMC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0015/README.html">5.7. Surrogate Modeling for One Story Building Earthquake Response</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0016/README.html">5.8. Surrogate Modeling to Predict Mean and Variance of Earthquake Response</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0017/README.html">5.9. Custom UQ for UQpy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0019/README.html">5.10. Bayesian Calibration of Material Model Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0022/README.html">5.11. Two-Dimensional Truss: PLoM Modeling and Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0023/README.html">5.12. Global Sensitivity Analysis for Field QoI</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">5.13. Heteroscedastic Gaussian Process modeling</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#outline">5.13.1. Outline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#problem-description">5.13.2. Problem description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#files-required">5.13.3. Files required</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#uq-workflow">5.13.4. UQ workflow</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0027/README.html">5.14. Forward propagation of uncertainty with multiple simulation models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0028/README.html">5.15. Bayesian calibration of hierarchical models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0031/README.html">5.16. PM4Sand - Bayesian Calibration using Cyclic Direct Simple Shear Test Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0032/README.html">5.17. PM4Sand - Forward Propagation to Lateral Spreading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0033/README.html">5.18. PM4Sand - Sensitivity Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0034/README.html">5.19. Surrogate-aided Bayesian Calibration of a Reinforced Concrete Column Using Experimental Cyclic Test Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../usage/desktop/jobs.html">6. Jobs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../troubleshooting/desktop/troubleshooting.html">7. Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../reqments/reqQUOFE.html">8. Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bugs.html">9. Bugs &amp; Feature Requests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../dcv/quoFEM/quoFEM.html">10. Running in Your Browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../usage/desktop/quoFEM/usage_video.html">11. Video Overview</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Technical Manual</span></p>
 <ul>
@@ -144,121 +135,80 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../developer_manual/verification/desktop/verification.html">3. Verification</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #F2F2F2" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../../../index.html">Quantified Uncertainty with Optimization for the FEM</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../../../../index.html" class="icon icon-home"></a> &raquo;</li>
-        
-      <li>Heteroscedastic Gaussian Process modeling</li>
-    
-    
+      <li><a href="../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../examples.html"><span class="section-number">5. </span>Examples</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">5.13. </span>Heteroscedastic Gaussian Process modeling</li>
       <li class="wy-breadcrumbs-aside">
-        
-          
             <a href="../../../../../_sources/common/user_manual/examples/desktop/qfem-0025/README.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="heteroscedastic-gaussian-process-modeling">
-<span id="qfem-0025"></span><h1>Heteroscedastic Gaussian Process modeling<a class="headerlink" href="#heteroscedastic-gaussian-process-modeling" title="Permalink to this heading">¶</a></h1>
+             
+  <section id="heteroscedastic-gaussian-process-modeling">
+<span id="qfem-0025"></span><h1><span class="section-number">5.13. </span>Heteroscedastic Gaussian Process modeling<a class="headerlink" href="#heteroscedastic-gaussian-process-modeling" title="Link to this heading"></a></h1>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 75%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Problem files</p></td>
-<td><p><a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples/qfem-0025/">Github</a></p></td>
+<td><p><a class="extlink-github reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples/qfem-0025/">Github</a></p></td>
 </tr>
 </tbody>
 </table>
-<div class="section" id="outline">
-<h2>Outline<a class="headerlink" href="#outline" title="Permalink to this heading">¶</a></h2>
+<section id="outline">
+<h2><span class="section-number">5.13.1. </span>Outline<a class="headerlink" href="#outline" title="Link to this heading"></a></h2>
 <p>In this example, demonstrates the heteroscedastic Gaussian process model for surrogating noisy response.</p>
-</div>
-<div class="section" id="problem-description">
-<h2>Problem description<a class="headerlink" href="#problem-description" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="problem-description">
+<h2><span class="section-number">5.13.2. </span>Problem description<a class="headerlink" href="#problem-description" title="Link to this heading"></a></h2>
 <p>Let us consider the basic python model in <span class="xref std std-ref">this example</span> with fixed <span class="math notranslate nohighlight">\(y=0\)</span>.</p>
 <div class="math notranslate nohighlight" id="equation-common-user-manual-examples-desktop-qfem-0025-readme-0">
-<span class="eqno">()<a class="headerlink" href="#equation-common-user-manual-examples-desktop-qfem-0025-readme-0" title="Permalink to this equation">¶</a></span>\[g(x)=(a-x)^{2}+bx^{4}+\varepsilon\]</div>
+<span class="eqno">(5.13.2.1)<a class="headerlink" href="#equation-common-user-manual-examples-desktop-qfem-0025-readme-0" title="Link to this equation"></a></span>\[g(x)=(a-x)^{2}+bx^{4}+\varepsilon\]</div>
 <p>where <span class="math notranslate nohighlight">\(\varepsilon\)</span> is an additive Gaussian noise that represent the variability in the output response surface. Let us assume <span class="math notranslate nohighlight">\(\varepsilon\)</span> has zero mean and non-homogeneous variance of <span class="math notranslate nohighlight">\(\sigma(x)^2 = (x+2.0)^2\)</span>.</p>
-<div class="align-center figure" id="id1">
-<span id="figobservations"></span><a class="reference internal image-reference" href="../../../../../_images/qf-0025-data.png"><img alt="../../../../../_images/qf-0025-data.png" src="../../../../../_images/qf-0025-data.png" style="width: 400px;" /></a>
-<p class="caption"><span class="caption-text">Observation dataset</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
+<figure class="align-center" id="id1">
+<span id="figobservations"></span><a class="reference internal image-reference" href="../../../../../_images/qf-0025-data.png"><img alt="../../../../../_images/qf-0025-data.png" src="../../../../../_images/qf-0025-data.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.13.2.1 </span><span class="caption-text">Observation dataset</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>We would like to create a surrogate model of this function for the input range of <span class="math notranslate nohighlight">\(x\in[-2,2]\)</span></p>
-</div>
-<div class="section" id="files-required">
-<h2>Files required<a class="headerlink" href="#files-required" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="files-required">
+<h2><span class="section-number">5.13.3. </span>Files required<a class="headerlink" href="#files-required" title="Link to this heading"></a></h2>
 <p>The exercise requires one main script file and one supplementary file. The user should download these files and place them in a <strong>NEW</strong> folder.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Do NOT place the files in your root, downloads, or desktop folder as when the application runs it will copy the contents on the directories and subdirectories containing these files multiple times. If you are like us, your root, Downloads or Documents folders contains a lot of files.</p>
 </div>
 <ol class="arabic">
-<li><p><a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0025/src/rosenbrock.py">rosenbrock.py</a> - This is a python script that computes the model. The script is based on <span class="xref std std-ref">this example</span>, but with <span class="math notranslate nohighlight">\(y=0\)</span>. Further,  <span class="math notranslate nohighlight">\(\varepsilon(x)\)</span> is generated using numpy random sampler.</p>
+<li><p><a class="extlink-qfem-0025 reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0025/src/rosenbrock.py">rosenbrock.py</a> - This is a python script that computes the model. The script is based on <span class="xref std std-ref">this example</span>, but with <span class="math notranslate nohighlight">\(y=0\)</span>. Further,  <span class="math notranslate nohighlight">\(\varepsilon(x)\)</span> is generated using numpy random sampler.</p>
 <div class="literal-block-wrapper docutils container" id="id2">
-<div class="code-block-caption"><span class="caption-text">rosenbrock.py</span><a class="headerlink" href="#id2" title="Permalink to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-number">Listing 5.13.3.1 </span><span class="caption-text">rosenbrock.py</span><a class="headerlink" href="#id2" title="Link to this code"></a></div>
 <div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
 
 <span class="c1"># written: adamzs 06/20</span>
 <span class="c1"># The global minimum is at (a, a^2)</span>
 
-<span class="kn">import</span> <span class="nn">sys</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">params</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="k">def</span> <span class="nf">rosenbrock</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">params</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">rosenbrock</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
 	
 	<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;workdir.&quot;</span><span class="p">,</span><span class="mi">1</span><span class="p">)[</span><span class="mi">1</span><span class="p">]))</span> <span class="c1"># to make this example reroducable. </span>
 	<span class="c1"># different working directories should take DIFFERENT random seed.</span>
@@ -280,9 +230,9 @@
 </div>
 </div>
 </li>
-<li><p><a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0025/src/params.py">params.py</a>- This file defines the input variable(s) that the surrogate model will take</p>
+<li><p><a class="extlink-qfem-0025 reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0025/src/params.py">params.py</a>- This file defines the input variable(s) that the surrogate model will take</p>
 <div class="literal-block-wrapper docutils container" id="id3">
-<div class="code-block-caption"><span class="caption-text">params.py</span><a class="headerlink" href="#id3" title="Permalink to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-number">Listing 5.13.3.2 </span><span class="caption-text">params.py</span><a class="headerlink" href="#id3" title="Link to this code"></a></div>
 <div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="mf">0.0</span>
 </pre></div>
 </div>
@@ -293,22 +243,24 @@
 <p class="admonition-title">Note</p>
 <p>Since the python script creates a <code class="docutils literal notranslate"><span class="pre">results.out</span></code> file when it runs, no postprocessing script is needed.</p>
 </div>
-</div>
-<div class="section" id="uq-workflow">
-<h2>UQ workflow<a class="headerlink" href="#uq-workflow" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="uq-workflow">
+<h2><span class="section-number">5.13.4. </span>UQ workflow<a class="headerlink" href="#uq-workflow" title="Link to this heading"></a></h2>
 <p>The steps involved are as follows:</p>
 <ol class="arabic simple">
 <li><p>Start the application and the <strong>UQ</strong> panel will be highlighted. In the <strong>UQ Engine</strong> drop down menu, select the <strong>SimCenterUQ</strong> engine. In the <strong>Method</strong> select <strong>Train GP Surrogate</strong> option. Enter the values in this panel as shown in the figure below.</p></li>
 </ol>
-<div class="align-center figure">
-<a class="reference internal image-reference" href="../../../../../_images/qf-0025-UQ.png"><img alt="../../../../../_images/qf-0025-UQ.png" src="../../../../../_images/qf-0025-UQ.png" style="width: 1200px;" /></a>
-</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/qf-0025-UQ.png"><img alt="../../../../../_images/qf-0025-UQ.png" src="../../../../../_images/qf-0025-UQ.png" style="width: 1200px;" />
+</a>
+</figure>
 <ol class="arabic simple" start="2">
 <li><p>Next in the <strong>FEM</strong> panel , select <strong>Python</strong> FEM engine. Enter the paths to the <code class="docutils literal notranslate"><span class="pre">rosenbrock.py</span></code> and <code class="docutils literal notranslate"><span class="pre">params.py</span></code> or select <strong>Choose</strong> and navigate to the files.</p></li>
 </ol>
-<div class="align-center figure">
-<a class="reference internal image-reference" href="../../../../../_images/qf-0025-FEM.png"><img alt="../../../../../_images/qf-0025-FEM.png" src="../../../../../_images/qf-0025-FEM.png" style="width: 1200px;" /></a>
-</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/qf-0025-FEM.png"><img alt="../../../../../_images/qf-0025-FEM.png" src="../../../../../_images/qf-0025-FEM.png" style="width: 1200px;" />
+</a>
+</figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Since the python script creates a <code class="docutils literal notranslate"><span class="pre">results.out</span></code> file when it runs, no postprocessing script is needed.</p>
@@ -316,15 +268,17 @@
 <ol class="arabic simple" start="3">
 <li><p>Select the <strong>RV</strong> tab from the input panel. This panel should be pre-populated with <span class="math notranslate nohighlight">\(x\)</span>. If not, press the <strong>Add</strong> button to create a new field to define the input random variable. Enter the same variable name, as required in the model script. Specify the input range of interest</p></li>
 </ol>
-<div class="align-center figure">
-<a class="reference internal image-reference" href="../../../../../_images/qf-0025-RV.png"><img alt="../../../../../_images/qf-0025-RV.png" src="../../../../../_images/qf-0025-RV.png" style="width: 1200px;" /></a>
-</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/qf-0025-RV.png"><img alt="../../../../../_images/qf-0025-RV.png" src="../../../../../_images/qf-0025-RV.png" style="width: 1200px;" />
+</a>
+</figure>
 <ol class="arabic simple" start="4">
 <li><p>In the <strong>QoI</strong> panel enter a variable named <code class="docutils literal notranslate"><span class="pre">f</span></code> with length 1.</p></li>
 </ol>
-<div class="align-center figure">
-<a class="reference internal image-reference" href="../../../../../_images/qf-0025-EDP.png"><img alt="../../../../../_images/qf-0025-EDP.png" src="../../../../../_images/qf-0025-EDP.png" style="width: 1200px;" /></a>
-</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/qf-0025-EDP.png"><img alt="../../../../../_images/qf-0025-EDP.png" src="../../../../../_images/qf-0025-EDP.png" style="width: 1200px;" />
+</a>
+</figure>
 <ol class="arabic simple" start="5">
 <li><p>Click on the <strong>Run</strong> button. This will cause the backed application to launch the <strong>SimCenterUQ</strong> engine, which performs the surrogate training.</p></li>
 <li><p>When done, the <strong>RES</strong> tab will be selected and the results will be displayed.</p></li>
@@ -332,78 +286,63 @@
 <ul class="simple">
 <li><p>Summary of Results:</p></li>
 </ul>
-<div class="align-center figure">
-<a class="reference internal image-reference" href="../../../../../_images/qf-0025-RES1.png"><img alt="../../../../../_images/qf-0025-RES1.png" src="../../../../../_images/qf-0025-RES1.png" style="width: 1200px;" /></a>
-</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/qf-0025-RES1.png"><img alt="../../../../../_images/qf-0025-RES1.png" src="../../../../../_images/qf-0025-RES1.png" style="width: 1200px;" />
+</a>
+</figure>
 <ul class="simple">
 <li><p>Leave-one-out cross-validation (LOOCV) predictions:</p></li>
 </ul>
-<div class="align-center figure">
-<a class="reference internal image-reference" href="../../../../../_images/qf-0025-RES2.png"><img alt="../../../../../_images/qf-0025-RES2.png" src="../../../../../_images/qf-0025-RES2.png" style="width: 600px;" /></a>
-</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/qf-0025-RES2.png"><img alt="../../../../../_images/qf-0025-RES2.png" src="../../../../../_images/qf-0025-RES2.png" style="width: 600px;" />
+</a>
+</figure>
 <p>Note that the goodness-of-fit measures above do not perfectly capture <em>goodness</em> as it is evaluated assuming aleatory variability (or the measurement noise) zero. However, the cross-validation plot with bounds provides a rough estimate of whether the observation data safely lies on the GP prediction bounds. A better validation measure for the case with high nugget variance will be included in the next release.</p>
-<div class="align-center figure">
-<a class="reference internal image-reference" href="../../../../../_images/qf-0025-RES3.png"><img alt="../../../../../_images/qf-0025-RES3.png" src="../../../../../_images/qf-0025-RES3.png" style="width: 1200px;" /></a>
-</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/qf-0025-RES3.png"><img alt="../../../../../_images/qf-0025-RES3.png" src="../../../../../_images/qf-0025-RES3.png" style="width: 1200px;" />
+</a>
+</figure>
 <p>The scatter plot compares the observation data with the predicted mean and variance obtained by cross-validations. The confidence interval (CI, shown in red) is the bounds for the ‘mean’ of the response function, while the prediction interval (PI, shown in gray) shows those of the observations (i.e. by adding the range of the measurement noise)</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2018-2025, The Regents of the University of California.
-
-    </p>
+    <p>&#169; Copyright 2018-2025, The Regents of the University of California.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-
-  
-  
-    
     <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158130480-4"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    ga('create', 'UA-158130480-4', 'auto');
-    
-    ga('send', 'pageview');
-    </script>
-
-    
-    
+      gtag('config', 'UA-158130480-4', {
+          'anonymize_ip': false,
+      });
+    </script>  
 
   <style>
          .wy-nav-content { max-width: none; }

@@ -1,0 +1,644 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5.19. Surrogate-aided Bayesian Calibration of a Reinforced Concrete Column Using Experimental Cyclic Test Data &mdash; Quantified Uncertainty with Optimization for the FEM  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/css/theme.css?v=66b6668b" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/css/custom.css?v=4b5bf716" />
+
+  
+      <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../../../../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../../_static/copybutton.js?v=f281be69"></script>
+      <script src="../../../../../_static/design-tabs.js?v=36754332"></script>
+      <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js?v=ffc8af2d"></script>
+      <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js?v=12818e64"></script>
+    <script src="../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+    <link rel="next" title="6. Jobs" href="../../../usage/desktop/jobs.html" />
+    <link rel="prev" title="5.18. PM4Sand - Sensitivity Analysis" href="../qfem-0033/README.html" />
+<script src="https://cdn.jsdelivr.net/npm/vega@5.12.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.13.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.8.0"></script>
+<style media="screen">.vega-actions a {margin-right: 5px;}</style>
+<link href="../../../../../_static/css/bootstrap.css" rel="stylesheet">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #F2F2F2" >
+<a href="https://simcenter.designsafe-ci.org/" style="margin-bottom: 0px;">
+  <img src="../../../../../_static/img/SimCenter-Only.png" class="logo" alt="Org-Logo" />
+</a>
+<hr style="margin: 0px;">
+
+  <a href="../../../../../index.html" class="icon icon-home"> Quantified Uncertainty with Optimization for the FEM
+
+
+
+</a>
+
+
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../about/quoFEM/about.html">1. About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../front-matter/desktop/ack.html">2. Acknowledgments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../front-matter/license.html">3. Copyright and License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../front-matter/cite.html">4. How To Cite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../releases/quoCapabilities.html">5. Capabilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../releases/quoReleaseNotes.html">6. Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../releases/quoPlans.html">7. Release Plans</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../front-matter/glossary.html">8. Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../front-matter/abbreviations.html">9. Abbreviations</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../installation/desktop/installation.html">1. Running Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../about/quoFEM/quoFEMtutorial.html">2. Getting Started Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../usage/desktop/usage.html">3. User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../usage/desktop/quoFEM/tools.html">4. Tools</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../examples.html">5. Examples</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0001/README.html">5.1. Two-Dimensional Truss: Sampling, Reliability and Sensitivity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0002/README.html">5.2. Forward Propagation - OpenSeesPy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0005/README.html">5.3. Basic modeling with Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0007/README.html">5.4. Steel Frame: Conventional Calibration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0009/README.html">5.5. Two-Dimensional Truss: Global Sensitivity Analysis using SimCenterUQ Engine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0014/README.html">5.6. Steel Frame: Bayesian Calibration using TMCMC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0015/README.html">5.7. Surrogate Modeling for One Story Building Earthquake Response</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0016/README.html">5.8. Surrogate Modeling to Predict Mean and Variance of Earthquake Response</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0017/README.html">5.9. Custom UQ for UQpy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0019/README.html">5.10. Bayesian Calibration of Material Model Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0022/README.html">5.11. Two-Dimensional Truss: PLoM Modeling and Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0023/README.html">5.12. Global Sensitivity Analysis for Field QoI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0025/README.html">5.13. Heteroscedastic Gaussian Process modeling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0027/README.html">5.14. Forward propagation of uncertainty with multiple simulation models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0028/README.html">5.15. Bayesian calibration of hierarchical models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0031/README.html">5.16. PM4Sand - Bayesian Calibration using Cyclic Direct Simple Shear Test Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0032/README.html">5.17. PM4Sand - Forward Propagation to Lateral Spreading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qfem-0033/README.html">5.18. PM4Sand - Sensitivity Analysis</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">5.19. Surrogate-aided Bayesian Calibration of a Reinforced Concrete Column Using Experimental Cyclic Test Data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#outline">5.19.1. Outline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#files-required">5.19.2. Files Required</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#experimental-setup">5.19.3. Experimental Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#numerical-model">5.19.4. Numerical Model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#quofem-setup">5.19.5. quoFEM Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#results">5.19.6. Results</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#comparison-with-direct-tmcmc-results">5.19.6.1. Comparison with Direct TMCMC Results</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#discussion">5.19.7. Discussion</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#parameter-calibration-results">5.19.7.1. Parameter Calibration Results</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#key-findings">5.19.7.2. Key Findings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#comparison-with-results-without-surrogate">5.19.7.3. Comparison with Results Without Surrogate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#computational-efficiency">5.19.7.4. Computational Efficiency</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#references">5.19.8. References</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../usage/desktop/jobs.html">6. Jobs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../troubleshooting/desktop/troubleshooting.html">7. Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../reqments/reqQUOFE.html">8. Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bugs.html">9. Bugs &amp; Feature Requests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../dcv/quoFEM/quoFEM.html">10. Running in Your Browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../usage/desktop/quoFEM/usage_video.html">11. Video Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Technical Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../technical_manual/desktop/uqTechnical.html">1. Dakota Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../technical_manual/desktop/SimCenterUQTechnical.html">2. Methods in SimCenterUQ Engine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../technical_manual/desktop/UCSDUQTechnical.html">3. Methods in UCSD UQ Engine</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer_manual/how_to_build/desktop/how_to_build.html">1. How to Build</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer_manual/how_to_extend.html">2. How to Extend</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer_manual/verification/desktop/verification.html">3. Verification</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #F2F2F2" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../index.html">Quantified Uncertainty with Optimization for the FEM</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../examples.html"><span class="section-number">5. </span>Examples</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">5.19. </span>Surrogate-aided Bayesian Calibration of a Reinforced Concrete Column Using Experimental Cyclic Test Data</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../../_sources/common/user_manual/examples/desktop/qfem-0034/README.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="surrogate-aided-bayesian-calibration-of-a-reinforced-concrete-column-using-experimental-cyclic-test-data">
+<span id="qfem-0034"></span><h1><span class="section-number">5.19. </span>Surrogate-aided Bayesian Calibration of a Reinforced Concrete Column Using Experimental Cyclic Test Data<a class="headerlink" href="#surrogate-aided-bayesian-calibration-of-a-reinforced-concrete-column-using-experimental-cyclic-test-data" title="Link to this heading"></a></h1>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p>Problem files</p></td>
+<td><p><a class="extlink-github reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples/qfem-0034/">Github</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="outline">
+<span id="rc-column-calibration"></span><h2><span class="section-number">5.19.1. </span>Outline<a class="headerlink" href="#outline" title="Link to this heading"></a></h2>
+<p>This example demonstrates the application of surrogate-aided Bayesian calibration <a class="reference internal" href="#taflanidis-et-al-2025" id="id1"><span>[Taflanidis_et_al_2025]</span></a> to identify material and section parameters of a reinforced concrete column model using experimental cyclic loading data. The study showcases quoFEM’s new <strong>Use Approximation</strong> feature for Bayesian calibration, which employs Gaussian Process (GP) surrogates within an adaptive Bayesian framework to significantly reduce computational costs while maintaining calibration accuracy.</p>
+<p>The experimental dataset is from <a class="reference internal" href="#soesianawati-et-al-1986" id="id2"><span>[Soesianawati_et_al_1986]</span></a>, part of the PEER Structural Performance Database <a class="reference internal" href="#peer-spd" id="id3"><span>[PEER_SPD]</span></a> containing over 400 RC column tests. This example builds on the SimCenter educational module <strong>Uncertainty Quantification (UQ) for structural models</strong> <a class="reference internal" href="#simcenter-educational-modules" id="id4"><span>[SimCenter_Educational_Modules]</span></a>, which uses the same structural model to demonstrate various UQ methods.</p>
+<p><strong>Problem Setup</strong>: A cantilever RC column (0.4m × 0.4m × 1.6m) subjected to cyclic lateral loading is modeled using OpenSeesPy with lumped plasticity. Three critical parameters are calibrated: crack factor (stiffness degradation ratio), yield moment (Mp), and peak moment capacity (Mc) using 548 experimental force-displacement measurements.</p>
+<p><strong>Methodology</strong>: The GP-AB (Gaussian Process - Aided Bayesian calibration) algorithm iteratively builds a GP surrogate model through adaptive design of experiments, strategically selecting training points using exploitation and exploration strategies while requiring only 2 × (number of calibration parameters) evaluations per iteration.</p>
+<p><strong>Key Findings</strong>: The surrogate-aided approach achieves orders of magnitude reduction in computational demand (66 vs 78,000 model evaluations) and wall-clock time (13.4 vs 95.7 minutes) while maintaining equivalent posterior accuracy with parameter differences below 0.5%.</p>
+<p><strong>Broader Impact</strong>: This demonstration validates surrogate-aided calibration as a transformative tool for practical Bayesian parameter identification of computationally expensive structural models, enabling rigorous uncertainty quantification that would otherwise be prohibitively costly.</p>
+</section>
+<section id="files-required">
+<h2><span class="section-number">5.19.2. </span>Files Required<a class="headerlink" href="#files-required" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p><a class="extlink-qfem-0034 reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0034/src/ColumnModel.py">ColumnModel.py</a>: OpenSeesPy structural analysis script</p></li>
+<li><p><a class="extlink-qfem-0034 reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0034/src/ColumnParams.py">ColumnParams.py</a>: Parameter definitions for calibration</p></li>
+<li><p><a class="extlink-qfem-0034 reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0034/src/experimentDisp.csv">experimentDisp.csv</a>: Experimental displacement time history</p></li>
+<li><p><a class="extlink-qfem-0034 reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0034/src/experimentForce.csv">experimentForce.csv</a>: Experimental force measurements for calibration</p></li>
+</ol>
+</section>
+<section id="experimental-setup">
+<h2><span class="section-number">5.19.3. </span>Experimental Setup<a class="headerlink" href="#experimental-setup" title="Link to this heading"></a></h2>
+<p>The calibration example uses experimental data from <a class="reference internal" href="#soesianawati-et-al-1986" id="id5"><span>[Soesianawati_et_al_1986]</span></a>, part of the PEER Structural Performance Database (<a class="reference external" href="https://nisee.berkeley.edu/spd/index.html">https://nisee.berkeley.edu/spd/index.html</a>) containing over 400 cyclic lateral-load tests from multiple research institutions worldwide.</p>
+<blockquote>
+<div><figure class="align-center" id="id9">
+<img alt="../../../../../_images/column_configuration.png" src="../../../../../_images/column_configuration.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 5.19.3.1 </span><span class="caption-text">Test specimen configuration <a class="reference internal" href="#soesianawati-et-al-1986" id="id6"><span>[Soesianawati_et_al_1986]</span></a></span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<p><strong>Test Specimen</strong>: The column specimen has a 400mm × 400mm square cross-section with a height of 1600mm, reinforced with 12 HD16 longitudinal bars and 13mm concrete cover. Testing involves constant axial compression (744 kN) and displacement-controlled cyclic lateral loading.</p>
+<blockquote>
+<div><figure class="align-center" id="id10">
+<img alt="../../../../../_images/column_reinforcement.png" src="../../../../../_images/column_reinforcement.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 5.19.3.2 </span><span class="caption-text">Test specimen reinforcement details <a class="reference internal" href="#soesianawati-et-al-1986" id="id7"><span>[Soesianawati_et_al_1986]</span></a></span><a class="headerlink" href="#id10" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<p><strong>Loading Protocol</strong>: The quasi-static cyclic protocol progressively increases displacement amplitude to ±78mm (4.9% drift), applying multiple cycles at each level to characterize behavioral transitions from elastic response through near-collapse performance while capturing strength degradation and stiffness deterioration.</p>
+<blockquote>
+<div><figure class="align-center" id="id11">
+<img alt="../../../../../_images/hysteresis_curve_boxed.png" src="../../../../../_images/hysteresis_curve_boxed.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 5.19.3.3 </span><span class="caption-text">Experimental force-displacement hysteretic response</span><a class="headerlink" href="#id11" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<p><strong>Measured Data</strong>: The dataset comprises 548 synchronized displacement and force measurements across multiple complete hysteretic cycles.</p>
+<blockquote>
+<div><figure class="align-center" id="id12">
+<img alt="../../../../../_images/displacement_plot.png" src="../../../../../_images/displacement_plot.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 5.19.3.4 </span><span class="caption-text">Experimental displacement time history used as input to the numerical model</span><a class="headerlink" href="#id12" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id13">
+<img alt="../../../../../_images/force_plot.png" src="../../../../../_images/force_plot.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 5.19.3.5 </span><span class="caption-text">Experimental force time history used for calibration</span><a class="headerlink" href="#id13" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+</section>
+<section id="numerical-model">
+<h2><span class="section-number">5.19.4. </span>Numerical Model<a class="headerlink" href="#numerical-model" title="Link to this heading"></a></h2>
+<p>An OpenSeesPy lumped plasticity model reproduces the experimental conditions, using an elastic beam-column element connected to a nonlinear rotational spring at the base. This approach concentrates nonlinear behavior in the plastic hinge while treating the remainder as elastic, efficiently capturing global response characteristics while maintaining computational efficiency.</p>
+<blockquote>
+<div><figure class="align-center" id="id14">
+<img alt="../../../../../_images/model.png" src="../../../../../_images/model.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 5.19.4.1 </span><span class="caption-text">Numerical model schematic showing lumped plasticity approach with calibration parameters. Figure from <a class="reference internal" href="#simcenter-educational-modules" id="id8"><span>[SimCenter_Educational_Modules]</span></a>.</span><a class="headerlink" href="#id14" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<p>The model includes effective stiffness accounting for cracking, applied loads matching experimental conditions (744 kN axial compression and 548-point displacement history), and P-Delta geometric transformation for second-order effects.</p>
+<p>Each analysis requires ~2 seconds per iteration. Direct Bayesian calibration typically needs thousands of evaluations (potentially hours of runtime), motivating the surrogate-aided approach. While this model allows direct TMCMC for validation, complex finite element models requiring minutes or hours per evaluation make direct calibration prohibitively expensive.</p>
+</section>
+<section id="quofem-setup">
+<h2><span class="section-number">5.19.5. </span>quoFEM Setup<a class="headerlink" href="#quofem-setup" title="Link to this heading"></a></h2>
+<p>The calibration is performed using quoFEM with the following configuration:</p>
+<p><strong>Step 1: UQ Tab - Bayesian Calibration Settings</strong>: In the UQ tab, select <strong>Bayesian Calibration</strong> as the method and choose <strong>UCSD-UQ</strong> as the UQ engine. For the model type, select <strong>Non-hierarchical</strong>, which utilizes the TMCMC algorithm for posterior sampling. Set the sample size to 1000 and the random seed to 20 to ensure reproducibility. Specify the calibration data file by providing the path to <cite>experimentForce.csv</cite>. To accelerate the calibration process, enable the <strong>Use Approximation</strong> option, which allows surrogate-aided Bayesian calibration. The figure below illustrates the recommended UQ tab configuration.</p>
+<blockquote>
+<div><figure class="align-center">
+<img alt="../../../../../_images/UQ3.png" src="../../../../../_images/UQ3.png" />
+</figure>
+</div></blockquote>
+<p><strong>Step 2: Forward Model (FEM) Tab</strong>: In the FEM tab, choose <strong>Python</strong> as the FEM engine. Provide the full path to <cite>ColumnModel.py</cite> as the input script and the full path to <cite>ColumnParams.py</cite> as the parameters script.</p>
+<blockquote>
+<div><figure class="align-center">
+<img alt="../../../../../_images/FEM4.png" src="../../../../../_images/FEM4.png" />
+</figure>
+</div></blockquote>
+<p><strong>Step 3: Input Random Variables (RV) Tab</strong>: Define the prior distribution for the three parameters to be calibrated:</p>
+<table class="docutils align-default" id="id15">
+<caption><span class="caption-number">Table 5.19.5.1 </span><span class="caption-text">Random Variables for Calibration</span><a class="headerlink" href="#id15" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 25.0%" />
+<col style="width: 25.0%" />
+<col style="width: 25.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable Name</p></th>
+<th class="head"><p>Distribution</p></th>
+<th class="head"><p>Min.</p></th>
+<th class="head"><p>Max.</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>crack_factor</p></td>
+<td><p>Uniform</p></td>
+<td><p>0.05</p></td>
+<td><p>0.8</p></td>
+</tr>
+<tr class="row-odd"><td><p>Mp</p></td>
+<td><p>Uniform</p></td>
+<td><p>100</p></td>
+<td><p>500</p></td>
+</tr>
+<tr class="row-even"><td><p>Mc</p></td>
+<td><p>Uniform</p></td>
+<td><p>100</p></td>
+<td><p>600</p></td>
+</tr>
+</tbody>
+</table>
+<figure class="align-center">
+<img alt="../../../../../_images/RV_panel.png" src="../../../../../_images/RV_panel.png" />
+</figure>
+<p><strong>Step 4: Output Quantities of Interest (QoI) Tab</strong>: Define the response quantities to match against experimental data:</p>
+<blockquote>
+<div><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>QoI1:
+- Variable Name: force
+- Length: 548 (matching experimental data points)
+</pre></div>
+</div>
+<figure class="align-center">
+<img alt="../../../../../_images/QoI.png" src="../../../../../_images/QoI.png" />
+</figure>
+</div></blockquote>
+<p><strong>Step 5: Execution</strong></p>
+<ul class="simple">
+<li><p>Click the <strong>RUN</strong> button to start the calibration process on your local machine.</p></li>
+<li><p>Or, click the <strong>RUN at DesignSafe</strong> button to submit the job to DesignSafe-CyberInfrastructure and utilize the parallel computing resources provided by DesignSafe.</p></li>
+</ul>
+</section>
+<section id="results">
+<h2><span class="section-number">5.19.6. </span>Results<a class="headerlink" href="#results" title="Link to this heading"></a></h2>
+<p>Upon completion of the calibration, quoFEM generates summary statistics and visualizations to help assess the results:</p>
+<ol class="arabic">
+<li><p><strong>Summary statistics</strong>: In the <strong>Summary</strong> tab of the results (<strong>RES</strong>) panel, key metrics such as the posterior mean and posterior standard deviation for each calibrated parameter are provided. These statistics are also shown for each component of the force response.</p>
+<figure class="align-center">
+<img alt="../../../../../_images/RES13.png" src="../../../../../_images/RES13.png" />
+</figure>
+</li>
+<li><p><strong>Posterior samples</strong>: The <strong>Data Values</strong> tab of the results (<strong>RES</strong>) panel displays charts for visualizing the posterior samples and a table containing the values drawn from the posterior distribution of the parameters and the corresponding model responses. Posterior samples can be exported as text files for further analysis by clicking the buttons in the <strong>Data Values</strong> tab. Clicking on the header rows of the chart will sort the values in ascending or descending order.</p>
+<figure class="align-center">
+<img alt="../../../../../_images/RES23.png" src="../../../../../_images/RES23.png" />
+</figure>
+</li>
+</ol>
+<p>You can toggle between visualizations such as scatter plots, histograms, and empirical cumulative distribution functions (CDFs) in the chart by left- and right-clicking on cells inside the chart area (not on the header rows). Right-clicking on a cell inside a column will plot the variable in that column along the x-axis, while left-clicking will plot that variable along the y-axis.</p>
+<blockquote>
+<div><figure class="align-center">
+<img alt="../../../../../_images/RES33.png" src="../../../../../_images/RES33.png" />
+</figure>
+<figure class="align-center">
+<img alt="../../../../../_images/RES43.png" src="../../../../../_images/RES43.png" />
+</figure>
+</div></blockquote>
+<p>By left- and right-clicking within the same column, you can plot the CDF of that variable.</p>
+<blockquote>
+<div><figure class="align-center">
+<img alt="../../../../../_images/RES8.png" src="../../../../../_images/RES8.png" />
+</figure>
+</div></blockquote>
+<p>By right- and left-clicking the same column, you can plot the histogram of that variable.</p>
+<blockquote>
+<div><figure class="align-center">
+<img alt="../../../../../_images/RES9.png" src="../../../../../_images/RES9.png" />
+</figure>
+</div></blockquote>
+<p>You can expand the chart by dragging the area between the chart and the table.</p>
+<blockquote>
+<div><figure class="align-center">
+<img alt="../../../../../_images/RES10.png" src="../../../../../_images/RES10.png" />
+</figure>
+</div></blockquote>
+<section id="comparison-with-direct-tmcmc-results">
+<h3><span class="section-number">5.19.6.1. </span>Comparison with Direct TMCMC Results<a class="headerlink" href="#comparison-with-direct-tmcmc-results" title="Link to this heading"></a></h3>
+<p>For validation purposes, the same calibration was performed without the surrogate approximation (i.e., with the <strong>Use Approximation</strong> option disabled). The following figures show the comparison between surrogate-aided and direct TMCMC results, demonstrating that the surrogate model effectively captures the essential behavior of the structural model while providing substantial computational savings:</p>
+<blockquote>
+<div><figure class="align-center">
+<img alt="../../../../../_images/RES52.png" src="../../../../../_images/RES52.png" />
+</figure>
+<figure class="align-center">
+<img alt="../../../../../_images/RES62.png" src="../../../../../_images/RES62.png" />
+</figure>
+<figure class="align-center">
+<img alt="../../../../../_images/RES71.png" src="../../../../../_images/RES71.png" />
+</figure>
+</div></blockquote>
+</section>
+</section>
+<section id="discussion">
+<h2><span class="section-number">5.19.7. </span>Discussion<a class="headerlink" href="#discussion" title="Link to this heading"></a></h2>
+<p>The Bayesian calibration successfully identified the three key parameters of the reinforced concrete column model using the experimental cyclic loading data. The results demonstrate a significant reduction in parameter uncertainty compared to the initial prior distributions, indicating that the experimental data provides valuable information for constraining the model parameters.</p>
+<section id="parameter-calibration-results">
+<h3><span class="section-number">5.19.7.1. </span>Parameter Calibration Results<a class="headerlink" href="#parameter-calibration-results" title="Link to this heading"></a></h3>
+<p>The following table compares the prior and posterior statistical moments for the three calibrated parameters:</p>
+<table class="docutils align-default" id="id16">
+<caption><span class="caption-number">Table 5.19.7.1.1 </span><span class="caption-text">Prior vs Posterior Parameter Statistics</span><a class="headerlink" href="#id16" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 15.0%" />
+<col style="width: 15.0%" />
+<col style="width: 15.0%" />
+<col style="width: 15.0%" />
+<col style="width: 20.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Prior Mean</p></th>
+<th class="head"><p>Prior Std Dev</p></th>
+<th class="head"><p>Posterior Mean</p></th>
+<th class="head"><p>Posterior Std Dev</p></th>
+<th class="head"><p>Uncertainty Reduction*</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>crack_factor</strong></p></td>
+<td><p>0.425</p></td>
+<td><p>0.217</p></td>
+<td><p>0.249</p></td>
+<td><p>0.004</p></td>
+<td><p>98.0%</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Mp</strong> (kN-m)</p></td>
+<td><p>300.0</p></td>
+<td><p>115.5</p></td>
+<td><p>294.3</p></td>
+<td><p>4.31</p></td>
+<td><p>96.3%</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Mc</strong> (kN-m)</p></td>
+<td><p>350.0</p></td>
+<td><p>144.3</p></td>
+<td><p>459.6</p></td>
+<td><p>15.1</p></td>
+<td><p>89.6%</p></td>
+</tr>
+</tbody>
+</table>
+<p><em>Uncertainty reduction = (1 - Posterior Std Dev / Prior Std Dev) x 100%</em></p>
+</section>
+<section id="key-findings">
+<h3><span class="section-number">5.19.7.2. </span>Key Findings<a class="headerlink" href="#key-findings" title="Link to this heading"></a></h3>
+<p><strong>Crack Factor Parameter</strong>: The posterior distribution of the crack factor shows the most dramatic uncertainty reduction (98.0%), with the calibrated value converging to approximately 0.25. This suggests that the experimental data strongly constrains the ratio of cracked to uncracked section moment of inertia, indicating that the column exhibits significant stiffness degradation due to cracking under cyclic loading.</p>
+<p><strong>Yield Moment (Mp)</strong>: The calibrated yield moment of 294.3 kN-m is close to the prior mean of 300.0 kN-m, but with a substantial reduction in uncertainty (96.3%). The narrow posterior distribution (standard deviation of 4.31 kN-m) indicates high confidence in the identified yield capacity of the plastic hinge.</p>
+<p><strong>Peak Moment Capacity (Mc)</strong>: The posterior mean of 459.6 kN-m is significantly higher than the prior mean of 350.0 kN-m, suggesting that the experimental data reveals a higher moment capacity than initially expected. Despite having the largest absolute posterior standard deviation (15.1 kN-m), this parameter still shows an 89.6% reduction in uncertainty.</p>
+<p>The calibrated parameter values are physically reasonable: crack factor of 0.25 represents realistic stiffness degradation for RC under cyclic loading, while the moment capacities (294.3 and 459.6 kN-m) show appropriate strength hierarchy and consistency with the column geometry. The substantial uncertainty reductions across all parameters indicate the experimental data is highly informative.</p>
+</section>
+<section id="comparison-with-results-without-surrogate">
+<h3><span class="section-number">5.19.7.3. </span>Comparison with Results Without Surrogate<a class="headerlink" href="#comparison-with-results-without-surrogate" title="Link to this heading"></a></h3>
+<p>To validate the effectiveness of the surrogate-aided calibration approach, a comparison was performed between results obtained with and without the surrogate approximation:</p>
+<table class="docutils align-default" id="id17">
+<caption><span class="caption-number">Table 5.19.7.3.1 </span><span class="caption-text">Surrogate vs Direct TMCMC Comparison</span><a class="headerlink" href="#id17" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 18.2%" />
+<col style="width: 13.6%" />
+<col style="width: 13.6%" />
+<col style="width: 13.6%" />
+<col style="width: 13.6%" />
+<col style="width: 13.6%" />
+<col style="width: 13.6%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>GP-AB Mean</p></th>
+<th class="head"><p>GP-AB Std</p></th>
+<th class="head"><p>TMCMC Mean</p></th>
+<th class="head"><p>TMCMC Std</p></th>
+<th class="head"><p>Mean Diff</p></th>
+<th class="head"><p>Std Diff</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>crack_factor</strong></p></td>
+<td><p>0.249</p></td>
+<td><p>0.004</p></td>
+<td><p>0.249</p></td>
+<td><p>0.005</p></td>
+<td><p>0.0002</p></td>
+<td><p>0.0006</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Mp</strong> (kN-m)</p></td>
+<td><p>294.3</p></td>
+<td><p>4.31</p></td>
+<td><p>294.5</p></td>
+<td><p>4.49</p></td>
+<td><p>0.17</p></td>
+<td><p>0.18</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Mc</strong> (kN-m)</p></td>
+<td><p>459.6</p></td>
+<td><p>15.1</p></td>
+<td><p>457.4</p></td>
+<td><p>15.8</p></td>
+<td><p>2.19</p></td>
+<td><p>0.73</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Validation of Surrogate Model Performance</strong>: The comparison demonstrates excellent agreement between the two approaches, with percentage differences in posterior means being less than 0.5% for all parameters. The small differences in standard deviations indicate that both methods provide similar uncertainty quantification. The largest absolute difference occurs in the Mc parameter (2.19 kN-m difference in mean), but this represents less than 0.5% of the parameter value, which is negligible for practical engineering applications.</p>
+</section>
+<section id="computational-efficiency">
+<h3><span class="section-number">5.19.7.4. </span>Computational Efficiency<a class="headerlink" href="#computational-efficiency" title="Link to this heading"></a></h3>
+<p>Upon completion of the analysis, the RES panel includes a <strong>Log</strong> tab displaying detailed log file contents. These files provide a comprehensive summary of computational performance, including total runtime and number of model evaluations. Comparing the log files from both calibration approaches reveals the dramatic computational efficiency gains achieved by the surrogate-aided method:</p>
+<table class="docutils align-default" id="id18">
+<caption><span class="caption-number">Table 5.19.7.4.1 </span><span class="caption-text">Computational Performance Comparison</span><a class="headerlink" href="#id18" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 25.0%" />
+<col style="width: 25.0%" />
+<col style="width: 20.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Metric</p></th>
+<th class="head"><p>Surrogate-Aided Method</p></th>
+<th class="head"><p>Direct TMCMC Method</p></th>
+<th class="head"><p>Efficiency Gain</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Total Runtime</strong></p></td>
+<td><p>13.4 minutes</p></td>
+<td><p>95.7 minutes</p></td>
+<td><p>7.1x faster</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Model Evaluations</strong></p></td>
+<td><p>66</p></td>
+<td><p>78,000</p></td>
+<td><p>1,182x fewer</p></td>
+</tr>
+</tbody>
+</table>
+<p>The surrogate-aided method demonstrates transformative computational efficiency by requiring only 66 strategically selected model evaluations compared to 78,000 needed for direct TMCMC sampling. This remarkable 1,182-fold reduction in computational demand is achieved through an intelligent adaptive design of experiments strategy that systematically adds 6 training points per iteration (following the 2xn_θ = 2x3 pattern for the three calibration parameters). Each iteration uses both exploitation points (focused on high-posterior-probability regions) and exploration points (covering unexplored parameter space) to maximize information gain from the GP surrogate model.</p>
+<p>The 7.1x speedup in wall-clock time represents an 86% reduction in computational time, transforming what would be a 95.7-minute direct calibration into a 13.4-minute surrogate-aided process. This efficiency gain becomes even more significant for complex finite element models where individual evaluations may require minutes or hours rather than &lt; 2 seconds. The surrogate-aided approach thus enables practical Bayesian calibration of computationally intensive structural models that would otherwise be prohibitively expensive to analyze.</p>
+</section>
+</section>
+<section id="references">
+<h2><span class="section-number">5.19.8. </span>References<a class="headerlink" href="#references" title="Link to this heading"></a></h2>
+<div role="list" class="citation-list">
+<div class="citation" id="taflanidis-et-al-2025" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">Taflanidis_et_al_2025</a><span class="fn-bracket">]</span></span>
+<p>Alexandros A. Taflanidis, B.S. Aakash, Sang-ri Yi, and Joel P. Conte, “Surrogate-aided Bayesian calibration with adaptive learning strategies,” <em>Mechanical Systems and Signal Processing</em>, Volume 237, 2025, 113014, <a class="reference external" href="https://doi.org/10.1016/j.ymssp.2025.113014">https://doi.org/10.1016/j.ymssp.2025.113014</a>.</p>
+</div>
+<div class="citation" id="soesianawati-et-al-1986" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Soesianawati_et_al_1986<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id2">1</a>,<a role="doc-backlink" href="#id5">2</a>,<a role="doc-backlink" href="#id6">3</a>,<a role="doc-backlink" href="#id7">4</a>)</span>
+<p>Soesianawati, M.T., Park, R., and Priestley, M.J.N. (1986). “Limited Ductility Design of Reinforced Concrete Columns.” Report 86-10, Department of Civil Engineering, University of Canterbury, Christchurch, New Zealand.</p>
+</div>
+<div class="citation" id="peer-spd" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">PEER_SPD</a><span class="fn-bracket">]</span></span>
+<p>PEER Structural Performance Database (SPD). Available at <a class="reference external" href="https://nisee.berkeley.edu/spd/index.html">https://nisee.berkeley.edu/spd/index.html</a></p>
+</div>
+<div class="citation" id="simcenter-educational-modules" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>SimCenter_Educational_Modules<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id4">1</a>,<a role="doc-backlink" href="#id8">2</a>)</span>
+<p>SimCenter Educational Modules: Uncertainty Quantification (UQ) for Structural Models. Available at <a class="reference external" href="https://simcenter.designsafe-ci.org/knowledge-hub/teaching-gallery/">https://simcenter.designsafe-ci.org/knowledge-hub/teaching-gallery/</a></p>
+</div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2018-2025, The Regents of the University of California.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158130480-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-158130480-4', {
+          'anonymize_ip': false,
+      });
+    </script>  
+
+  <style>
+         .wy-nav-content { max-width: none; }
+  </style>
+
+<script>
+    /*
+    let selectedFilters = [];
+    const images  = document.getElementsByClassName("gallery-item");
+    const filters = [...document.querySelectorAll('.filter select')];
+    const toggles = [...document.querySelectorAll('.filter input')];
+
+    var show = function (elem) {
+        elem.style.display = 'block';
+    };
+    var hide = function (elem) {
+        elem.style.display = 'none';
+    };
+    var toggleFilter =  function(el,elid) {
+        const filter = document.getElementById(elid);
+        filter.disabled = !el.checked;
+       
+        if ("createEvent" in document) {
+            var evt = document.createEvent("HTMLEvents");
+            evt.initEvent("change", false, true);
+            filter.dispatchEvent(evt);
+        }
+        else
+            filter.fireEvent("change");
+    };
+    
+    for (const filter of filters) {
+        filter.addEventListener('change', function(event) {
+            selectedFilters = filters.map(filter => filter.disabled ? '' : filter.value).filter(Boolean);
+            console.log(selectedFilters);
+            for (const image of images) {
+                if (selectedFilters.every(filter => image.classList.contains(filter))) {
+                    show(image);
+                }
+                else {hide(image)};
+            };
+        })
+    };
+    */
+</script>
+
+
+</body>
+</html>
