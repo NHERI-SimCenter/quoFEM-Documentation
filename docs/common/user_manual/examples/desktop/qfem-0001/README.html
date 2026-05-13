@@ -1,33 +1,57 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" data-content_root="../../../../../">
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
   <title>5.1. Two-Dimensional Truss: Sampling, Reliability and Sensitivity &mdash; Quantified Uncertainty with Optimization for the FEM  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/css/theme.css?v=66b6668b" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/copybutton.css?v=76b2166b" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/tabs.css?v=a5c4661c" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-design.min.css?v=95c83b7e" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/css/custom.css?v=4b5bf716" />
+  
 
   
-      <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../../../../_static/documentation_options.js?v=5929fcd5"></script>
-      <script src="../../../../../_static/doctools.js?v=9a2dae69"></script>
-      <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script src="../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
-      <script src="../../../../../_static/copybutton.js?v=f281be69"></script>
-      <script src="../../../../../_static/design-tabs.js?v=36754332"></script>
-      <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js?v=ffc8af2d"></script>
-      <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js?v=12818e64"></script>
-      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="../../../../../_static/js/theme.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/pointer.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../../" src="../../../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+        <script src="../../../../../_static/jquery.js"></script>
+        <script src="../../../../../_static/underscore.js"></script>
+        <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../../../_static/doctools.js"></script>
+        <script src="../../../../../_static/clipboard.min.js"></script>
+        <script src="../../../../../_static/copybutton.js"></script>
+        <script src="../../../../../_static/design-tabs.js"></script>
+        <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+        <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <script type="text/javascript" src="../../../../../_static/js/theme.js"></script>
+
+    
     <link rel="index" title="Index" href="../../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../../search.html" />
     <link rel="next" title="5.2. Forward Propagation - OpenSeesPy" href="../qfem-0002/README.html" />
@@ -40,35 +64,54 @@
 
 </head>
 
-<body class="wy-body-for-nav"> 
+<body class="wy-body-for-nav">
+
+   
   <div class="wy-grid-for-nav">
+    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search"  style="background: #F2F2F2" >
+          
 <a href="https://simcenter.designsafe-ci.org/" style="margin-bottom: 0px;">
   <img src="../../../../../_static/img/SimCenter-Only.png" class="logo" alt="Org-Logo" />
 </a>
 <hr style="margin: 0px;">
 
-  <a href="../../../../../index.html" class="icon icon-home"> Quantified Uncertainty with Optimization for the FEM
+  <a href="../../../../../index.html">
 
 
+
+  
+  <img src="../../../../../_static/quoFEM-Logo.png" class="logo" alt="Logo"/>
 
 </a>
 
+
+  
+  
 
 
 
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
 
 
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
               <p class="caption" role="heading"><span class="caption-text">About</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../about/quoFEM/about.html">1. About</a></li>
@@ -120,6 +163,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../bugs.html">9. Bugs &amp; Feature Requests</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../dcv/quoFEM/quoFEM.html">10. Running in Your Browser</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../usage/desktop/quoFEM/usage_video.html">11. Video Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../usage/desktop/Misc.html">12. Misc</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Technical Manual</span></p>
 <ul>
@@ -134,38 +178,79 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../developer_manual/verification/desktop/verification.html">3. Verification</a></li>
 </ul>
 
+            
+          
         </div>
+        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #F2F2F2" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../../../index.html">Quantified Uncertainty with Optimization for the FEM</a>
+        
       </nav>
 
+
       <div class="wy-nav-content">
+        
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../examples.html"><span class="section-number">5. </span>Examples</a></li>
-      <li class="breadcrumb-item active"><span class="section-number">5.1. </span>Two-Dimensional Truss: Sampling, Reliability and Sensitivity</li>
+    
+      <li><a href="../../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../examples.html"><span class="section-number">5. </span>Examples</a> &raquo;</li>
+        
+      <li><span class="section-number">5.1. </span>Two-Dimensional Truss: Sampling, Reliability and Sensitivity</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
+        
+          
             <a href="../../../../../_sources/common/user_manual/examples/desktop/qfem-0001/README.rst.txt" rel="nofollow"> View page source</a>
+          
+        
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-             
-  <section id="two-dimensional-truss-sampling-reliability-and-sensitivity">
-<span id="qfem-0001"></span><h1><span class="section-number">5.1. </span>Two-Dimensional Truss: Sampling, Reliability and Sensitivity<a class="headerlink" href="#two-dimensional-truss-sampling-reliability-and-sensitivity" title="Link to this heading"></a></h1>
+            
+  <div class="section" id="two-dimensional-truss-sampling-reliability-and-sensitivity">
+<span id="qfem-0001"></span><h1><span class="section-number">5.1. </span>Two-Dimensional Truss: Sampling, Reliability and Sensitivity<a class="headerlink" href="#two-dimensional-truss-sampling-reliability-and-sensitivity" title="Permalink to this heading">¶</a></h1>
 <p>Consider the problem of uncertainty quantification in a two-dimensional truss structure shown in the following figure.</p>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../../../../../_images/truss.png"><img alt="../../../../../_images/truss.png" src="../../../../../_images/truss.png" style="width: 600px;" />
-</a>
-</figure>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../../../../../_images/truss.png"><img alt="../../../../../_images/truss.png" src="../../../../../_images/truss.png" style="width: 600px;" /></a>
+</div>
 <p>The structure has uncertain properties that all follow normal distribution:</p>
 <ol class="arabic simple">
 <li><p>Elastic modulus(<code class="docutils literal notranslate"><span class="pre">E</span></code>): mean <span class="math notranslate nohighlight">\(\mu_E=205 kN/{mm^2}\)</span> and standard deviation <span class="math notranslate nohighlight">\(\sigma_E =15 kN/{mm^2}\)</span> (COV = 7.3%)</p></li>
@@ -176,7 +261,7 @@
 <p>The goal of the exercise is to estimate the mean and standard deviation of the vertical displacement at node 3.</p>
 <p><em>The exercise requires two files. The user is required to download these files and place them in a **NEW*</em> folder.* The two files are:</p>
 <ol class="arabic">
-<li><p>Main file: <a class="extlink-qfem-0001 reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0001/src/TrussModel.tcl">TrussTemplate.tcl</a></p>
+<li><p>Main file: <a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0001/src/TrussModel.tcl">TrussTemplate.tcl</a></p>
 <div class="highlight-tcl notranslate"><div class="highlight"><pre><span></span><span class="c"># units kN &amp; mm</span>
 
 <span class="c">#</span>
@@ -254,7 +339,7 @@
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">TrussPost.tcl</span></code> script shown below will accept as input any of the 6 nodes in the domain and for each of the two dof directions.</p>
 <ol class="arabic" start="2">
-<li><p>Postprocessing file: <a class="extlink-qfem-0001 reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0001/../qfem-0001/src/TrussPost.tcl">TrussPost.tcl</a>.</p>
+<li><p>Postprocessing file: <a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0001/../qfem-0001/src/TrussPost.tcl">TrussPost.tcl</a>.</p>
 <div class="highlight-tcl notranslate"><div class="highlight"><pre><span></span><span class="c"># create file handler to write results to output &amp; list into which we will put results</span>
 <span class="k">set</span><span class="w"> </span>resultFile<span class="w"> </span><span class="k">[</span><span class="nb">open</span><span class="w"> </span>results.out<span class="w"> </span>w<span class="k">]</span>
 <span class="k">set</span><span class="w"> </span>results<span class="w"> </span><span class="k">[]</span>
@@ -293,7 +378,7 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The user has the option to provide no post-process script (in which case the main script must create a <code class="docutils literal notranslate"><span class="pre">results.out</span></code> file containing a single line with as many space separated numbers as QoI or the user may provide a Python script that also performs the postprocessing). Below is an example of a postprocessing Python script.</p>
-<p>Alternative postprocessing file: <a class="extlink-qfem-0001 reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0001/src/TrussPost.py">TrussPost.py</a></p>
+<p>Alternative postprocessing file: <a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0001/src/TrussPost.py">TrussPost.py</a></p>
 <blockquote>
 <div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
 
@@ -370,12 +455,16 @@
 <p class="admonition-title">Warning</p>
 <p>Do not place the files in your root, downloads, or desktop folder as when the application runs it will copy the contents on the directories and subdirectories containing these files multiple times. If you are like us, your root, Downloads or Documents folders contains an awful lot of files and when the backend workflow runs you will slowly find you will run out of disk space!</p>
 </div>
-<section id="sampling-analysis">
-<h2><span class="section-number">5.1.1. </span>Sampling Analysis<a class="headerlink" href="#sampling-analysis" title="Link to this heading"></a></h2>
+<div class="section" id="sampling-analysis">
+<h2><span class="section-number">5.1.1. </span>Sampling Analysis<a class="headerlink" href="#sampling-analysis" title="Permalink to this heading">¶</a></h2>
 <table class="docutils align-default">
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 72%" />
+</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Problem files</p></td>
-<td><p><a class="extlink-github reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples/qfem-0001">Download</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples/qfem-0001">Download</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -383,9 +472,9 @@
 <ol class="arabic simple">
 <li><p>Start the application and the UQ tab will be highlighted. In the panel for the UQ selection, keep the UQ engine as that selected, i.e. Dakota, and the <strong>UQ Method Category</strong> as Forward Propagation, and the Forward Propagation method as LHS (Latin Hypercube). Change the <strong>#samples</strong> to 1000 and the <strong>seed</strong> to 20 as shown in the figure.</p></li>
 </ol>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/trussUQ.png" src="../../../../../_images/trussUQ.png" />
-</figure>
+</div>
 <ul class="simple">
 <li><p>Sample size is related to the confidence interval of the estimates. Please refer to <a class="reference internal" href="../../../usage/desktop/DakotaSampling.html#lbldakotaforward"><span class="std std-ref">here</span></a>.</p></li>
 <li><p>Random seed is used to ensure that results are reproducible.</p></li>
@@ -393,21 +482,21 @@
 <ol class="arabic simple" start="2">
 <li><p>Next select the <strong>FEM</strong> panel from the input panel. This will default in the OpenSees FEM engine. For the main script copy the path name to <code class="docutils literal notranslate"><span class="pre">TrussModel.tcl</span></code> or select <strong>choose</strong> and navigate to the file. For the <strong>post-process script</strong> field, repeat the same procedure for the <code class="docutils literal notranslate"><span class="pre">TrussPost.tcl</span></code> script.</p></li>
 </ol>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/trussFEM.png" src="../../../../../_images/trussFEM.png" />
-</figure>
+</div>
 <ol class="arabic simple" start="3">
 <li><p>Next select the <strong>RV</strong> panel from the input panel. This should be pre-populated with four random variables with same names as those having <code class="docutils literal notranslate"><span class="pre">pset</span></code> in the tcl script. For each variable, from the drop-down menu change them from having a constant distribution to a normal one and then provide the means and standard deviations specified for the problem.</p></li>
 </ol>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/trussRV.png" src="../../../../../_images/trussRV.png" />
-</figure>
+</div>
 <ol class="arabic simple" start="4">
 <li><p>Next select the <strong>EDP</strong> panel. Here enter <code class="docutils literal notranslate"><span class="pre">Node_3_Disp_2</span></code> for the one variable.</p></li>
 </ol>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/trussQoI.png" src="../../../../../_images/trussQoI.png" />
-</figure>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The user can add additional QoI by selecting add and then providing additional names. As seen from the post-process script any of the 6 nodes may be specified and for any node either the 1 or 2 DOF direction.</p>
@@ -415,93 +504,119 @@
 <ol class="arabic simple" start="5">
 <li><p>Next click on the <strong>Run</strong> button. This will cause the backend application to launch dakota. When done the <strong>RES</strong> panel will be selected and the results will be displayed. The results show the values the mean and standard deviation.</p></li>
 </ol>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/trussRES1.png" src="../../../../../_images/trussRES1.png" />
-</figure>
+</div>
 <p>If the user selects the <strong>Data</strong> tab in the results panel, they will be presented with both a graphical plot and a tabular listing of the data.</p>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/trussRES2.png" src="../../../../../_images/trussRES2.png" />
-</figure>
+</div>
 <p>Various views of the graphical display can be obtained by left- and right-clicking in the columns of the tabular data. If a singular column of the tabular data is pressed with both right and left buttons a frequency and CDF will be displayed, as shown in figure below.</p>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/trussRES5.png" src="../../../../../_images/trussRES5.png" />
-</figure>
-</section>
-<section id="reliability-analysis">
-<h2><span class="section-number">5.1.2. </span>Reliability Analysis<a class="headerlink" href="#reliability-analysis" title="Link to this heading"></a></h2>
+</div>
+</div>
+<div class="section" id="reliability-analysis">
+<h2><span class="section-number">5.1.2. </span>Reliability Analysis<a class="headerlink" href="#reliability-analysis" title="Permalink to this heading">¶</a></h2>
 <table class="docutils align-default">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Problem files</p></td>
-<td><p><a class="extlink-github reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples/qfem-0003/">Download</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples/qfem-0003/">Download</a></p></td>
 </tr>
 </tbody>
 </table>
 <p>If one is interested in the probability that a particular response measure will be exceeded, an alternate strategy is to perform a reliability analysis. In order to perform a reliability analysis the steps above would be repeated with the exception that the user would select a reliability analysis method instead of a Forward Propagation method. To obtain reliability results using the Second-Order Reliability Method (SORM) for the truss problem the user would follow the same sequence of steps as previously. The difference would be in the <strong>UQ</strong> panel in which the user would select a Reliability as the Dakota Method Category and then choose Local reliability. In the figure the user is specifying that they are interested in the probability that the displacement will exceed certain response levels.</p>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/trussSORM-UQ.png" src="../../../../../_images/trussSORM-UQ.png" />
-</figure>
+</div>
 <p>After the user fills in the rest of the tabs as per the previous section, the user would then press the <strong>RUN</strong> button. The application (after spinning for a while with the wheel of death) will present the user with the results.</p>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/trussSORM-RES.png" src="../../../../../_images/trussSORM-RES.png" />
-</figure>
-</section>
-<section id="global-sensitivity">
-<h2><span class="section-number">5.1.3. </span>Global Sensitivity<a class="headerlink" href="#global-sensitivity" title="Link to this heading"></a></h2>
+</div>
+</div>
+<div class="section" id="global-sensitivity">
+<h2><span class="section-number">5.1.3. </span>Global Sensitivity<a class="headerlink" href="#global-sensitivity" title="Permalink to this heading">¶</a></h2>
 <table class="docutils align-default">
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 72%" />
+</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Problem files</p></td>
-<td><p><a class="extlink-github reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples/qfem-0004/">Download</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples/qfem-0004/">Download</a></p></td>
 </tr>
 </tbody>
 </table>
 <p>In a global sensitivity analysis the user is wishing to understand what is the influence of the individual random variables on the quantities of interest. This is typically done before the user launches large scale forward uncertainty problems in order to limit the number of random variables used to limit the number of simulations performed.</p>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/trussSens-UQ.png" src="../../../../../_images/trussSens-UQ.png" />
-</figure>
+</div>
 <p>After the user fills in the rest of the tabs as per the previous section, the user would then press the <strong>RUN</strong> button. The application (after spinning for a while with the wheel of death) will present the user with the results.</p>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/trussSensitivity-RES.png" src="../../../../../_images/trussSensitivity-RES.png" />
-</figure>
-</section>
-</section>
+</div>
+</div>
+</div>
 
 
            </div>
+           
           </div>
           <footer>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2018-2025, The Regents of the University of California.</p>
-  </div>
+    <p>
+        &#169; Copyright 2018-2026, The Regents of the University of California.
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
         </div>
       </div>
+
     </section>
+
   </div>
-  <script>
+  
+
+  <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-    <!-- Theme Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158130480-4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-158130480-4', {
-          'anonymize_ip': false,
-      });
-    </script>  
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-158130480-4', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+    
 
   <style>
          .wy-nav-content { max-width: none; }

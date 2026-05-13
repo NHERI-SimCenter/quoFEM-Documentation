@@ -1,33 +1,57 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" data-content_root="../../../../">
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
   <title>3.1.2.4. Deterministic Calibration &mdash; Quantified Uncertainty with Optimization for the FEM  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=66b6668b" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css?v=76b2166b" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/tabs.css?v=a5c4661c" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-design.min.css?v=95c83b7e" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/css/custom.css?v=4b5bf716" />
+  
 
   
-      <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../../../_static/documentation_options.js?v=5929fcd5"></script>
-      <script src="../../../../_static/doctools.js?v=9a2dae69"></script>
-      <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script src="../../../../_static/clipboard.min.js?v=a7894cd8"></script>
-      <script src="../../../../_static/copybutton.js?v=f281be69"></script>
-      <script src="../../../../_static/design-tabs.js?v=36754332"></script>
-      <script src="../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js?v=ffc8af2d"></script>
-      <script src="../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js?v=12818e64"></script>
-      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="../../../../_static/js/theme.js"></script>
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/pointer.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/clipboard.min.js"></script>
+        <script src="../../../../_static/copybutton.js"></script>
+        <script src="../../../../_static/design-tabs.js"></script>
+        <script src="../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+        <script src="../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+    
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
     <link rel="next" title="3.1.2.5. Bayesian Calibration" href="DakotaBayesianCalibration.html" />
@@ -40,35 +64,54 @@
 
 </head>
 
-<body class="wy-body-for-nav"> 
+<body class="wy-body-for-nav">
+
+   
   <div class="wy-grid-for-nav">
+    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search"  style="background: #F2F2F2" >
+          
 <a href="https://simcenter.designsafe-ci.org/" style="margin-bottom: 0px;">
   <img src="../../../../_static/img/SimCenter-Only.png" class="logo" alt="Org-Logo" />
 </a>
 <hr style="margin: 0px;">
 
-  <a href="../../../../index.html" class="icon icon-home"> Quantified Uncertainty with Optimization for the FEM
+  <a href="../../../../index.html">
 
 
+
+  
+  <img src="../../../../_static/quoFEM-Logo.png" class="logo" alt="Logo"/>
 
 </a>
 
+
+  
+  
 
 
 
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
 
 
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
               <p class="caption" role="heading"><span class="caption-text">About</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../about/quoFEM/about.html">1. About</a></li>
@@ -87,7 +130,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../about/quoFEM/quoFEMtutorial.html">2. Getting Started Tutorial</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="usage.html">3. User Interface</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="UQ.html">3.1. UQ: Uncertainty Quantification</a><ul class="current">
-<li><a class="reference internal" href="UQ.html#uq-features-at-a-glance">3.1.1. UQ Features At-a-Glance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="UQ.html#uq-features-at-a-glance">3.1.1. UQ Features At-a-Glance</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="UQ.html#dakota-uq-engine">3.1.2. Dakota UQ Engine</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="DakotaSampling.html">3.1.2.1. Forward Propagation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="DakotaSensitivity.html">3.1.2.2. Global Sensitivity Analysis</a></li>
@@ -98,9 +141,9 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="UQ.html#simcenter-uq-engine">3.1.3. SimCenter UQ Engine</a></li>
-<li><a class="reference internal" href="UQ.html#ucsd-uq-engine">3.1.4. UCSD UQ Engine</a></li>
-<li><a class="reference internal" href="UQ.html#custom-uq-engine">3.1.5. Custom UQ Engine</a></li>
-<li><a class="reference internal" href="UQ.html#video-resources">3.1.6. Video Resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="UQ.html#ucsd-uq-engine">3.1.4. UCSD UQ Engine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="UQ.html#custom-uq-engine">3.1.5. Custom UQ Engine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="UQ.html#video-resources">3.1.6. Video Resources</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="quoFEM/FEM.html">3.2. FEM: Finite Element Method</a></li>
@@ -117,6 +160,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../bugs.html">9. Bugs &amp; Feature Requests</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../dcv/quoFEM/quoFEM.html">10. Running in Your Browser</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quoFEM/usage_video.html">11. Video Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Misc.html">12. Misc</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Technical Manual</span></p>
 <ul>
@@ -131,57 +175,98 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../developer_manual/verification/desktop/verification.html">3. Verification</a></li>
 </ul>
 
+            
+          
         </div>
+        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #F2F2F2" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../../index.html">Quantified Uncertainty with Optimization for the FEM</a>
+        
       </nav>
 
+
       <div class="wy-nav-content">
+        
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="usage.html"><span class="section-number">3. </span>User Interface</a></li>
-          <li class="breadcrumb-item"><a href="UQ.html"><span class="section-number">3.1. </span>UQ: Uncertainty Quantification</a></li>
-      <li class="breadcrumb-item active"><span class="section-number">3.1.2.4. </span>Deterministic Calibration</li>
+    
+      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="usage.html"><span class="section-number">3. </span>User Interface</a> &raquo;</li>
+        
+          <li><a href="UQ.html"><span class="section-number">3.1. </span>UQ: Uncertainty Quantification</a> &raquo;</li>
+        
+      <li><span class="section-number">3.1.2.4. </span>Deterministic Calibration</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
+        
+          
             <a href="../../../../_sources/common/user_manual/usage/desktop/DakotaDeterministicCalibration.rst.txt" rel="nofollow"> View page source</a>
+          
+        
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-             
-  <section id="deterministic-calibration">
-<span id="lbldakotadeterministiccalibration"></span><h1><span class="section-number">3.1.2.4. </span>Deterministic Calibration<a class="headerlink" href="#deterministic-calibration" title="Link to this heading"></a></h1>
+            
+  <div class="section" id="deterministic-calibration">
+<span id="lbldakotadeterministiccalibration"></span><h1><span class="section-number">3.1.2.4. </span>Deterministic Calibration<a class="headerlink" href="#deterministic-calibration" title="Permalink to this heading">¶</a></h1>
 <p>Deterministic calibration methods (also known as non-linear least squares methods or deterministic parameter estimation methods) are used to fit a set of m observations (provided in the calibration data file defined in the <strong>UQ</strong> panel) with a model (defined in the <strong>FEM</strong> panel) that is non-linear with n unknown parameters. The unknown parameters of this model are defined in the <strong>RV</strong> panel. The bounds of the domain within which the optimal values of the parameters need to be searched for are also specified in the <strong>RV</strong> panel, along with the initial point at which the search will begin. No prior specification of the distribution associated with the random variables is necessary. The output quantities from the model are defined in the <strong>QOI</strong> panel. For each evaluation of the computational model, the processing scripts should write the values of the simulated response quantities of interest in a file called <code class="docutils literal notranslate"><span class="pre">results.out</span></code>. The algorithms employed will find a set of parameter values that <strong>minimizes</strong> the sum of the squared differences between the measured values of the QoIs and the predicted values of the QoIs from the computational model. The algorithms themselves are general functional minimization algorithms seeking to minimize:</p>
 <div class="math notranslate nohighlight" id="equation-common-user-manual-usage-desktop-dakotadeterministiccalibration-0">
-<span class="eqno">(3.1.2.4.1)<a class="headerlink" href="#equation-common-user-manual-usage-desktop-dakotadeterministiccalibration-0" title="Link to this equation"></a></span>\[f(\theta) = \sum_{i=1}^{m} R_i(\theta)^2 = \sum_{i=1}^{m} \left ( y_i(\theta)^{predicted} - y_i^{measured} \right)^2\]</div>
+<span class="eqno">(3.1.2.4.1)<a class="headerlink" href="#equation-common-user-manual-usage-desktop-dakotadeterministiccalibration-0" title="Permalink to this equation">¶</a></span>\[f(\theta) = \sum_{i=1}^{m} R_i(\theta)^2 = \sum_{i=1}^{m} \left ( y_i(\theta)^{predicted} - y_i^{measured} \right)^2\]</div>
 <p>where <span class="math notranslate nohighlight">\(R_i(\theta)\)</span>, typically called the residuals, are the differences between the measured data <span class="math notranslate nohighlight">\(y_i^{measured}\)</span> provided in the calibration data file, and predictions from the model <span class="math notranslate nohighlight">\(y_i(\theta)^{predicted}\)</span> of the corresponding response quantity, and <span class="math notranslate nohighlight">\(\theta \in \mathbb{R}^n\)</span> the <span class="math notranslate nohighlight">\(n\)</span> model parameters whose values are not precisely known and are being calibrated to match available data.</p>
 <p>The panel that is presented to the user when this Dakota Category is chosen, is as shown in <a class="reference internal" href="#figparameterestimation"><span class="std std-numref">Fig. 3.1.2.4.1</span></a>.</p>
-<figure class="align-center" id="id4">
+<div class="align-center figure" id="id4">
 <span id="figparameterestimation"></span><img alt="../../../../_images/DeterministicCalibration.png" src="../../../../_images/DeterministicCalibration.png" />
-<figcaption>
-<p><span class="caption-number">Fig. 3.1.2.4.1 </span><span class="caption-text">Dakota deterministic calibration input panel.</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-number">Fig. 3.1.2.4.1 </span><span class="caption-text">Dakota deterministic calibration input panel.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
 <p>For deterministic calibration, two different optimization algorithms are currently provided under the Method drop-down menu, namely OPT++GaussNewton and NL2SOL. For both methods three input parameters need to be specified as shown in the figure:</p>
 <ol class="arabic simple">
 <li><p>the maximum number of iterations for the optimization algorithm</p></li>
 <li><p>the convergence tolerance</p></li>
 <li><p>the path to the file containing the calibration data</p></li>
 </ol>
-<section id="opt-gaussnewton">
-<h2>OPT++GaussNewton<a class="headerlink" href="#opt-gaussnewton" title="Link to this heading"></a></h2>
+<div class="section" id="opt-gaussnewton">
+<h2>OPT++GaussNewton<a class="headerlink" href="#opt-gaussnewton" title="Permalink to this heading">¶</a></h2>
 <p>OPT++ provides a Gauss-Newton least squares capability which, on zero-residual test problems, can exhibit quadratic convergence rates near the solution. As a consequence, good starting point values for the parameters should be provided. The Hessian is constructed with a Gauss-Newton approximation and the OPT++ Optimization routines are used. (<a class="reference internal" href="#opt" id="id1"><span>[OPT]</span></a>).</p>
-</section>
-<section id="nl2sol">
-<h2>NL2SOL<a class="headerlink" href="#nl2sol" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="nl2sol">
+<h2>NL2SOL<a class="headerlink" href="#nl2sol" title="Permalink to this heading">¶</a></h2>
 <p>The NL2SOL method is based on an adaptive nonlinear least-squares algorithm, devised by Dennis and colleagues (<a class="reference internal" href="#dennis81a" id="id2"><span>[Dennis81a]</span></a>, <a class="reference internal" href="#dennis81b" id="id3"><span>[Dennis81b]</span></a>). NL2SOL uses a trust region method and adaptively switches between two Hessian approximations, the Gauss-Newton approximation alone and the Gauss-Newton approximation plus a quasi-Newton approximation to the rest of the Hessian. This latter approximation is useful when the starting guess is far from the solution. For problems with large residuals, this algorithm is known to be more reliable than Gauss-Newton.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -194,75 +279,90 @@
 </ol>
 <p>For example, if there are data from two experiments, and there are 2 response quantities, of length 2 and 1 respectively, then, there must be two rows of values in the calibration data file, the length of each row must be 3, the first two values in each row correspond to the first response quantity and the third value in each row corresponds to the second response quantity.</p>
 </div>
-<div role="list" class="citation-list">
-<div class="citation" id="dennis81a" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">Dennis81a</a><span class="fn-bracket">]</span></span>
-<ol class="upperalpha simple" start="10">
+<dl class="citation">
+<dt class="label" id="dennis81a"><span class="brackets"><a class="fn-backref" href="#id2">Dennis81a</a></span></dt>
+<dd><ol class="upperalpha simple" start="10">
 <li><ol class="upperalpha simple" start="5">
 <li><p>Dennis, D. M. Gay, and R. E. Welsch. An adaptive nonlinear least-squares algorithm. ACM Trans. Math. Softw.. 7(3). 348 - 368. 1981.</p></li>
 </ol>
 </li>
 </ol>
-</div>
-<div class="citation" id="dennis81b" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">Dennis81b</a><span class="fn-bracket">]</span></span>
-<ol class="upperalpha simple" start="10">
+</dd>
+<dt class="label" id="dennis81b"><span class="brackets"><a class="fn-backref" href="#id3">Dennis81b</a></span></dt>
+<dd><ol class="upperalpha simple" start="10">
 <li><ol class="upperalpha simple" start="5">
 <li><p>Dennis, D. M. Gay, and R. E. Welsch. Algorithm 573: NL2SOL—An Adaptive Nonlinear Least-Squares Algorithm [E4] ACM Trans. Math. Softw.. 7(3). 369 - 383. 1981.</p></li>
 </ol>
 </li>
 </ol>
-</div>
-<div class="citation" id="opt" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">OPT</a><span class="fn-bracket">]</span></span>
-<ol class="upperalpha simple" start="10">
+</dd>
+<dt class="label" id="opt"><span class="brackets"><a class="fn-backref" href="#id1">OPT</a></span></dt>
+<dd><ol class="upperalpha simple" start="10">
 <li><ol class="upperalpha simple" start="3">
 <li><p>Meza, R. A. Oliva, P. D. Hough, and P. J. Williams, “OPT++: An Object Oriented Toolkit for Nonlinear Optimization”, ACM Transactions on Mathematical Software, Volume 33, Number 2, June 2007.</p></li>
 </ol>
 </li>
 </ol>
+</dd>
+</dl>
 </div>
 </div>
-</section>
-</section>
 
 
            </div>
+           
           </div>
           <footer>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2018-2025, The Regents of the University of California.</p>
-  </div>
+    <p>
+        &#169; Copyright 2018-2026, The Regents of the University of California.
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
         </div>
       </div>
+
     </section>
+
   </div>
-  <script>
+  
+
+  <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-    <!-- Theme Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158130480-4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-158130480-4', {
-          'anonymize_ip': false,
-      });
-    </script>  
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-158130480-4', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+    
 
   <style>
          .wy-nav-content { max-width: none; }

@@ -1,33 +1,57 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" data-content_root="../../../../../">
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
   <title>5.10. Bayesian Calibration of Material Model Parameters &mdash; Quantified Uncertainty with Optimization for the FEM  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/css/theme.css?v=66b6668b" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/copybutton.css?v=76b2166b" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/tabs.css?v=a5c4661c" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-design.min.css?v=95c83b7e" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/css/custom.css?v=4b5bf716" />
+  
 
   
-      <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../../../../_static/documentation_options.js?v=5929fcd5"></script>
-      <script src="../../../../../_static/doctools.js?v=9a2dae69"></script>
-      <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script src="../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
-      <script src="../../../../../_static/copybutton.js?v=f281be69"></script>
-      <script src="../../../../../_static/design-tabs.js?v=36754332"></script>
-      <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js?v=ffc8af2d"></script>
-      <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js?v=12818e64"></script>
-      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="../../../../../_static/js/theme.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/pointer.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../../" src="../../../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+        <script src="../../../../../_static/jquery.js"></script>
+        <script src="../../../../../_static/underscore.js"></script>
+        <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../../../_static/doctools.js"></script>
+        <script src="../../../../../_static/clipboard.min.js"></script>
+        <script src="../../../../../_static/copybutton.js"></script>
+        <script src="../../../../../_static/design-tabs.js"></script>
+        <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+        <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <script type="text/javascript" src="../../../../../_static/js/theme.js"></script>
+
+    
     <link rel="index" title="Index" href="../../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../../search.html" />
     <link rel="next" title="5.11. Two-Dimensional Truss: PLoM Modeling and Simulation" href="../qfem-0022/README.html" />
@@ -40,35 +64,54 @@
 
 </head>
 
-<body class="wy-body-for-nav"> 
+<body class="wy-body-for-nav">
+
+   
   <div class="wy-grid-for-nav">
+    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search"  style="background: #F2F2F2" >
+          
 <a href="https://simcenter.designsafe-ci.org/" style="margin-bottom: 0px;">
   <img src="../../../../../_static/img/SimCenter-Only.png" class="logo" alt="Org-Logo" />
 </a>
 <hr style="margin: 0px;">
 
-  <a href="../../../../../index.html" class="icon icon-home"> Quantified Uncertainty with Optimization for the FEM
+  <a href="../../../../../index.html">
 
 
+
+  
+  <img src="../../../../../_static/quoFEM-Logo.png" class="logo" alt="Logo"/>
 
 </a>
 
+
+  
+  
 
 
 
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
 
 
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
               <p class="caption" role="heading"><span class="caption-text">About</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../about/quoFEM/about.html">1. About</a></li>
@@ -131,6 +174,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../bugs.html">9. Bugs &amp; Feature Requests</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../dcv/quoFEM/quoFEM.html">10. Running in Your Browser</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../usage/desktop/quoFEM/usage_video.html">11. Video Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../usage/desktop/Misc.html">12. Misc</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Technical Manual</span></p>
 <ul>
@@ -145,85 +189,122 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../developer_manual/verification/desktop/verification.html">3. Verification</a></li>
 </ul>
 
+            
+          
         </div>
+        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #F2F2F2" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../../../index.html">Quantified Uncertainty with Optimization for the FEM</a>
+        
       </nav>
 
+
       <div class="wy-nav-content">
+        
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../examples.html"><span class="section-number">5. </span>Examples</a></li>
-      <li class="breadcrumb-item active"><span class="section-number">5.10. </span>Bayesian Calibration of Material Model Parameters</li>
+    
+      <li><a href="../../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../examples.html"><span class="section-number">5. </span>Examples</a> &raquo;</li>
+        
+      <li><span class="section-number">5.10. </span>Bayesian Calibration of Material Model Parameters</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
+        
+          
             <a href="../../../../../_sources/common/user_manual/examples/desktop/qfem-0019/README.rst.txt" rel="nofollow"> View page source</a>
+          
+        
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-             
-  <section id="bayesian-calibration-of-material-model-parameters">
-<span id="qfem-0019"></span><h1><span class="section-number">5.10. </span>Bayesian Calibration of Material Model Parameters<a class="headerlink" href="#bayesian-calibration-of-material-model-parameters" title="Link to this heading"></a></h1>
+            
+  <div class="section" id="bayesian-calibration-of-material-model-parameters">
+<span id="qfem-0019"></span><h1><span class="section-number">5.10. </span>Bayesian Calibration of Material Model Parameters<a class="headerlink" href="#bayesian-calibration-of-material-model-parameters" title="Permalink to this heading">¶</a></h1>
 <table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Problem files</p></td>
-<td><p><a class="extlink-github reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples/qfem-0019/">Github</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples/qfem-0019/">Github</a></p></td>
 </tr>
 </tbody>
 </table>
-<section id="outline">
-<h2><span class="section-number">5.10.1. </span>Outline<a class="headerlink" href="#outline" title="Link to this heading"></a></h2>
+<div class="section" id="outline">
+<h2><span class="section-number">5.10.1. </span>Outline<a class="headerlink" href="#outline" title="Permalink to this heading">¶</a></h2>
 <p>In this example, the parameters of the STEEL02 material model in OpenSees
 are calibrated using Bayesian inference. Experimental data is
 passed in to quoFEM from an external file, and the output is the time-history of
 stress.</p>
-</section>
-<section id="problem-description">
-<h2><span class="section-number">5.10.2. </span>Problem description<a class="headerlink" href="#problem-description" title="Link to this heading"></a></h2>
-<section id="data">
-<h3><span class="section-number">5.10.2.1. </span>Data<a class="headerlink" href="#data" title="Link to this heading"></a></h3>
+</div>
+<div class="section" id="problem-description">
+<h2><span class="section-number">5.10.2. </span>Problem description<a class="headerlink" href="#problem-description" title="Permalink to this heading">¶</a></h2>
+<div class="section" id="data">
+<h3><span class="section-number">5.10.2.1. </span>Data<a class="headerlink" href="#data" title="Permalink to this heading">¶</a></h3>
 <p>The stress-strain data obtained experimentally from a cyclic test on a coupon prepared from a bar of reinforcing steel is shown in <a class="reference internal" href="#figureexperimentaldatasteelcoupon"><span class="std std-numref">Fig. 5.10.2.1.1</span></a>.</p>
-<figure class="align-center" id="id1">
-<span id="figureexperimentaldatasteelcoupon"></span><a class="reference internal image-reference" href="../../../../../_images/qf-0019-StressStrainData.png"><img alt="../../../../../_images/qf-0019-StressStrainData.png" src="../../../../../_images/qf-0019-StressStrainData.png" style="width: 400px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Fig. 5.10.2.1.1 </span><span class="caption-text">Stress-strain curve from cyclic test on test coupon from reinforcing steel bar.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<div class="align-center figure" id="id1">
+<span id="figureexperimentaldatasteelcoupon"></span><a class="reference internal image-reference" href="../../../../../_images/qf-0019-StressStrainData.png"><img alt="../../../../../_images/qf-0019-StressStrainData.png" src="../../../../../_images/qf-0019-StressStrainData.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5.10.2.1.1 </span><span class="caption-text">Stress-strain curve from cyclic test on test coupon from reinforcing steel bar.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
 <p>This stress-strain data was obtained corresponding to a randomized strain history similar to those observed experimentally in reinforcing steel during seismic tests, as shown in <a class="reference internal" href="#figureexperimentaldatasteelcouponstrain"><span class="std std-numref">Fig. 5.10.2.1.2</span></a>.</p>
-<figure class="align-center" id="id2">
-<span id="figureexperimentaldatasteelcouponstrain"></span><a class="reference internal image-reference" href="../../../../../_images/qf-0019-StrainHistory.png"><img alt="../../../../../_images/qf-0019-StrainHistory.png" src="../../../../../_images/qf-0019-StrainHistory.png" style="width: 400px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Fig. 5.10.2.1.2 </span><span class="caption-text">The test coupon was subjected to this strain history.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<div class="align-center figure" id="id2">
+<span id="figureexperimentaldatasteelcouponstrain"></span><a class="reference internal image-reference" href="../../../../../_images/qf-0019-StrainHistory.png"><img alt="../../../../../_images/qf-0019-StrainHistory.png" src="../../../../../_images/qf-0019-StrainHistory.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5.10.2.1.2 </span><span class="caption-text">The test coupon was subjected to this strain history.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
 <p>The corresponding stress history is shown in <a class="reference internal" href="#figureexperimentaldatasteelcouponstress"><span class="std std-numref">Fig. 5.10.2.1.3</span></a>.</p>
-<figure class="align-center" id="id3">
-<span id="figureexperimentaldatasteelcouponstress"></span><a class="reference internal image-reference" href="../../../../../_images/qf-0019-StressHistory.png"><img alt="../../../../../_images/qf-0019-StressHistory.png" src="../../../../../_images/qf-0019-StressHistory.png" style="width: 400px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Fig. 5.10.2.1.3 </span><span class="caption-text">The stress history obtained from the experiment.</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-</section>
-<section id="model">
-<h3><span class="section-number">5.10.2.2. </span>Model<a class="headerlink" href="#model" title="Link to this heading"></a></h3>
+<div class="align-center figure" id="id3">
+<span id="figureexperimentaldatasteelcouponstress"></span><a class="reference internal image-reference" href="../../../../../_images/qf-0019-StressHistory.png"><img alt="../../../../../_images/qf-0019-StressHistory.png" src="../../../../../_images/qf-0019-StressHistory.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5.10.2.1.3 </span><span class="caption-text">The stress history obtained from the experiment.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="model">
+<h3><span class="section-number">5.10.2.2. </span>Model<a class="headerlink" href="#model" title="Permalink to this heading">¶</a></h3>
 <p>For this example, the STEEL02 material model in OpenSees was selected to represent the cyclic stress-strain response of the steel reinforcing bar in finite element simulations. The STEEL02 material model in OpenSees can take a total of 11 parameter values as input, as described in the <a class="reference external" href="https://opensees.berkeley.edu/wiki/index.php/Steel02_Material_--_Giuffré-Menegotto-Pinto_Model_with_Isotropic_Strain_Hardening">documentation</a>. Of these 11 parameters, the value of 7 parameters shown in <a class="reference internal" href="#table-1">Table 1</a> will be calibrated in this example.</p>
-<span id="table-1"></span><table class="docutils align-default" id="id4">
-<caption><span class="caption-number">Table 5.10.2.2.1 </span><span class="caption-text">Parameters of the STEEL02 material model whose values are being calibrated.</span><a class="headerlink" href="#id4" title="Link to this table"></a></caption>
+<span id="table-1"></span><table class="colwidths-given docutils align-default" id="id4">
+<caption><span class="caption-number">Table 5.10.2.2.1 </span><span class="caption-text">Parameters of the STEEL02 material model whose values are being calibrated.</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
 <colgroup>
-<col style="width: 60.0%" />
-<col style="width: 20.0%" />
-<col style="width: 20.0%" />
+<col style="width: 60%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Variable</p></th>
@@ -264,6 +345,10 @@ stress.</p>
 </table>
 <p>The value of the other four parameters are kept fixed at:</p>
 <table class="docutils align-default">
+<colgroup>
+<col style="width: 84%" />
+<col style="width: 16%" />
+</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Variable</p></th>
 <th class="head"><p>Value</p></th>
@@ -284,32 +369,32 @@ stress.</p>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="parameter-estimation-setup">
-<h3><span class="section-number">5.10.2.3. </span>Parameter estimation setup<a class="headerlink" href="#parameter-estimation-setup" title="Link to this heading"></a></h3>
+</div>
+<div class="section" id="parameter-estimation-setup">
+<h3><span class="section-number">5.10.2.3. </span>Parameter estimation setup<a class="headerlink" href="#parameter-estimation-setup" title="Permalink to this heading">¶</a></h3>
 <p>In this example, the values of the parameters shown in <a class="reference internal" href="#table-1">Table 1</a> are being estimated. The table also shows the lower and upper bounds of the uniform distribution that is assumed to the prior probability distribution for these parameters. The unknown parameters in this problem, <span class="math notranslate nohighlight">\(\mathbf{\theta}=(f_y, E, b, cR_1, cR_2, a_1, a_3)^T\)</span> are estimated using the data of the stress response corresponding to the strain history shown in <a class="reference internal" href="#figureexperimentaldatasteelcouponstrain"><span class="std std-numref">Fig. 5.10.2.1.2</span></a>.</p>
 <p>The Gaussian likelihood that is used by default in quoFEM is employed for this problem. This assumes that the errors (i.e. the differences between the finite element prediction of the stress history and the experimentally obtained stress history) follow a zero-mean Gaussian distribution. The components of the error vector are assumed to be statistically independent and identically distributed. Under this assumption, the standard deviation of the error is also an unknown parameter of the likelihood model and is also estimated during the calibration process. quoFEM automatically sets up the prior probability distribution for this additional parameter.</p>
-</section>
-</section>
-<section id="files-required">
-<h2><span class="section-number">5.10.3. </span>Files required<a class="headerlink" href="#files-required" title="Link to this heading"></a></h2>
+</div>
+</div>
+<div class="section" id="files-required">
+<h2><span class="section-number">5.10.3. </span>Files required<a class="headerlink" href="#files-required" title="Permalink to this heading">¶</a></h2>
 <p>The exercise requires one script file and two data files. The user should download these files and place them in a <strong>new</strong> folder.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Do not place the files in your root, downloads, or desktop folder as when the application runs it will copy the contents on the directories and subdirectories containing these files multiple times. If you are like us, your root, Downloads or Documents folders contains a lot of files.</p>
 </div>
 <ol class="arabic simple">
-<li><p><a class="extlink-qfem-0019 reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0019/src/matTestAllParamsReadStrain.tcl">matTestAllParamsReadStrain.tcl</a> - This is an OpenSees script written in tcl which simulates a material test and writes the stress response (in a file called <code class="docutils literal notranslate"><span class="pre">results.out</span></code>) when subjected to the chosen strain history, for a given value of the parameters of the material model.</p></li>
-<li><p><a class="extlink-qfem-0019 reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0019/src/stress.1.coords">stress.1.coords</a> - This file contains the strain history that is used as input during the finite element simulation of the material response. The strain values stored in this file are read in by the tcl script performing the OpenSees analysis.</p></li>
-<li><p><a class="extlink-qfem-0019 reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0019/src/calDataField.csv">calDataField.csv</a> - This is a csv file that contains the stress data. There is one row of data, which implies that the data is obtained from one experiment. If additional data are available from other experiments, then the data from each experiment must be provided on separate lines.</p></li>
+<li><p><a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0019/src/matTestAllParamsReadStrain.tcl">matTestAllParamsReadStrain.tcl</a> - This is an OpenSees script written in tcl which simulates a material test and writes the stress response (in a file called <code class="docutils literal notranslate"><span class="pre">results.out</span></code>) when subjected to the chosen strain history, for a given value of the parameters of the material model.</p></li>
+<li><p><a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0019/src/stress.1.coords">stress.1.coords</a> - This file contains the strain history that is used as input during the finite element simulation of the material response. The strain values stored in this file are read in by the tcl script performing the OpenSees analysis.</p></li>
+<li><p><a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0019/src/calDataField.csv">calDataField.csv</a> - This is a csv file that contains the stress data. There is one row of data, which implies that the data is obtained from one experiment. If additional data are available from other experiments, then the data from each experiment must be provided on separate lines.</p></li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Since the tcl script creates a <code class="docutils literal notranslate"><span class="pre">results.out</span></code> file when it runs, no post-processing script is needed.</p>
 </div>
-</section>
-<section id="uq-workflow">
-<h2><span class="section-number">5.10.4. </span>UQ workflow<a class="headerlink" href="#uq-workflow" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="uq-workflow">
+<h2><span class="section-number">5.10.4. </span>UQ workflow<a class="headerlink" href="#uq-workflow" title="Permalink to this heading">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Selecting the <code class="docutils literal notranslate"><span class="pre">Material</span> <span class="pre">Model:</span> <span class="pre">Bayesian</span> <span class="pre">Calibration</span> <span class="pre">with</span> <span class="pre">TMCMC</span></code> example in the quoFEM Examples menu will auto-populate all the input fields required to run this example.
@@ -319,45 +404,51 @@ The procedure outlined below demonstrates how to manually set up this problem in
 <ol class="arabic simple">
 <li><p>Start the application and the <strong>UQ</strong> panel will be highlighted. In the <strong>UQ Engine</strong> drop down menu, select the <strong>UCSD_UQ</strong> engine. In the <strong>Method</strong> category drop down menu the <strong>Transitional Markov chain Monte Carlo</strong> option will be highlighted. Enter the values in this panel as shown in the figure below. If manually setting up this problem, choose the path to the file containing the calibration data on your system.</p></li>
 </ol>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/qf-0019-UQ.png" src="../../../../../_images/qf-0019-UQ.png" />
-</figure>
+</div>
 <ol class="arabic simple" start="2">
 <li><p>Next select the <strong>FEM</strong> panel from the input panel selection. This will default to the <strong>OpenSees</strong> FEM engine. In the <strong>Input Script</strong> field, enter the path to the <code class="docutils literal notranslate"><span class="pre">matTestAllParamsReadStrain.tcl</span></code> file or select <strong>Choose</strong> and navigate to the file.</p></li>
 </ol>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/qf-0019-FEM.png" src="../../../../../_images/qf-0019-FEM.png" />
-</figure>
+</div>
 <ol class="arabic simple" start="3">
 <li><p>Next select the <strong>RV</strong> tab from the input panel. This panel should be pre-populated with seven random variables. If not, press the <strong>Add</strong> button to create new fields to define the input random variables. Enter the same variable names, as required in the model script.</p></li>
 </ol>
 <p>For each variable, specify the prior probability distribution and its parameters, as shown in the figure below.</p>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/qf-0019-RV.png" src="../../../../../_images/qf-0019-RV.png" />
-</figure>
+</div>
 <ol class="arabic simple" start="4">
 <li><p>In the <strong>EDP</strong> panel denote that the variable named <code class="docutils literal notranslate"><span class="pre">stress</span></code> is not a scalar response variable, but has a length of 342.</p></li>
 </ol>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/qf-0019-QOI.png" src="../../../../../_images/qf-0019-QOI.png" />
-</figure>
+</div>
 <ol class="arabic simple" start="5">
 <li><p>Next click on the <strong>Run</strong> button. This will cause the backend application to launch the <strong>UCSD_UQ</strong> engine, which performs Bayesian calibration using the TMCMC algorithm. When done, the <strong>RES</strong> tab will be selected and the results will be displayed as shown in the figure below. The results show the first four moments of the posterior marginal probability distribution of the parameters estimated in this example. Also shown are the moments of the additional parameter of the likelihood function. Finally, the moments of the predictions of the model corresponding to the samples of the parameter values from their posterior probability distribution are also shown in this panel (not visible in this figure - you can see them by scrolling down in the application).</p></li>
 </ol>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/qf-0019-RES1.png" src="../../../../../_images/qf-0019-RES1.png" />
-</figure>
+</div>
 <p>If the user selects the <strong>Data Values</strong> tab in the results panel, they will be presented with both a graphical plot and a tabular listing of the data.</p>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/qf-0019-RES2.png" src="../../../../../_images/qf-0019-RES2.png" />
-</figure>
-</section>
-<section id="comparison-with-deterministic-calibration-results">
-<h2><span class="section-number">5.10.5. </span>Comparison with deterministic calibration results<a class="headerlink" href="#comparison-with-deterministic-calibration-results" title="Link to this heading"></a></h2>
+</div>
+</div>
+<div class="section" id="comparison-with-deterministic-calibration-results">
+<h2><span class="section-number">5.10.5. </span>Comparison with deterministic calibration results<a class="headerlink" href="#comparison-with-deterministic-calibration-results" title="Permalink to this heading">¶</a></h2>
 <p>For the same data and choice of material model to represent the data, deterministic estimation of the parameters of the material model shown in <a class="reference internal" href="#table-1">Table 1</a> was also conducted in quoFEM using the non-linear least squares minimization algorithm available through the <strong>Dakota</strong> UQ engine.</p>
 <p>The bounds and the starting point of the search for the optimum parameter values are shown in <a class="reference internal" href="#table-2">Table 2</a>.</p>
 <p id="table-2">Table 2: Parameters of the STEEL02 material model whose optimum values are being estimated.</p>
 <table class="docutils align-default">
+<colgroup>
+<col style="width: 59%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 18%" />
+</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Variable</p></th>
 <th class="head"><p>lower bound</p></th>
@@ -405,6 +496,10 @@ The procedure outlined below demonstrates how to manually set up this problem in
 </table>
 <p>Like in the Bayesian parameter estimation case, the value of the other four parameters are kept fixed at:</p>
 <table class="docutils align-default">
+<colgroup>
+<col style="width: 92%" />
+<col style="width: 8%" />
+</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Variable</p></th>
 <th class="head"><p>Value</p></th>
@@ -425,77 +520,95 @@ The procedure outlined below demonstrates how to manually set up this problem in
 </tr>
 </tbody>
 </table>
-<section id="solution-using-quofem">
-<h3><span class="section-number">5.10.5.1. </span>Solution using quoFEM<a class="headerlink" href="#solution-using-quofem" title="Link to this heading"></a></h3>
+<div class="section" id="solution-using-quofem">
+<h3><span class="section-number">5.10.5.1. </span>Solution using quoFEM<a class="headerlink" href="#solution-using-quofem" title="Permalink to this heading">¶</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Selecting the <code class="docutils literal notranslate"><span class="pre">Material</span> <span class="pre">Model:</span> <span class="pre">Deterministic</span> <span class="pre">Calibration</span></code> example in the quoFEM Examples menu will auto-populate all the input fields required to run this example.</p>
 </div>
 <p>The inputs in the <strong>FEM</strong> and the <strong>EDP</strong> panels are the same as in the Bayesian parameter estimation case. The inputs that differ from the Bayesian parameter estimation case are shown in the figures below:</p>
 <p><strong>UQ</strong> panel:</p>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/qf-0018-UQ.png" src="../../../../../_images/qf-0018-UQ.png" />
-</figure>
+</div>
 <p><strong>RV</strong> panel:</p>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/qf-0018-RV.png" src="../../../../../_images/qf-0018-RV.png" />
-</figure>
-</section>
-<section id="results">
-<h3><span class="section-number">5.10.5.2. </span>Results<a class="headerlink" href="#results" title="Link to this heading"></a></h3>
+</div>
+</div>
+<div class="section" id="results">
+<h3><span class="section-number">5.10.5.2. </span>Results<a class="headerlink" href="#results" title="Permalink to this heading">¶</a></h3>
 <p>After conducting the deterministic parameter estimation, the results obtained are shown in the figure below:</p>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/qf-0018-RES1.png" src="../../../../../_images/qf-0018-RES1.png" />
-</figure>
+</div>
 <p>The optimum parameter values estimated in this example closely match the mean value of the posterior samples shown in the figure of the summary tab of the <strong>RES</strong> panel for the Bayesian parameter estimation case.</p>
 <p>The fit corresponding to the optimum parameter values is shown in the figures below:</p>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/qf-0019-StressResults.png" src="../../../../../_images/qf-0019-StressResults.png" />
-</figure>
-<figure class="align-center">
+</div>
+<div class="align-center figure">
 <img alt="../../../../../_images/qf-0019-DeterministicCalibrationResults.png" src="../../../../../_images/qf-0019-DeterministicCalibrationResults.png" />
-</figure>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
+</div>
 
 
            </div>
+           
           </div>
           <footer>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2018-2025, The Regents of the University of California.</p>
-  </div>
+    <p>
+        &#169; Copyright 2018-2026, The Regents of the University of California.
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
         </div>
       </div>
+
     </section>
+
   </div>
-  <script>
+  
+
+  <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-    <!-- Theme Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158130480-4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-158130480-4', {
-          'anonymize_ip': false,
-      });
-    </script>  
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-158130480-4', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+    
 
   <style>
          .wy-nav-content { max-width: none; }

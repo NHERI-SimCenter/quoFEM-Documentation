@@ -1,32 +1,56 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" data-content_root="../../../../../">
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
   <title>5.16. PM4Sand - Bayesian Calibration using Cyclic Direct Simple Shear Test Data &mdash; Quantified Uncertainty with Optimization for the FEM  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/css/theme.css?v=66b6668b" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/copybutton.css?v=76b2166b" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/tabs.css?v=a5c4661c" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-design.min.css?v=95c83b7e" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/css/custom.css?v=4b5bf716" />
+  
 
   
-      <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../../../../_static/documentation_options.js?v=5929fcd5"></script>
-      <script src="../../../../../_static/doctools.js?v=9a2dae69"></script>
-      <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script src="../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
-      <script src="../../../../../_static/copybutton.js?v=f281be69"></script>
-      <script src="../../../../../_static/design-tabs.js?v=36754332"></script>
-      <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js?v=ffc8af2d"></script>
-      <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js?v=12818e64"></script>
-    <script src="../../../../../_static/js/theme.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/pointer.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../../" src="../../../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+        <script src="../../../../../_static/jquery.js"></script>
+        <script src="../../../../../_static/underscore.js"></script>
+        <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../../../_static/doctools.js"></script>
+        <script src="../../../../../_static/clipboard.min.js"></script>
+        <script src="../../../../../_static/copybutton.js"></script>
+        <script src="../../../../../_static/design-tabs.js"></script>
+        <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+        <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
+    
+    <script type="text/javascript" src="../../../../../_static/js/theme.js"></script>
+
+    
     <link rel="index" title="Index" href="../../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../../search.html" />
     <link rel="next" title="5.17. PM4Sand - Forward Propagation to Lateral Spreading" href="../qfem-0032/README.html" />
@@ -39,35 +63,54 @@
 
 </head>
 
-<body class="wy-body-for-nav"> 
+<body class="wy-body-for-nav">
+
+   
   <div class="wy-grid-for-nav">
+    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search"  style="background: #F2F2F2" >
+          
 <a href="https://simcenter.designsafe-ci.org/" style="margin-bottom: 0px;">
   <img src="../../../../../_static/img/SimCenter-Only.png" class="logo" alt="Org-Logo" />
 </a>
 <hr style="margin: 0px;">
 
-  <a href="../../../../../index.html" class="icon icon-home"> Quantified Uncertainty with Optimization for the FEM
+  <a href="../../../../../index.html">
 
 
+
+  
+  <img src="../../../../../_static/quoFEM-Logo.png" class="logo" alt="Logo"/>
 
 </a>
 
+
+  
+  
 
 
 
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
 
 
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
               <p class="caption" role="heading"><span class="caption-text">About</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../about/quoFEM/about.html">1. About</a></li>
@@ -121,6 +164,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../bugs.html">9. Bugs &amp; Feature Requests</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../dcv/quoFEM/quoFEM.html">10. Running in Your Browser</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../usage/desktop/quoFEM/usage_video.html">11. Video Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../usage/desktop/Misc.html">12. Misc</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Technical Manual</span></p>
 <ul>
@@ -135,56 +179,102 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../developer_manual/verification/desktop/verification.html">3. Verification</a></li>
 </ul>
 
+            
+          
         </div>
+        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #F2F2F2" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../../../index.html">Quantified Uncertainty with Optimization for the FEM</a>
+        
       </nav>
 
+
       <div class="wy-nav-content">
+        
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../examples.html"><span class="section-number">5. </span>Examples</a></li>
-      <li class="breadcrumb-item active"><span class="section-number">5.16. </span>PM4Sand - Bayesian Calibration using Cyclic Direct Simple Shear Test Data</li>
+    
+      <li><a href="../../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../examples.html"><span class="section-number">5. </span>Examples</a> &raquo;</li>
+        
+      <li><span class="section-number">5.16. </span>PM4Sand - Bayesian Calibration using Cyclic Direct Simple Shear Test Data</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
+        
+          
             <a href="../../../../../_sources/common/user_manual/examples/desktop/qfem-0031/README.rst.txt" rel="nofollow"> View page source</a>
+          
+        
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-             
-  <section id="pm4sand-bayesian-calibration-using-cyclic-direct-simple-shear-test-data">
-<span id="qfem-0031"></span><h1><span class="section-number">5.16. </span>PM4Sand - Bayesian Calibration using Cyclic Direct Simple Shear Test Data<a class="headerlink" href="#pm4sand-bayesian-calibration-using-cyclic-direct-simple-shear-test-data" title="Link to this heading"></a></h1>
+            
+  <div class="section" id="pm4sand-bayesian-calibration-using-cyclic-direct-simple-shear-test-data">
+<span id="qfem-0031"></span><h1><span class="section-number">5.16. </span>PM4Sand - Bayesian Calibration using Cyclic Direct Simple Shear Test Data<a class="headerlink" href="#pm4sand-bayesian-calibration-using-cyclic-direct-simple-shear-test-data" title="Permalink to this heading">¶</a></h1>
 <table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Problem files</p></td>
-<td><p><a class="extlink-github reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples/qfem-0031/">Github</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples/qfem-0031/">Github</a></p></td>
 </tr>
 </tbody>
 </table>
-<section id="related-examples">
-<h2><span class="section-number">5.16.1. </span>Related Examples<a class="headerlink" href="#related-examples" title="Link to this heading"></a></h2>
+<div class="section" id="related-examples">
+<h2><span class="section-number">5.16.1. </span>Related Examples<a class="headerlink" href="#related-examples" title="Permalink to this heading">¶</a></h2>
 <p>This page is a part of the PM4Sand example series, focusing on Step 2 <strong>Bayesian Calibration</strong>. Steps 1 and 3 can be found below:</p>
 <ul class="simple">
 <li><p>General description and Step 1: <a class="reference internal" href="../qfem-0033/README.html#qfem-0033"><span class="std std-ref">PM4Sand - Sensitivity Analysis</span></a></p></li>
 <li><p>Step 3: <a class="reference internal" href="../qfem-0032/README.html#qfem-0032"><span class="std std-ref">PM4Sand - Forward Propagation to Lateral Spreading</span></a></p></li>
 </ul>
-</section>
-<section id="problem-description">
-<h2><span class="section-number">5.16.2. </span>Problem description<a class="headerlink" href="#problem-description" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="problem-description">
+<h2><span class="section-number">5.16.2. </span>Problem description<a class="headerlink" href="#problem-description" title="Permalink to this heading">¶</a></h2>
 <p>Consider now the observations of the Cyclic Direct Simple Shear (CyDSS) experiment in below table, that are publicly available on the DesignSafe data depot. The observed count of cycles at different Cyclic Shear Stress Ratio (CSR) values can be predicted by the simulation model. Bayesian analysis assumes that the discrepancy between the optimal model prediction and experiments can be described as a Gaussian noise, capturing various inaccuracies such as inherent uncertainty in the phenomenon, the imperfection of our simulation model, and measurement error.</p>
-<table class="docutils align-default" id="id1">
-<caption><span class="caption-number">Table 5.16.2.1 </span><span class="caption-text">Table 1: Cyclic Shear Stress Ratio (CSR) vs. Number of Cycles to Onset of Liquefaction</span><a class="headerlink" href="#id1" title="Link to this table"></a></caption>
+<table class="colwidths-given docutils align-default" id="id1">
+<caption><span class="caption-number">Table 5.16.2.1 </span><span class="caption-text">Table 1: Cyclic Shear Stress Ratio (CSR) vs. Number of Cycles to Onset of Liquefaction</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
 <colgroup>
-<col style="width: 50.0%" />
-<col style="width: 50.0%" />
+<col style="width: 50%" />
+<col style="width: 50%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Cyclic Shear Stress Ratio (CSR)</p></th>
@@ -213,12 +303,12 @@
 </tbody>
 </table>
 <p>The prior distribution of the parameters is in the below Table.</p>
-<table class="docutils align-default" id="id2">
-<caption><span class="caption-number">Table 5.16.2.2 </span><span class="caption-text">Table 2: Prior distribution of parameters</span><a class="headerlink" href="#id2" title="Link to this table"></a></caption>
+<table class="colwidths-given docutils align-default" id="id2">
+<caption><span class="caption-number">Table 5.16.2.2 </span><span class="caption-text">Table 2: Prior distribution of parameters</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
 <colgroup>
-<col style="width: 27.3%" />
-<col style="width: 36.4%" />
-<col style="width: 36.4%" />
+<col style="width: 27%" />
+<col style="width: 36%" />
+<col style="width: 36%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -242,98 +332,83 @@
 </tbody>
 </table>
 <p>The goal is to obtain the samples of the posterior distribution of PM4Sand parameters that will closely reproduce the experimental results while accounting for the model and measurement uncertainties. Following best practices, the algorithm introduces inverse Gamma priors with the shape parameter alpha = 3 and scale parameter beta = 2 for the measurement variances. The posterior sample of the three PM4Sand parameters is obtained using the transitional Markov chain Monte Carlo (TMCMC) sampling technique that is available in the UCSD-UQ engine. This is an expensive calculation that greatly benefits from the available HPC resources at DesignSafe.</p>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../../../../../_images/qfem0031-fig0.png"><img alt="../../../../../_images/qfem0031-fig0.png" src="../../../../../_images/qfem0031-fig0.png" style="width: 50%;" />
-</a>
-</figure>
-</section>
-<section id="files-required">
-<h2><span class="section-number">5.16.3. </span>Files required<a class="headerlink" href="#files-required" title="Link to this heading"></a></h2>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="../../../../../_images/qfem0031-fig0.png"><img alt="../../../../../_images/qfem0031-fig0.png" src="../../../../../_images/qfem0031-fig0.png" style="width: 50%;" /></a>
+</div>
+</div>
+<div class="section" id="files-required">
+<h2><span class="section-number">5.16.3. </span>Files required<a class="headerlink" href="#files-required" title="Permalink to this heading">¶</a></h2>
 <ul>
-<li><p>Calibration data file (<a class="extlink-qfem-0031 reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0031/../qfem-0031/src/Ottawa_F65_CalibrationFile.txt">Ottawa_F65_CalibrationFile.txt</a>). The file contains 6 values representing the number of cycles to onset of liquefaction, given different CSR values, according to Table 1:</p>
+<li><p>Calibration data file (<a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0031/../qfem-0031/src/Ottawa_F65_CalibrationFile.txt">Ottawa_F65_CalibrationFile.txt</a>). The file contains 6 values representing the number of cycles to onset of liquefaction, given different CSR values, according to Table 1:</p>
 <blockquote>
 <div><div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>26 21 13 5 4 3
 </pre></div>
 </div>
 </div></blockquote>
 </li>
-<li><p>An opensees simulation model that reproduces the CyDSS test for CSR of [0.105, 0.105, 0.130, 0.151, 0.172, 0.200]: <a class="extlink-qfem-0031 reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0031/../qfem-0031/src/AnalysisScript.tcl">AnalysisScript.tcl</a> and <a class="extlink-qfem-0031 reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0031/../qfem-0031/src/DSS_quad_DispControlModified.tcl">DSS_quad_DispControlModified.tcl</a></p></li>
+<li><p>An opensees simulation model that reproduces the CyDSS test for CSR of [0.105, 0.105, 0.130, 0.151, 0.172, 0.200]: <a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0031/../qfem-0031/src/AnalysisScript.tcl">AnalysisScript.tcl</a> and <a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0031/../qfem-0031/src/DSS_quad_DispControlModified.tcl">DSS_quad_DispControlModified.tcl</a></p></li>
 </ul>
-</section>
-<section id="uq-workflow">
-<h2><span class="section-number">5.16.4. </span>UQ workflow<a class="headerlink" href="#uq-workflow" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="uq-workflow">
+<h2><span class="section-number">5.16.4. </span>UQ workflow<a class="headerlink" href="#uq-workflow" title="Permalink to this heading">¶</a></h2>
 <p>The steps involved are as follows:</p>
 <ol class="arabic simple">
 <li><p>Start the application and the <strong>UQ</strong> panel will be highlighted. Select <code class="docutils literal notranslate"><span class="pre">Bayesian</span> <span class="pre">Calibration</span></code> and <code class="docutils literal notranslate"><span class="pre">USCD-UQ</span></code>. Import the calibration file.</p></li>
 </ol>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/qfem0031-UQ.png" src="../../../../../_images/qfem0031-UQ.png" />
-</figure>
+</div>
 <ol class="arabic simple" start="2">
 <li><p>Next select the <strong>FEM</strong> panel from the input panel selection. This will default to the <strong>OpenSees</strong> FEM engine. In the <strong>Input Script</strong> field, enter the path to the <code class="docutils literal notranslate"><span class="pre">AnalysisScript.tcl</span></code> file or select <strong>Choose</strong> and navigate to the file. Only the main file needs to be imported and other supplementary files can be located at the same directory.</p></li>
 </ol>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/qfem0031-FEM.png" src="../../../../../_images/qfem0031-FEM.png" />
-</figure>
+</div>
 <ol class="arabic simple" start="3">
 <li><p>Next select the <strong>RV</strong> tab from the input panel and define prior distributions.</p></li>
 </ol>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../../../../../_images/qfem0031-RV.png"><img alt="../../../../../_images/qfem0031-RV.png" src="../../../../../_images/qfem0031-RV.png" style="width: 80%;" />
-</a>
-</figure>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="../../../../../_images/qfem0031-RV.png"><img alt="../../../../../_images/qfem0031-RV.png" src="../../../../../_images/qfem0031-RV.png" style="width: 80%;" /></a>
+</div>
 <ol class="arabic simple" start="4">
 <li><p>In the <strong>QoI</strong> panel denote that the output variable names. The length of the entries mush sum up to six, matching the length of simulation model output and the length of observation dataset.</p></li>
 </ol>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../../../../../_images/qfem0031-QoI.png"><img alt="../../../../../_images/qfem0031-QoI.png" src="../../../../../_images/qfem0031-QoI.png" style="width: 50%;" />
-</a>
-</figure>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="../../../../../_images/qfem0031-QoI.png"><img alt="../../../../../_images/qfem0031-QoI.png" src="../../../../../_images/qfem0031-QoI.png" style="width: 50%;" /></a>
+</div>
 <ol class="arabic simple" start="5">
 <li><p>Once ready, let us run the job remotely on DesignSafe HPC cloud computer. Note that you can also run the job locally, but it will take several hours, depending on the computer spec. The remote run will take only a few minutes. To run a remote job, the user first need to request a job allocation by submitting a ticket at DesignSafe website. Navigate to <a class="reference external" href="https://www.designsafe-ci.org/">DesignSafe webpage</a>, click <code class="docutils literal notranslate"><span class="pre">Help</span></code> - <code class="docutils literal notranslate"><span class="pre">Submit</span></code> a Ticket, and request an allocation to run SimCenter tools. Once the allocation name is identified, the user can run the analysis by clicking the <strong>RUN at DesignSafe</strong> button and filling in the below entries.</p></li>
 </ol>
-<figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="../../../../../_images/qfem0031-DS1.png"><img alt="../../../../../_images/qfem0031-DS1.png" src="../../../../../_images/qfem0031-DS1.png" style="width: 70%;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Fig. 5.16.4.1 </span><span class="caption-text">RUN at DesignSafe window</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<div class="align-center figure" id="id3">
+<a class="reference internal image-reference" href="../../../../../_images/qfem0031-DS1.png"><img alt="../../../../../_images/qfem0031-DS1.png" src="../../../../../_images/qfem0031-DS1.png" style="width: 70%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5.16.4.1 </span><span class="caption-text">RUN at DesignSafe window</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
 <div class="line-block">
 <div class="line">It is recommended to request more than 3 nodes (i.e. more than 120 processors) to obtain the results within a few minutes. Once the job is successfully submitted, you can check the job status by clicking “GET from DesignSafe” button. Once the job status appears <code class="docutils literal notranslate"><span class="pre">FINISHED</span></code>, left-click the corresponding row and click <strong>Retrieve Data</strong></div>
 </div>
-<figure class="align-center" id="id4">
-<a class="reference internal image-reference" href="../../../../../_images/qfem0031-DS2.png"><img alt="../../../../../_images/qfem0031-DS2.png" src="../../../../../_images/qfem0031-DS2.png" style="width: 80%;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Fig. 5.16.4.2 </span><span class="caption-text">GET from DesignSafe window</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<div class="align-center figure" id="id4">
+<a class="reference internal image-reference" href="../../../../../_images/qfem0031-DS2.png"><img alt="../../../../../_images/qfem0031-DS2.png" src="../../../../../_images/qfem0031-DS2.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5.16.4.2 </span><span class="caption-text">GET from DesignSafe window</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
 <ol class="arabic simple" start="6">
 <li><p>The final samples of the posterior distribution are be displayed at RES tab. The <strong>Summary</strong> tab displays the summary statistics of the posterior parameter/predictive distributions. The <strong>Log</strong> tab displays the log message from the analysis. The <strong>Data Values</strong> tab shows the samples from the target posterior distribution.</p></li>
 </ol>
-<figure class="align-center" id="id5">
+<div class="align-center figure" id="id5">
 <img alt="../../../../../_images/qfem0031-RES1.png" src="../../../../../_images/qfem0031-RES1.png" />
-<figcaption>
-<p><span class="caption-number">Fig. 5.16.4.3 </span><span class="caption-text">RES (Summary) tab</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<figure class="align-center" id="id6">
+<p class="caption"><span class="caption-number">Fig. 5.16.4.3 </span><span class="caption-text">RES (Summary) tab</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+<div class="align-center figure" id="id6">
 <img alt="../../../../../_images/qfem0031-RES2.png" src="../../../../../_images/qfem0031-RES2.png" />
-<figcaption>
-<p><span class="caption-number">Fig. 5.16.4.4 </span><span class="caption-text">RES (Log) tab</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<figure class="align-center" id="id7">
+<p class="caption"><span class="caption-number">Fig. 5.16.4.4 </span><span class="caption-text">RES (Log) tab</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+<div class="align-center figure" id="id7">
 <img alt="../../../../../_images/qfem0031-RES4.png" src="../../../../../_images/qfem0031-RES4.png" />
-<figcaption>
-<p><span class="caption-number">Fig. 5.16.4.5 </span><span class="caption-text">RES (Data Values) tab</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-number">Fig. 5.16.4.5 </span><span class="caption-text">RES (Data Values) tab</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
 <p>Under the <strong>Data Values</strong> tab, click <strong>Save Columns Separately</strong> button to save the samples of each RV of the posterior distribution. This can later be imported into quoFEM to replace the definition of random variables.</p>
-</section>
-<section id="post-processing-script">
-<h2><span class="section-number">5.16.5. </span>Post-processing script<a class="headerlink" href="#post-processing-script" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="post-processing-script">
+<h2><span class="section-number">5.16.5. </span>Post-processing script<a class="headerlink" href="#post-processing-script" title="Permalink to this heading">¶</a></h2>
 <p>The detailed and intermediate analysis results can be retrieved from the remote working directory. The remote working directory can be found by looking at preference windows, which can be found by clicking <code class="docutils literal notranslate"><span class="pre">file</span></code>-<code class="docutils literal notranslate"><span class="pre">preference</span></code> in the quoFEM menu bar. For example, the file named ‘dakotaTab.out’ contains the posterior sample values shown in the <strong>Data Values</strong> tab in the user interface RES tab and ‘dakotaTabPrior.out’ contains the samples from the prior distribution. You can create your own visualization script using these files. Below is an example of such a python script, that plots the pair-wise scatter plots of the samples to understand the shape of the posterior distribution and especially, the correlation between the samples. Note that <code class="docutils literal notranslate"><span class="pre">{YOUR/PATH/TO/REMOTEWORKDIR}</span></code> in line 4 should be replaced with your remote working directory, found in your preference window.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="linenos"> 2</span><span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
@@ -354,13 +429,10 @@
 <span class="linenos">17</span><span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">pairplot</span><span class="p">(</span><span class="n">combine</span><span class="p">,</span> <span class="n">hue</span> <span class="o">=</span> <span class="s2">&quot;Distribution&quot;</span><span class="p">,</span> <span class="n">markers</span><span class="o">=</span><span class="s2">&quot;.&quot;</span><span class="p">,</span> <span class="n">corner</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Prior&#39;</span><span class="p">:</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;Posterior&#39;</span><span class="p">:</span><span class="s1">&#39;blue&#39;</span><span class="p">})</span>
 </pre></div>
 </div>
-<figure class="align-center" id="fig1">
-<a class="reference internal image-reference" href="../../../../../_images/qfem0031-fig1.png"><img alt="../../../../../_images/qfem0031-fig1.png" src="../../../../../_images/qfem0031-fig1.png" style="width: 50%;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Fig. 5.16.5.1 </span><span class="caption-text">PM4Sand model parameters sampled from the joint prior and posterior distribution</span><a class="headerlink" href="#fig1" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<div class="align-center figure" id="fig1">
+<a class="reference internal image-reference" href="../../../../../_images/qfem0031-fig1.png"><img alt="../../../../../_images/qfem0031-fig1.png" src="../../../../../_images/qfem0031-fig1.png" style="width: 50%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5.16.5.1 </span><span class="caption-text">PM4Sand model parameters sampled from the joint prior and posterior distribution</span><a class="headerlink" href="#fig1" title="Permalink to this image">¶</a></p>
+</div>
 <dl class="simple">
 <dt>Please visit DesignSafe <a class="reference external" href="https://designsafe-ci.org/user-guide/usecases/arduino/usecase_quoFEM/">use case gallery</a>  to find more information on</dt><dd><ol class="lowerroman simple">
 <li><p>running quoFEM on DesignSafe through jupyter-notebook (without using graphical user interface)</p></li>
@@ -368,46 +440,64 @@
 </ol>
 </dd>
 </dl>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
+           
           </div>
           <footer>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2018-2025, The Regents of the University of California.</p>
-  </div>
+    <p>
+        &#169; Copyright 2018-2026, The Regents of the University of California.
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
         </div>
       </div>
+
     </section>
+
   </div>
-  <script>
+  
+
+  <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-    <!-- Theme Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158130480-4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-158130480-4', {
-          'anonymize_ip': false,
-      });
-    </script>  
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-158130480-4', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+    
 
   <style>
          .wy-nav-content { max-width: none; }

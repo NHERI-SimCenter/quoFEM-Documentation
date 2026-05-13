@@ -1,33 +1,57 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" data-content_root="../../../../../">
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
   <title>3.1. Interpoint Distances &mdash; Quantified Uncertainty with Optimization for the FEM  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/css/theme.css?v=66b6668b" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/copybutton.css?v=76b2166b" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/tabs.css?v=a5c4661c" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-design.min.css?v=95c83b7e" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/css/custom.css?v=4b5bf716" />
+  
 
   
-      <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../../../../_static/documentation_options.js?v=5929fcd5"></script>
-      <script src="../../../../../_static/doctools.js?v=9a2dae69"></script>
-      <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script src="../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
-      <script src="../../../../../_static/copybutton.js?v=f281be69"></script>
-      <script src="../../../../../_static/design-tabs.js?v=36754332"></script>
-      <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js?v=ffc8af2d"></script>
-      <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js?v=12818e64"></script>
-      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="../../../../../_static/js/theme.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/pointer.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../../" src="../../../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+        <script src="../../../../../_static/jquery.js"></script>
+        <script src="../../../../../_static/underscore.js"></script>
+        <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../../../_static/doctools.js"></script>
+        <script src="../../../../../_static/clipboard.min.js"></script>
+        <script src="../../../../../_static/copybutton.js"></script>
+        <script src="../../../../../_static/design-tabs.js"></script>
+        <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+        <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <script type="text/javascript" src="../../../../../_static/js/theme.js"></script>
+
+    
     <link rel="index" title="Index" href="../../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../../search.html" />
     <link rel="next" title="3.2. Global Sensitivity Analysis (Dakota)" href="DakotaSensitivity.html" />
@@ -40,35 +64,54 @@
 
 </head>
 
-<body class="wy-body-for-nav"> 
+<body class="wy-body-for-nav">
+
+   
   <div class="wy-grid-for-nav">
+    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search"  style="background: #F2F2F2" >
+          
 <a href="https://simcenter.designsafe-ci.org/" style="margin-bottom: 0px;">
   <img src="../../../../../_static/img/SimCenter-Only.png" class="logo" alt="Org-Logo" />
 </a>
 <hr style="margin: 0px;">
 
-  <a href="../../../../../index.html" class="icon icon-home"> Quantified Uncertainty with Optimization for the FEM
+  <a href="../../../../../index.html">
 
 
+
+  
+  <img src="../../../../../_static/quoFEM-Logo.png" class="logo" alt="Logo"/>
 
 </a>
 
+
+  
+  
 
 
 
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
 
 
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
               <p class="caption" role="heading"><span class="caption-text">About</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../user_manual/about/quoFEM/about.html">1. About</a></li>
@@ -94,6 +137,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../user_manual/bugs.html">9. Bugs &amp; Feature Requests</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../user_manual/dcv/quoFEM/quoFEM.html">10. Running in Your Browser</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../user_manual/usage/desktop/quoFEM/usage_video.html">11. Video Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../user_manual/usage/desktop/Misc.html">12. Misc</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Technical Manual</span></p>
 <ul>
@@ -102,54 +146,100 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../technical_manual/desktop/UCSDUQTechnical.html">3. Methods in UCSD UQ Engine</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../../how_to_build/desktop/how_to_build.html">1. How to Build</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../how_to_extend.html">2. How to Extend</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../verification.html">3. Verification</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../verification.html">3. Verification</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3.1. Interpoint Distances</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DakotaSensitivity.html">3.2. Global Sensitivity Analysis (Dakota)</a></li>
+</ul>
+</li>
 </ul>
 
+            
+          
         </div>
+        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #F2F2F2" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../../../index.html">Quantified Uncertainty with Optimization for the FEM</a>
+        
       </nav>
 
+
       <div class="wy-nav-content">
+        
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../verification.html"><span class="section-number">3. </span>Verification</a></li>
-      <li class="breadcrumb-item active"><span class="section-number">3.1. </span>Interpoint Distances</li>
+    
+      <li><a href="../../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../verification.html"><span class="section-number">3. </span>Verification</a> &raquo;</li>
+        
+      <li><span class="section-number">3.1. </span>Interpoint Distances</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
+        
+          
             <a href="../../../../../_sources/common/developer_manual/verification/desktop/quoFEM/InterpointDistances.rst.txt" rel="nofollow"> View page source</a>
+          
+        
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-             
-  <section id="interpoint-distances">
-<span id="lblinterpointdistveri"></span><h1><span class="section-number">3.1. </span>Interpoint Distances<a class="headerlink" href="#interpoint-distances" title="Link to this heading"></a></h1>
+            
+  <div class="section" id="interpoint-distances">
+<span id="lblinterpointdistveri"></span><h1><span class="section-number">3.1. </span>Interpoint Distances<a class="headerlink" href="#interpoint-distances" title="Permalink to this heading">¶</a></h1>
 <p>This is not a structural example, it is one used in the literature to verify sampling methods as a mathematical formula
 exists for the solution. The example presented is computing the average distance between randomly chosen points
 in a rectangular region. Such average distances come up in many settings. For cell phone companies, the probability that a distributed network is fully connected depends on the average distances between communicating nodes. For city planners preparing for disasters,
 it could represent the average distances from dwellings to fire stations or from the dwellings to the epicenter of an earthquake.</p>
 <p>The problem is defined as follows: Suppose two points <span class="math notranslate nohighlight">\(P\)</span> and <span class="math notranslate nohighlight">\(Q\)</span> are independent and considered uniformly distributed random points in a finite rectangle of dimension <span class="math notranslate nohighlight">\(L_w\)</span> and <span class="math notranslate nohighlight">\(L_h\)</span>. It has been <a class="reference external" href="http://www.math.utep.edu/Faculty/moschopoulos/Publications/1999-Random_Points_Associated_With_Rectangles.pdf">shown</a> that the expected average distance between these two points <span class="math notranslate nohighlight">\(E(P,Q)\)</span> is given by the formula:</p>
 <div class="math notranslate nohighlight" id="equation-common-developer-manual-verification-desktop-quofem-interpointdistances-0">
-<span class="eqno">(3.1.3)<a class="headerlink" href="#equation-common-developer-manual-verification-desktop-quofem-interpointdistances-0" title="Link to this equation"></a></span>\[E(P,Q) = \frac{1}{15} \left( \frac{L_w^3}{L_h^2}+\frac{L_h^3}{L_w^2}+d\left(3-\frac{L_w^2}{L_h^2}-\frac{L_h^2}{L_w^2}\right)
+<span class="eqno">(3.1.3)<a class="headerlink" href="#equation-common-developer-manual-verification-desktop-quofem-interpointdistances-0" title="Permalink to this equation">¶</a></span>\[E(P,Q) = \frac{1}{15} \left( \frac{L_w^3}{L_h^2}+\frac{L_h^3}{L_w^2}+d\left(3-\frac{L_w^2}{L_h^2}-\frac{L_h^2}{L_w^2}\right)
 +\frac{5}{2} \left(\frac{L_h^2}{L_w}\log\right(\frac{L_w+d}{L_h}\left)+\frac{L_w^2}{L_h}\log\left(\frac{L_h+d}{L_w}\right)\right)\right)\]</div>
 <p>where <span class="math notranslate nohighlight">\(d=\sqrt{L_w^2+L_h^2}\)</span></p>
 <p>Using the above formula, one can compute the expected distances for rectangles of different sizes, for example:</p>
-<table class="docutils align-default">
+<table class="colwidths-given docutils align-default">
 <colgroup>
-<col style="width: 33.3%" />
-<col style="width: 33.3%" />
-<col style="width: 33.3%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Lw</p></th>
@@ -220,40 +310,40 @@ it could represent the average distances from dwellings to fire stations or from
 <ol class="arabic simple" start="2">
 <li><p>Start the quoFEM app and select Dakota UQ Engine, Forward propagation type of problem, and LHS method. Specify <code class="docutils literal notranslate"><span class="pre">10000</span></code> samples and a seed of <code class="docutils literal notranslate"><span class="pre">175</span></code>.</p></li>
 </ol>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/ghoshUQ.png" src="../../../../../_images/ghoshUQ.png" />
-</figure>
+</div>
 <ol class="arabic simple" start="3">
 <li><p>Select next the <strong>FEM</strong> tab. From this tab select either OpenSees or OpenSeesPy depending on which file you choose to place in the folder. For the input file specify the full path to this file.</p></li>
 </ol>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/ghoshFEM.png" src="../../../../../_images/ghoshFEM.png" />
-</figure>
+</div>
 <ol class="arabic simple" start="4">
 <li><p>Select the <strong>RV</strong> tab. Create four random variables named <code class="docutils literal notranslate"><span class="pre">X1</span></code>, <code class="docutils literal notranslate"><span class="pre">Y1</span></code>, <code class="docutils literal notranslate"><span class="pre">X2</span></code>, <code class="docutils literal notranslate"><span class="pre">Y2</span></code>. For each specify a uniform distribution with the range for the <code class="docutils literal notranslate"><span class="pre">X</span></code> variables being <code class="docutils literal notranslate"><span class="pre">0</span></code> and <code class="docutils literal notranslate"><span class="pre">Lw</span></code> and the range of <code class="docutils literal notranslate"><span class="pre">Y</span></code> variables being <code class="docutils literal notranslate"><span class="pre">0</span></code> and <code class="docutils literal notranslate"><span class="pre">Lh</span></code>. This is as shown for <code class="docutils literal notranslate"><span class="pre">Lw</span> <span class="pre">=</span> <span class="pre">1.0</span></code> and <code class="docutils literal notranslate"><span class="pre">Lh</span> <span class="pre">=</span> <span class="pre">0.6</span></code>.</p></li>
 </ol>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/ghoshRV.png" src="../../../../../_images/ghoshRV.png" />
-</figure>
+</div>
 <ol class="arabic simple" start="5">
 <li><p>Select the <strong>QoI</strong> tab. Create one EDP and name it <code class="docutils literal notranslate"><span class="pre">E</span></code> as shown.</p></li>
 </ol>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/ghoshQoI.png" src="../../../../../_images/ghoshQoI.png" />
-</figure>
+</div>
 <ol class="arabic simple" start="6">
 <li><p>Press the Run button. The results should show the mean to be <code class="docutils literal notranslate"><span class="pre">0.425709</span></code>.</p></li>
 </ol>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/ghoshRES.png" src="../../../../../_images/ghoshRES.png" />
-</figure>
+</div>
 <p>These simulations can be performed for a number of the different sampling methods for several numbers of samples.</p>
-<table class="docutils align-default">
+<table class="colwidths-given docutils align-default">
 <colgroup>
-<col style="width: 25.0%" />
-<col style="width: 25.0%" />
-<col style="width: 25.0%" />
-<col style="width: 25.0%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Method</p></th>
@@ -295,45 +385,63 @@ it could represent the average distances from dwellings to fire stations or from
 </tr>
 </tbody>
 </table>
-</section>
+</div>
 
 
            </div>
+           
           </div>
           <footer>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2018-2025, The Regents of the University of California.</p>
-  </div>
+    <p>
+        &#169; Copyright 2018-2026, The Regents of the University of California.
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
         </div>
       </div>
+
     </section>
+
   </div>
-  <script>
+  
+
+  <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-    <!-- Theme Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158130480-4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-158130480-4', {
-          'anonymize_ip': false,
-      });
-    </script>  
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-158130480-4', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+    
 
   <style>
          .wy-nav-content { max-width: none; }

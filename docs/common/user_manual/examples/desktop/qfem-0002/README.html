@@ -1,33 +1,57 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" data-content_root="../../../../../">
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
   <title>5.2. Forward Propagation - OpenSeesPy &mdash; Quantified Uncertainty with Optimization for the FEM  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/css/theme.css?v=66b6668b" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/copybutton.css?v=76b2166b" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/tabs.css?v=a5c4661c" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-design.min.css?v=95c83b7e" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/css/custom.css?v=4b5bf716" />
+  
 
   
-      <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../../../../_static/documentation_options.js?v=5929fcd5"></script>
-      <script src="../../../../../_static/doctools.js?v=9a2dae69"></script>
-      <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script src="../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
-      <script src="../../../../../_static/copybutton.js?v=f281be69"></script>
-      <script src="../../../../../_static/design-tabs.js?v=36754332"></script>
-      <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js?v=ffc8af2d"></script>
-      <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js?v=12818e64"></script>
-      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="../../../../../_static/js/theme.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/pointer.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../../" src="../../../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+        <script src="../../../../../_static/jquery.js"></script>
+        <script src="../../../../../_static/underscore.js"></script>
+        <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../../../_static/doctools.js"></script>
+        <script src="../../../../../_static/clipboard.min.js"></script>
+        <script src="../../../../../_static/copybutton.js"></script>
+        <script src="../../../../../_static/design-tabs.js"></script>
+        <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+        <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <script type="text/javascript" src="../../../../../_static/js/theme.js"></script>
+
+    
     <link rel="index" title="Index" href="../../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../../search.html" />
     <link rel="next" title="5.3. Basic modeling with Python" href="../qfem-0005/README.html" />
@@ -40,35 +64,54 @@
 
 </head>
 
-<body class="wy-body-for-nav"> 
+<body class="wy-body-for-nav">
+
+   
   <div class="wy-grid-for-nav">
+    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search"  style="background: #F2F2F2" >
+          
 <a href="https://simcenter.designsafe-ci.org/" style="margin-bottom: 0px;">
   <img src="../../../../../_static/img/SimCenter-Only.png" class="logo" alt="Org-Logo" />
 </a>
 <hr style="margin: 0px;">
 
-  <a href="../../../../../index.html" class="icon icon-home"> Quantified Uncertainty with Optimization for the FEM
+  <a href="../../../../../index.html">
 
 
+
+  
+  <img src="../../../../../_static/quoFEM-Logo.png" class="logo" alt="Logo"/>
 
 </a>
 
+
+  
+  
 
 
 
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
 
 
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
               <p class="caption" role="heading"><span class="caption-text">About</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../about/quoFEM/about.html">1. About</a></li>
@@ -120,6 +163,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../bugs.html">9. Bugs &amp; Feature Requests</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../dcv/quoFEM/quoFEM.html">10. Running in Your Browser</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../usage/desktop/quoFEM/usage_video.html">11. Video Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../usage/desktop/Misc.html">12. Misc</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Technical Manual</span></p>
 <ul>
@@ -134,37 +178,83 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../developer_manual/verification/desktop/verification.html">3. Verification</a></li>
 </ul>
 
+            
+          
         </div>
+        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #F2F2F2" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../../../index.html">Quantified Uncertainty with Optimization for the FEM</a>
+        
       </nav>
 
+
       <div class="wy-nav-content">
+        
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../examples.html"><span class="section-number">5. </span>Examples</a></li>
-      <li class="breadcrumb-item active"><span class="section-number">5.2. </span>Forward Propagation - OpenSeesPy</li>
+    
+      <li><a href="../../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../examples.html"><span class="section-number">5. </span>Examples</a> &raquo;</li>
+        
+      <li><span class="section-number">5.2. </span>Forward Propagation - OpenSeesPy</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
+        
+          
             <a href="../../../../../_sources/common/user_manual/examples/desktop/qfem-0002/README.rst.txt" rel="nofollow"> View page source</a>
+          
+        
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-             
-  <section id="forward-propagation-openseespy">
-<span id="qfem-0002"></span><h1><span class="section-number">5.2. </span>Forward Propagation - OpenSeesPy<a class="headerlink" href="#forward-propagation-openseespy" title="Link to this heading"></a></h1>
+            
+  <div class="section" id="forward-propagation-openseespy">
+<span id="qfem-0002"></span><h1><span class="section-number">5.2. </span>Forward Propagation - OpenSeesPy<a class="headerlink" href="#forward-propagation-openseespy" title="Permalink to this heading">¶</a></h1>
 <table class="docutils align-default">
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 71%" />
+</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Problem files</p></td>
-<td><p><a class="extlink-github reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples/qfem-0002/">Github</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples/qfem-0002/">Github</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -177,10 +267,9 @@ truss structure shown in the following figure. Two input scripts are
 used to define a forward propagation procedure to be coordinated by
 quoFEM which will estimate the mean and standard deviation of the
 vertical displacement at node 3 using Latin hypercube sampling.</p>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../../../../../_images/qfem-0002.png"><img alt="../../../../../_images/qfem-0002.png" src="../../../../../_images/qfem-0002.png" style="width: 500px;" />
-</a>
-</figure>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../../../../../_images/qfem-0002.png"><img alt="../../../../../_images/qfem-0002.png" src="../../../../../_images/qfem-0002.png" style="width: 500px;" /></a>
+</div>
 <p>The following parameters are defined in the <strong>RV</strong> tab of quoFEM:</p>
 <ol class="arabic simple">
 <li><p>Elastic modulus, <code class="docutils literal notranslate"><span class="pre">E</span></code>: <strong>Weibull</strong> distribution with a scale
@@ -197,12 +286,16 @@ deviation <span class="math notranslate nohighlight">\((\sigma)\)</span> of <spa
 distribution with a mean <span class="math notranslate nohighlight">\((\mu)\)</span> of <span class="math notranslate nohighlight">\(500.0\)</span>, standard
 deviation <span class="math notranslate nohighlight">\((\sigma)\)</span> of <span class="math notranslate nohighlight">\(100.0\)</span>,</p></li>
 </ol>
-<section id="uq-workflow">
-<h2><span class="section-number">5.2.1. </span>UQ Workflow<a class="headerlink" href="#uq-workflow" title="Link to this heading"></a></h2>
+<div class="section" id="uq-workflow">
+<h2><span class="section-number">5.2.1. </span>UQ Workflow<a class="headerlink" href="#uq-workflow" title="Permalink to this heading">¶</a></h2>
 <p>To define the uncertainty workflow in quoFEM, select <strong>Forward
 Propagation</strong> for the <strong>Dakota Method Category</strong>, and enter the
 following inputs:</p>
 <table class="docutils align-default">
+<colgroup>
+<col style="width: 68%" />
+<col style="width: 32%" />
+</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><strong>Method</strong></p></td>
 <td><p>LHS</p></td>
@@ -215,9 +308,9 @@ following inputs:</p>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="model-files">
-<h2><span class="section-number">5.2.2. </span>Model Files<a class="headerlink" href="#model-files" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="model-files">
+<h2><span class="section-number">5.2.2. </span>Model Files<a class="headerlink" href="#model-files" title="Permalink to this heading">¶</a></h2>
 <p>The following files make up the <strong>FEM</strong> model definition.</p>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="https://raw.githubusercontent.com/claudioperez/SimCenterExamples/master/static/truss/model.py">model.py</a>:
@@ -237,9 +330,9 @@ variables as objects in the Python runtime. It is supplied to the
 which are assigned to variables in this file will be varied at
 runtime by the UQ engine.</em></p></li>
 </ol>
-</section>
-<section id="results">
-<h2><span class="section-number">5.2.3. </span>Results<a class="headerlink" href="#results" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="results">
+<h2><span class="section-number">5.2.3. </span>Results<a class="headerlink" href="#results" title="Permalink to this heading">¶</a></h2>
 <p>The results from this analysis with a maximum of <span class="math notranslate nohighlight">\(200\)</span> iterations
 are as follows:</p>
 <p><strong>Node 3</strong>:</p>
@@ -258,46 +351,64 @@ views of the graphical display can be obtained by left- and
 right-clicking the columns of the tabular data. If a singular column of
 the tabular data is selected with simultaneous right and left clicks, a
 frequency and CDF will be displayed.</p>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
+           
           </div>
           <footer>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2018-2025, The Regents of the University of California.</p>
-  </div>
+    <p>
+        &#169; Copyright 2018-2026, The Regents of the University of California.
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
         </div>
       </div>
+
     </section>
+
   </div>
-  <script>
+  
+
+  <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-    <!-- Theme Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158130480-4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-158130480-4', {
-          'anonymize_ip': false,
-      });
-    </script>  
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-158130480-4', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+    
 
   <style>
          .wy-nav-content { max-width: none; }

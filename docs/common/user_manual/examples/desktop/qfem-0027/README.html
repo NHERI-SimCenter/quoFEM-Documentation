@@ -1,32 +1,56 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" data-content_root="../../../../../">
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
   <title>5.14. Forward propagation of uncertainty with multiple simulation models &mdash; Quantified Uncertainty with Optimization for the FEM  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/css/theme.css?v=66b6668b" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/copybutton.css?v=76b2166b" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/tabs.css?v=a5c4661c" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-design.min.css?v=95c83b7e" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/css/custom.css?v=4b5bf716" />
+  
 
   
-      <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../../../../_static/documentation_options.js?v=5929fcd5"></script>
-      <script src="../../../../../_static/doctools.js?v=9a2dae69"></script>
-      <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script src="../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
-      <script src="../../../../../_static/copybutton.js?v=f281be69"></script>
-      <script src="../../../../../_static/design-tabs.js?v=36754332"></script>
-      <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js?v=ffc8af2d"></script>
-      <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js?v=12818e64"></script>
-    <script src="../../../../../_static/js/theme.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/pointer.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../../" src="../../../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+        <script src="../../../../../_static/jquery.js"></script>
+        <script src="../../../../../_static/underscore.js"></script>
+        <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../../../_static/doctools.js"></script>
+        <script src="../../../../../_static/clipboard.min.js"></script>
+        <script src="../../../../../_static/copybutton.js"></script>
+        <script src="../../../../../_static/design-tabs.js"></script>
+        <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+        <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
+    
+    <script type="text/javascript" src="../../../../../_static/js/theme.js"></script>
+
+    
     <link rel="index" title="Index" href="../../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../../search.html" />
     <link rel="next" title="5.15. Bayesian calibration of hierarchical models" href="../qfem-0028/README.html" />
@@ -39,35 +63,54 @@
 
 </head>
 
-<body class="wy-body-for-nav"> 
+<body class="wy-body-for-nav">
+
+   
   <div class="wy-grid-for-nav">
+    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search"  style="background: #F2F2F2" >
+          
 <a href="https://simcenter.designsafe-ci.org/" style="margin-bottom: 0px;">
   <img src="../../../../../_static/img/SimCenter-Only.png" class="logo" alt="Org-Logo" />
 </a>
 <hr style="margin: 0px;">
 
-  <a href="../../../../../index.html" class="icon icon-home"> Quantified Uncertainty with Optimization for the FEM
+  <a href="../../../../../index.html">
 
 
+
+  
+  <img src="../../../../../_static/quoFEM-Logo.png" class="logo" alt="Logo"/>
 
 </a>
 
+
+  
+  
 
 
 
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
 
 
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
               <p class="caption" role="heading"><span class="caption-text">About</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../about/quoFEM/about.html">1. About</a></li>
@@ -119,6 +162,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../bugs.html">9. Bugs &amp; Feature Requests</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../dcv/quoFEM/quoFEM.html">10. Running in Your Browser</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../usage/desktop/quoFEM/usage_video.html">11. Video Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../usage/desktop/Misc.html">12. Misc</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Technical Manual</span></p>
 <ul>
@@ -133,42 +177,88 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../developer_manual/verification/desktop/verification.html">3. Verification</a></li>
 </ul>
 
+            
+          
         </div>
+        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #F2F2F2" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../../../index.html">Quantified Uncertainty with Optimization for the FEM</a>
+        
       </nav>
 
+
       <div class="wy-nav-content">
+        
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../examples.html"><span class="section-number">5. </span>Examples</a></li>
-      <li class="breadcrumb-item active"><span class="section-number">5.14. </span>Forward propagation of uncertainty with multiple simulation models</li>
+    
+      <li><a href="../../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../examples.html"><span class="section-number">5. </span>Examples</a> &raquo;</li>
+        
+      <li><span class="section-number">5.14. </span>Forward propagation of uncertainty with multiple simulation models</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
+        
+          
             <a href="../../../../../_sources/common/user_manual/examples/desktop/qfem-0027/README.rst.txt" rel="nofollow"> View page source</a>
+          
+        
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-             
-  <section id="forward-propagation-of-uncertainty-with-multiple-simulation-models">
-<span id="qfem-0027"></span><h1><span class="section-number">5.14. </span>Forward propagation of uncertainty with multiple simulation models<a class="headerlink" href="#forward-propagation-of-uncertainty-with-multiple-simulation-models" title="Link to this heading"></a></h1>
+            
+  <div class="section" id="forward-propagation-of-uncertainty-with-multiple-simulation-models">
+<span id="qfem-0027"></span><h1><span class="section-number">5.14. </span>Forward propagation of uncertainty with multiple simulation models<a class="headerlink" href="#forward-propagation-of-uncertainty-with-multiple-simulation-models" title="Permalink to this heading">¶</a></h1>
 <table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Problem files</p></td>
-<td><p><a class="extlink-github reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples/qfem-0027/">Github</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples/qfem-0027/">Github</a></p></td>
 </tr>
 </tbody>
 </table>
-<section id="outline">
-<h2><span class="section-number">5.14.1. </span>Outline<a class="headerlink" href="#outline" title="Link to this heading"></a></h2>
+<div class="section" id="outline">
+<h2><span class="section-number">5.14.1. </span>Outline<a class="headerlink" href="#outline" title="Permalink to this heading">¶</a></h2>
 <p>In this example, two models of a 6-story structure are used to predict the maximum base shear by conducting a nonlinear time history analysis of the structure subjected to seismic excitation. The beliefs represent the uncertainty about which of these two models are the best model to be used in the analysis, and in this example, equal belief is placed in the two models.</p>
 <p>The structure is modeled as having flexible columns and stiff elastic beams. The structure is subjected to an earthquake excitation at the base which is strong enough to result in nonlinear response.</p>
 <p>Model 1 uses Steel01 material to represent the behavior of the columns while model 2 uses Steel02. There are three random variables in each model which correspond to three parameters in the uniaxial material models Steel01 and Steel02: the initial elastic stiffness of the columns (k), the yield strength of the columns (Fy), and the strain hardening ratio of the columns (alp), i.e., the ratio between the post-yield stiffness and the initial elastic stiffness. For Steel02, R0 is set to 15, and cR1 and cR2 are set to their recommended values of 0.925 and 0.15, respectively.</p>
@@ -181,9 +271,9 @@
 </pre></div>
 </div>
 <p>The output quantity of interest (QoI) is the amplitude of the maximum base shear.</p>
-</section>
-<section id="files-required">
-<h2><span class="section-number">5.14.2. </span>Files required<a class="headerlink" href="#files-required" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="files-required">
+<h2><span class="section-number">5.14.2. </span>Files required<a class="headerlink" href="#files-required" title="Permalink to this heading">¶</a></h2>
 <p>The exercise uses two finite element models of a structure. The required files to run each model are collected into separate directories per model. In each directory, the following files are required: one main tcl script file, two supplementary tcl scripts used to build the model and run the analysis, one supplementary file that contains the ground motion, and a tcl script to post-process the output created during the OpenSees analysis and create the quantity of interest which is the maximum absolute value of the base shear. The user should download the required directories and files and place them in a <strong>NEW</strong> folder.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -191,48 +281,43 @@
 </div>
 <p>The following files are needed to evaluate Model 1. Evaluating Model 2 also requires a set of 5 files with the first two files in the following list replaced by the corresponding ones for Model 2.</p>
 <ol class="arabic simple">
-<li><p><a class="extlink-qfem-0027 reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0027/src/model1/ShearBuilding_NL_1.tcl">ShearBuilding_NL_1.tcl</a> - This is a tcl script that evaluates the model and generates a file containing the time history of the element forces for element 1. The horizontal component of the element forces (the second column in the file) corresponds to the base shear experienced by this model of the structure.</p></li>
-<li><p><a class="extlink-qfem-0027 reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0027/src/model1/create_model_1.tcl">create_model_1.tcl</a>- This file contains tcl and OpenSees commands that create the nodes, materials, and elements that make up the finite element model of the structure.</p></li>
-<li><p><a class="extlink-qfem-0027 reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0027/src/model1/run_analysis.tcl">run_analysis.tcl</a> - This file contains tcl and OpenSees commands to create the load, record the output, and perform a time history analysis of the structural response to the applied earthquake excitation.</p></li>
-<li><p><a class="extlink-qfem-0027 reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0027/src/model1/R331.dat">R331.dat</a> - This text file contains the time history of the earthquake acceleration applied to the base of the model.</p></li>
-<li><p><a class="extlink-qfem-0027 reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0027/src/model1/postprocess.tcl">postprocess.tcl</a> - This file contains tcl commands to read the time history of the base shear from the file created during the analysis, and to compute the maximum absolute value of the base shear experienced by the model.</p></li>
+<li><p><a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0027/src/model1/ShearBuilding_NL_1.tcl">ShearBuilding_NL_1.tcl</a> - This is a tcl script that evaluates the model and generates a file containing the time history of the element forces for element 1. The horizontal component of the element forces (the second column in the file) corresponds to the base shear experienced by this model of the structure.</p></li>
+<li><p><a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0027/src/model1/create_model_1.tcl">create_model_1.tcl</a>- This file contains tcl and OpenSees commands that create the nodes, materials, and elements that make up the finite element model of the structure.</p></li>
+<li><p><a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0027/src/model1/run_analysis.tcl">run_analysis.tcl</a> - This file contains tcl and OpenSees commands to create the load, record the output, and perform a time history analysis of the structural response to the applied earthquake excitation.</p></li>
+<li><p><a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0027/src/model1/R331.dat">R331.dat</a> - This text file contains the time history of the earthquake acceleration applied to the base of the model.</p></li>
+<li><p><a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0027/src/model1/postprocess.tcl">postprocess.tcl</a> - This file contains tcl commands to read the time history of the base shear from the file created during the analysis, and to compute the maximum absolute value of the base shear experienced by the model.</p></li>
 </ol>
-</section>
-<section id="uq-workflow">
-<h2><span class="section-number">5.14.3. </span>UQ workflow<a class="headerlink" href="#uq-workflow" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="uq-workflow">
+<h2><span class="section-number">5.14.3. </span>UQ workflow<a class="headerlink" href="#uq-workflow" title="Permalink to this heading">¶</a></h2>
 <p>The steps involved are as follows:</p>
 <ol class="arabic simple">
 <li><p>Start the application and the <strong>UQ</strong> panel will be highlighted. In the <strong>UQ Method</strong> drop down menu, select the <strong>Forward Propagation</strong> option. In the <strong>UQ Engine</strong> dropdown menu select <strong>Dakota</strong> option. Enter the values in this panel as shown in the figure below.</p></li>
 </ol>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../../../../../_images/UQ1.png"><img alt="../../../../../_images/UQ1.png" src="../../../../../_images/UQ1.png" style="width: 1200px;" />
-</a>
-</figure>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="../../../../../_images/UQ1.png"><img alt="../../../../../_images/UQ1.png" src="../../../../../_images/UQ1.png" style="width: 1200px;" /></a>
+</div>
 <ol class="arabic simple" start="2">
 <li><p>Next in the <strong>FEM</strong> panel, select <strong>Multi Model</strong> FEM engine. Use the <strong>Add</strong> or <strong>Remove</strong> option as needed to have two tabs, one for each of the two models being used in this example, and enter the values shown in the following figures:</p></li>
 </ol>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../../../../../_images/FEM1.png"><img alt="../../../../../_images/FEM1.png" src="../../../../../_images/FEM1.png" style="width: 1200px;" />
-</a>
-</figure>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../../../../../_images/FEM2.png"><img alt="../../../../../_images/FEM2.png" src="../../../../../_images/FEM2.png" style="width: 1200px;" />
-</a>
-</figure>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="../../../../../_images/FEM1.png"><img alt="../../../../../_images/FEM1.png" src="../../../../../_images/FEM1.png" style="width: 1200px;" /></a>
+</div>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="../../../../../_images/FEM2.png"><img alt="../../../../../_images/FEM2.png" src="../../../../../_images/FEM2.png" style="width: 1200px;" /></a>
+</div>
 <ol class="arabic simple" start="3">
 <li><p>Select the <strong>RV</strong> tab from the input panel. This panel should be pre-populated with the names of the variables that were defined in the model scripts. If not, press the <strong>Add</strong> button to create a new field to define the input random variable. Enter the same variable name, as required in the model script. For this example, choose the Uniform probability distribution for all the random variables and enter the Min. and Max. values for each distribution as shown in the figure below:</p></li>
 </ol>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../../../../../_images/RV1.png"><img alt="../../../../../_images/RV1.png" src="../../../../../_images/RV1.png" style="width: 1200px;" />
-</a>
-</figure>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="../../../../../_images/RV1.png"><img alt="../../../../../_images/RV1.png" src="../../../../../_images/RV1.png" style="width: 1200px;" /></a>
+</div>
 <ol class="arabic simple" start="4">
 <li><p>In the <strong>EDP</strong> panel create an output quantity of length 1 with a descriptive name.</p></li>
 </ol>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../../../../../_images/EDP1.png"><img alt="../../../../../_images/EDP1.png" src="../../../../../_images/EDP1.png" style="width: 1200px;" />
-</a>
-</figure>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="../../../../../_images/EDP1.png"><img alt="../../../../../_images/EDP1.png" src="../../../../../_images/EDP1.png" style="width: 1200px;" /></a>
+</div>
 <ol class="arabic simple" start="5">
 <li><p>Click on the <strong>Run</strong> button. This will create the necessary input files to perform a forward propagation analysis with Dakota, run the analysis, and display the results when the analysis is completed.</p></li>
 </ol>
@@ -240,96 +325,107 @@
 <ul class="simple">
 <li><p>Summary of results obtained by using the two models:</p></li>
 </ul>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../../../../../_images/RES11.png"><img alt="../../../../../_images/RES11.png" src="../../../../../_images/RES11.png" style="width: 1200px;" />
-</a>
-</figure>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="../../../../../_images/RES11.png"><img alt="../../../../../_images/RES11.png" src="../../../../../_images/RES11.png" style="width: 1200px;" /></a>
+</div>
 <ul class="simple">
 <li><p>Maximum base shear vs model index:</p></li>
 </ul>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../../../../../_images/RES21.png"><img alt="../../../../../_images/RES21.png" src="../../../../../_images/RES21.png" style="width: 1200px;" />
-</a>
-</figure>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="../../../../../_images/RES21.png"><img alt="../../../../../_images/RES21.png" src="../../../../../_images/RES21.png" style="width: 1200px;" /></a>
+</div>
 <p>This scatter plot shows that the maximum base shear predicted by Model 1 is higher than that predicted by Model 2.</p>
 <ul class="simple">
 <li><p>Histogram of maximum base shear:</p></li>
 </ul>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../../../../../_images/RES31.png"><img alt="../../../../../_images/RES31.png" src="../../../../../_images/RES31.png" style="width: 1200px;" />
-</a>
-</figure>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="../../../../../_images/RES31.png"><img alt="../../../../../_images/RES31.png" src="../../../../../_images/RES31.png" style="width: 1200px;" /></a>
+</div>
 <p>If only Model 1 was used:</p>
 <ul class="simple">
 <li><p>Summary of results:</p></li>
 </ul>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../../../../../_images/RES41.png"><img alt="../../../../../_images/RES41.png" src="../../../../../_images/RES41.png" style="width: 1200px;" />
-</a>
-</figure>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="../../../../../_images/RES41.png"><img alt="../../../../../_images/RES41.png" src="../../../../../_images/RES41.png" style="width: 1200px;" /></a>
+</div>
 <ul class="simple">
 <li><p>Histogram of maximum base shear:</p></li>
 </ul>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../../../../../_images/RES5.png"><img alt="../../../../../_images/RES5.png" src="../../../../../_images/RES5.png" style="width: 1200px;" />
-</a>
-</figure>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="../../../../../_images/RES5.png"><img alt="../../../../../_images/RES5.png" src="../../../../../_images/RES5.png" style="width: 1200px;" /></a>
+</div>
 <p>If only Model 2 was used:</p>
 <ul class="simple">
 <li><p>Summary of results:</p></li>
 </ul>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../../../../../_images/RES6.png"><img alt="../../../../../_images/RES6.png" src="../../../../../_images/RES6.png" style="width: 1200px;" />
-</a>
-</figure>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="../../../../../_images/RES6.png"><img alt="../../../../../_images/RES6.png" src="../../../../../_images/RES6.png" style="width: 1200px;" /></a>
+</div>
 <ul class="simple">
 <li><p>Histogram of maximum base shear:</p></li>
 </ul>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../../../../../_images/RES7.png"><img alt="../../../../../_images/RES7.png" src="../../../../../_images/RES7.png" style="width: 1200px;" />
-</a>
-</figure>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="../../../../../_images/RES7.png"><img alt="../../../../../_images/RES7.png" src="../../../../../_images/RES7.png" style="width: 1200px;" /></a>
+</div>
 <p>We observe from the summary statistics and the histograms that if it is not known which of the two models considered is the best model to be used to represent the behavior of the structure, the predicted range of the maximum base shear is larger (i.e., the standard deviation of the maximum base shear is higher when using the two models than in the case when either of the two models are used on their own). The mean value of the base shear predicted in this case will be the mean of the maximum base shear predicted by the two models when used on their own (here we numerically estimate the mean by sampling values of the inputs from the specified distribution, hence there is sampling variability in the estimate of the mean).</p>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
+           
           </div>
           <footer>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2018-2025, The Regents of the University of California.</p>
-  </div>
+    <p>
+        &#169; Copyright 2018-2026, The Regents of the University of California.
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
         </div>
       </div>
+
     </section>
+
   </div>
-  <script>
+  
+
+  <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-    <!-- Theme Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158130480-4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-158130480-4', {
-          'anonymize_ip': false,
-      });
-    </script>  
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-158130480-4', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+    
 
   <style>
          .wy-nav-content { max-width: none; }

@@ -231,7 +231,8 @@ While there are a number of different types of UML diagrams, those shown below a
 
 As was mentioned the Front end UI applications are built using Qt. In a Qt application, the programmer creates a QApplication object, in :numref:`codeMainCode` the object named `app` and a QMainWindow, in the example named `window`. As will be shown in :numRef:`figUmlCommon`, MainWindowWorkflowApp is a type of QMainWindow that is used in all SimCenter research applications as it deals with all the application menu items, e.g. File open and close, Help cites, etc. The QMainWindowWorkflowApp is a SImCenter class that contains a single QWidget of type WorkflowAppWidget. The WorkflowAppWidget object is passed a RemoteService, the remote cloud service that the application will interact with. This RemoteService is placed in its own QThread object, so that the UI can respond to user requests while communication with the cloud service is underway. Once the window object is shown, control is passed to the QApplication until the user is done.
 
-.. _lbl_UmlEE:
+
+.. _lblUmlEE:
 
 
 UML EE-UQ
@@ -247,7 +248,7 @@ EE-UQ is an application to determine the response of a building subjected to an 
 
    UML Diagram for EU-UQ
 
-.. _lbl_UmlWE:
+.. _lblUmlWE:
 
 UML WE-UQ
 ---------
@@ -282,7 +283,7 @@ Similar in construction to EE-UQ is HydroUQ, as shown in figure :numref:`figUmlH
 
 .. only:: PBE
 
-.. _lbl_UmlPBE:
+.. _lblUmlPBE:
    
 UML PBE
 -------
@@ -299,7 +300,7 @@ The Loss Model applications currently available for selection include a P58 Loss
    UML diagram for PBE.
 
 
-.. _lbl_UmlEarthquakeEvents:
+.. _lblUmlEarthquakeEvents:
 
 UML EarthquakeEvents
 --------------------
@@ -314,7 +315,7 @@ The Earthquake Events package, as shown in :numref:`figUmlEarthquakeEvents`, con
 
    UML diagram for earthquake events.
 
-.. _lbl_UmlWindEvents:
+.. _lblUmlWindEvents:
 
 UML WindEvents
 --------------
@@ -331,7 +332,7 @@ Similar to the Earthquake Events package, the wind events package shown in :numr
 
  
 
-.. _lbl_UmlHydroEvents:
+.. _lblUmlHydroEvents:
 
 UML HydroEvents
 ---------------

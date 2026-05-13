@@ -4,29 +4,26 @@
 Examples
 ********
 
-The examples in this section can be accessed from the application by selecting Examples in the Main Menu. They demonstrate the range of workflows that can be executed with the application and serve as ready-to-use **prototypes** that may be modified to create custom workflows. Each example is designed to run quickly, with the primary goal of demonstrating how workflows can be assembled. To achieve this, certain settings—such as the number of samples, the finite element model, and the number of assets—have been intentionally kept small and simplified.
 
 .. only:: R2D_app
 
-    The files for the examples are available on `GitHub <https://github.com/NHERI-SimCenter/R2DExamples>`_. The examples can also be downloaded and installed within the tool by going to the menu **Examples -> Manage Examples** and by checking the boxes of the examples that are desired. 
+   The following examples highlight the usage of R2D. The files for the examples are available on `GitHub <https://github.com/NHERI-SimCenter/R2DExamples>`_. The examples can also be downloaded and installed within the tool by going to the menu **Examples -> Manage Examples** and by checking the boxes of the examples that are desired. 
 
 .. only:: quoFEM_app
 
-   The files for the examples are available in the `quoFEM GitHub repository <https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples>`_.	  
+   The following are a few examples showing the usage of quoFEM. Video companions showing these examples are also provided for selected problems. The files for the examples are available on GitHub.
 
 .. only:: EEUQ_app
 
-   The files for the examples are available in the `EE-UQ GitHub repository <https://github.com/NHERI-SimCenter/EE-UQ/tree/master/Examples>`_.
-
+   The following are a few examples showing the usage of EE-UQ. Video companions showing these examples are also provided. The files for the examples are available in GitHub.
 
 .. only:: WEUQ_app
 
-   The files for the examples are available in the `WE-UQ GitHub repository <https://github.com/NHERI-SimCenter/WE-UQ/tree/master/Examples>`_.
-
+   The following are a few examples showing the usage of WE-UQ. The files for the examples are available on GitHub.
 
  .. only:: HydroUQ_app
 
-   The files for the examples are available in the `HydroUQ GitHub repository <https://github.com/NHERI-SimCenter/HydroUQ/tree/master/Examples>`_.
+   The following are a few examples showing the usage of Hydro-UQ. The files for the examples are available in the `HydroUQ GitHub repository <https://github.com/NHERI-SimCenter/HydroUQ/tree/master/Examples>`_.
    
 .. only:: PBE_app
 

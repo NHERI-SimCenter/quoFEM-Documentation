@@ -1,33 +1,57 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" data-content_root="../../../../../">
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
   <title>5.11. Two-Dimensional Truss: PLoM Modeling and Simulation &mdash; Quantified Uncertainty with Optimization for the FEM  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/css/theme.css?v=66b6668b" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/copybutton.css?v=76b2166b" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/tabs.css?v=a5c4661c" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-design.min.css?v=95c83b7e" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/css/custom.css?v=4b5bf716" />
+  
 
   
-      <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../../../../_static/documentation_options.js?v=5929fcd5"></script>
-      <script src="../../../../../_static/doctools.js?v=9a2dae69"></script>
-      <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script src="../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
-      <script src="../../../../../_static/copybutton.js?v=f281be69"></script>
-      <script src="../../../../../_static/design-tabs.js?v=36754332"></script>
-      <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js?v=ffc8af2d"></script>
-      <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js?v=12818e64"></script>
-      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="../../../../../_static/js/theme.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/pointer.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../../" src="../../../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+        <script src="../../../../../_static/jquery.js"></script>
+        <script src="../../../../../_static/underscore.js"></script>
+        <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../../../_static/doctools.js"></script>
+        <script src="../../../../../_static/clipboard.min.js"></script>
+        <script src="../../../../../_static/copybutton.js"></script>
+        <script src="../../../../../_static/design-tabs.js"></script>
+        <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+        <script src="../../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <script type="text/javascript" src="../../../../../_static/js/theme.js"></script>
+
+    
     <link rel="index" title="Index" href="../../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../../search.html" />
     <link rel="next" title="5.12. Global Sensitivity Analysis for Field QoI" href="../qfem-0023/README.html" />
@@ -40,35 +64,54 @@
 
 </head>
 
-<body class="wy-body-for-nav"> 
+<body class="wy-body-for-nav">
+
+   
   <div class="wy-grid-for-nav">
+    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search"  style="background: #F2F2F2" >
+          
 <a href="https://simcenter.designsafe-ci.org/" style="margin-bottom: 0px;">
   <img src="../../../../../_static/img/SimCenter-Only.png" class="logo" alt="Org-Logo" />
 </a>
 <hr style="margin: 0px;">
 
-  <a href="../../../../../index.html" class="icon icon-home"> Quantified Uncertainty with Optimization for the FEM
+  <a href="../../../../../index.html">
 
 
+
+  
+  <img src="../../../../../_static/quoFEM-Logo.png" class="logo" alt="Logo"/>
 
 </a>
 
+
+  
+  
 
 
 
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
 
 
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
               <p class="caption" role="heading"><span class="caption-text">About</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../about/quoFEM/about.html">1. About</a></li>
@@ -120,6 +163,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../bugs.html">9. Bugs &amp; Feature Requests</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../dcv/quoFEM/quoFEM.html">10. Running in Your Browser</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../usage/desktop/quoFEM/usage_video.html">11. Video Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../usage/desktop/Misc.html">12. Misc</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Technical Manual</span></p>
 <ul>
@@ -134,60 +178,105 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../developer_manual/verification/desktop/verification.html">3. Verification</a></li>
 </ul>
 
+            
+          
         </div>
+        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #F2F2F2" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../../../index.html">Quantified Uncertainty with Optimization for the FEM</a>
+        
       </nav>
 
+
       <div class="wy-nav-content">
+        
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../examples.html"><span class="section-number">5. </span>Examples</a></li>
-      <li class="breadcrumb-item active"><span class="section-number">5.11. </span>Two-Dimensional Truss: PLoM Modeling and Simulation</li>
+    
+      <li><a href="../../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../examples.html"><span class="section-number">5. </span>Examples</a> &raquo;</li>
+        
+      <li><span class="section-number">5.11. </span>Two-Dimensional Truss: PLoM Modeling and Simulation</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
+        
+          
             <a href="../../../../../_sources/common/user_manual/examples/desktop/qfem-0022/README.rst.txt" rel="nofollow"> View page source</a>
+          
+        
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-             
-  <section id="two-dimensional-truss-plom-modeling-and-simulation">
-<span id="qfem-0022"></span><h1><span class="section-number">5.11. </span>Two-Dimensional Truss: PLoM Modeling and Simulation<a class="headerlink" href="#two-dimensional-truss-plom-modeling-and-simulation" title="Link to this heading"></a></h1>
+            
+  <div class="section" id="two-dimensional-truss-plom-modeling-and-simulation">
+<span id="qfem-0022"></span><h1><span class="section-number">5.11. </span>Two-Dimensional Truss: PLoM Modeling and Simulation<a class="headerlink" href="#two-dimensional-truss-plom-modeling-and-simulation" title="Permalink to this heading">¶</a></h1>
 <table class="docutils align-default">
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 72%" />
+</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Problem files</p></td>
-<td><p><a class="extlink-github reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples/qfem-0022/">Download</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples/qfem-0022/">Download</a></p></td>
 </tr>
 </tbody>
 </table>
-<section id="about-plom">
-<h2><span class="section-number">5.11.1. </span>About PLoM<a class="headerlink" href="#about-plom" title="Link to this heading"></a></h2>
+<div class="section" id="about-plom">
+<h2><span class="section-number">5.11.1. </span>About PLoM<a class="headerlink" href="#about-plom" title="Permalink to this heading">¶</a></h2>
 <p><strong>PLoM</strong> is an open source python package that implements the algorithm of <strong>Probabilistic
-Learning on Manifolds</strong> with and without constraints (<a class="reference internal" href="#soizeghanem2016" id="id1"><span>[SoizeGhanem2016]</span></a>, <a class="reference internal" href="#soizeghanem2020" id="id2"><span>[SoizeGhanem2020]</span></a>)
+Learning on Manifolds</strong> with and without constraints (<a class="reference internal" href="../../../usage/desktop/SimCenterUQPLoM.html#soizeghanem2016" id="id1"><span>[SoizeGhanem2016]</span></a>, <a class="reference internal" href="../../../usage/desktop/SimCenterUQPLoM.html#soizeghanem2020" id="id2"><span>[SoizeGhanem2020]</span></a>)
 for <em>generating realizations of a random vector in a finite Euclidean space that are
 statistically consistent with a given dataset of that vector</em>.</p>
 <p>PLoM functionality in SimCenter tools is built upon <a class="reference external" href="https://github.com/sanjayg0/PLoM">PLoM</a>
 package (available under MIT license), an opensource python package for Probabilistic
-Learning on Manifolds <a class="reference internal" href="#zhonggualgovindjee2021" id="id3"><span>[ZhongGualGovindjee2021]</span></a>. The package mainly consists of python
+Learning on Manifolds <a class="reference internal" href="../../../usage/desktop/SimCenterUQPLoM.html#zhonggualgovindjee2021" id="id3"><span>[ZhongGualGovindjee2021]</span></a>. The package mainly consists of python
 modules and invokes a dynamic library for more efficiently computing the gradient of
 the potential, and can be imported and run on Linux, macOS, and Windows platform.</p>
-</section>
-<section id="problem-statement">
-<h2><span class="section-number">5.11.2. </span>Problem Statement<a class="headerlink" href="#problem-statement" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="problem-statement">
+<h2><span class="section-number">5.11.2. </span>Problem Statement<a class="headerlink" href="#problem-statement" title="Permalink to this heading">¶</a></h2>
 <p>Consider the problem simulating response of a two-dimensional truss structure with uncertain material properties shown in the following figure.
 The goal of the exercise is to demonstrate the use of <code class="docutils literal notranslate"><span class="pre">PLoM</span> <span class="pre">model</span></code> method under <code class="docutils literal notranslate"><span class="pre">SimCenterUQ</span></code>.</p>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../../../../../_images/truss1.png"><img alt="../../../../../_images/truss1.png" src="../../../../../_images/truss1.png" style="width: 600px;" />
-</a>
-</figure>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../../../../../_images/truss1.png"><img alt="../../../../../_images/truss1.png" src="../../../../../_images/truss1.png" style="width: 600px;" /></a>
+</div>
 <ol class="arabic simple">
 <li><p>Elastic modulus(<code class="docutils literal notranslate"><span class="pre">E</span></code>): mean <span class="math notranslate nohighlight">\(\mu_E=205 kN/{mm^2}\)</span> and standard deviation <span class="math notranslate nohighlight">\(\sigma_E =15 kN/{mm^2}\)</span> (COV = 7.3%)</p></li>
 <li><p>Load (<code class="docutils literal notranslate"><span class="pre">P</span></code>): mean <span class="math notranslate nohighlight">\(\mu_P =25 kN\)</span> and a standard deviation of <span class="math notranslate nohighlight">\(\sigma_P = 3 kN\)</span>, (COV = 12%).</p></li>
@@ -196,7 +285,7 @@ The goal of the exercise is to demonstrate the use of <code class="docutils lite
 </ol>
 <p>The exercise requires two files:</p>
 <ol class="arabic simple">
-<li><p><a class="extlink-qfem-0022 reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0022/src/TrussModel.tcl">TrussTemplate.tcl</a></p></li>
+<li><p><a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0022/src/TrussModel.tcl">TrussTemplate.tcl</a></p></li>
 </ol>
 <div class="highlight-tcl notranslate"><div class="highlight"><pre><span></span><span class="c"># units kN &amp; mm</span>
 
@@ -268,7 +357,7 @@ The goal of the exercise is to demonstrate the use of <code class="docutils lite
 </pre></div>
 </div>
 <ol class="arabic simple" start="2">
-<li><p><a class="extlink-qfem-0001 reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0001//src/TrussPost.tcl">TrussPost.tcl</a>.</p></li>
+<li><p><a class="reference external" href="https://github.com/NHERI-SimCenter/quoFEM/tree/master/Examples//qfem-0001//src/TrussPost.tcl">TrussPost.tcl</a>.</p></li>
 </ol>
 <p>The <code class="docutils literal notranslate"><span class="pre">TrussPost.tcl</span></code> script shown below will accept as input any of the 6 nodes in the domain and for each of the two dof directions.</p>
 <div class="highlight-tcl notranslate"><div class="highlight"><pre><span></span><span class="c"># create file handler to write results to output &amp; list into which we will put results</span>
@@ -304,36 +393,36 @@ The goal of the exercise is to demonstrate the use of <code class="docutils lite
 <span class="nb">close</span><span class="w"> </span><span class="nv">$resultFile</span>
 </pre></div>
 </div>
-</section>
-<section id="plom-modeling">
-<h2><span class="section-number">5.11.3. </span>PLoM Modeling<a class="headerlink" href="#plom-modeling" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="plom-modeling">
+<h2><span class="section-number">5.11.3. </span>PLoM Modeling<a class="headerlink" href="#plom-modeling" title="Permalink to this heading">¶</a></h2>
 <ol class="arabic simple">
 <li><p>Start the application and the UQ Selection will be highlighted. In the panel for the UQ selection, select <code class="docutils literal notranslate"><span class="pre">SimCenterUQ</span></code> as the UQ engine.
 Select <code class="docutils literal notranslate"><span class="pre">PLoM</span> <span class="pre">Model</span></code> for the UQ method, and use <code class="docutils literal notranslate"><span class="pre">Sampling</span> <span class="pre">and</span> <span class="pre">Simulation</span></code> as the Training Dataset.
 For sampling method, select <code class="docutils literal notranslate"><span class="pre">LHS</span></code> with 50 initial simulations for generating training data (with a random seed specified).
 For the new sample number ratio, input 5 by which 250 new realizations will be created from the trained PLoM model.</p></li>
 </ol>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/UQ.png" src="../../../../../_images/UQ.png" />
-</figure>
+</div>
 <ol class="arabic simple" start="2">
 <li><p>Next select the <strong>FEM</strong> panel from the input panel. This will default in the <code class="docutils literal notranslate"><span class="pre">OpenSees</span></code> engine. For the main script copy the path name to <code class="docutils literal notranslate"><span class="pre">TrussModel.tcl</span></code> or select <strong>choose</strong> and navigate to the file. For the <strong>post-process script</strong> field, repeat the same procedure for the <code class="docutils literal notranslate"><span class="pre">TrussPost.tcl</span></code> script.</p></li>
 </ol>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/FEM.png" src="../../../../../_images/FEM.png" />
-</figure>
+</div>
 <ol class="arabic simple" start="3">
 <li><p>Next select the <strong>RV</strong> panel from the input panel. This should be pre-populated with four random variables with same names as those having <code class="docutils literal notranslate"><span class="pre">pset</span></code> in the tcl script. For each variable, from the drop down menu change them from having a constant distribution to a normal one and then provide the means and standard deviations specified for the problem.</p></li>
 </ol>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/RV.png" src="../../../../../_images/RV.png" />
-</figure>
+</div>
 <ol class="arabic simple" start="4">
 <li><p>Next select the <strong>EDP</strong> tab. Here two response variables <code class="docutils literal notranslate"><span class="pre">Node_2_Disp_2</span></code> and <code class="docutils literal notranslate"><span class="pre">Node_3_Disp_2</span></code> are defined, which should be consistent with the post-process script.</p></li>
 </ol>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/EDP.png" src="../../../../../_images/EDP.png" />
-</figure>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The user can add extra EDP by selecting add and then providing additional names. As seen from the post-process script any of the 6 nodes may be specified and for any node either the 1 or 2 DOF direction.</p>
@@ -342,83 +431,94 @@ For the new sample number ratio, input 5 by which 250 new realizations will be c
 <li><p>Next click on the <strong>Run</strong> button. This will cause the backend application to launch the job. When done the <strong>RES</strong> panel will be selected and the results will be displayed.
 The landing page of <strong>RES</strong> will show summarize the training information including training sampling number along with two PLoM model trucation plots for PCA and KDE.</p></li>
 </ol>
-<figure class="align-center" id="id4">
+<div class="align-center figure" id="id4">
 <img alt="../../../../../_images/RES1.png" src="../../../../../_images/RES1.png" />
-<figcaption>
-<p><span class="caption-number">Fig. 5.11.3.1 </span><span class="caption-text">PCA representation error versus the PCA eigenvalues overlapped by the truncating PCA eigenvalue used in training</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<figure class="align-center" id="id5">
+<p class="caption"><span class="caption-number">Fig. 5.11.3.1 </span><span class="caption-text">PCA representation error versus the PCA eigenvalues overlapped by the truncating PCA eigenvalue used in training</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<div class="align-center figure" id="id5">
 <img alt="../../../../../_images/RES2.png" src="../../../../../_images/RES2.png" />
-<figcaption>
-<p><span class="caption-number">Fig. 5.11.3.2 </span><span class="caption-text">Diffusion map eigenvalue by components overlapped by the truncating eigenvalue used in training</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-number">Fig. 5.11.3.2 </span><span class="caption-text">Diffusion map eigenvalue by components overlapped by the truncating eigenvalue used in training</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
 <p>If the user selects the <strong>Data</strong> tab in the results panel, they will be presented with both a graphical plot and a tabular listing of the data.
 Various views of the graphical display can be obtained by left and right clicking in the columns of the tabular data. If a singular column of
 the tabular data is pressed with both right and left buttons a frequency and CDF will be displayed, as shown in figure below.</p>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/RES3.png" src="../../../../../_images/RES3.png" />
-</figure>
+</div>
 <p>The PLoM model can be saved and be loaded back for future use. The <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">PLoM</span> <span class="pre">Model</span></code> button at the bottom of Summary
 page would bring up a dialogue window for saving the model file to a user-defined directory.</p>
-<figure class="align-center">
+<div class="align-center figure">
 <img alt="../../../../../_images/RES4.png" src="../../../../../_images/RES4.png" />
-</figure>
-<div role="list" class="citation-list">
-<div class="citation" id="soizeghanem2016" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">SoizeGhanem2016</a><span class="fn-bracket">]</span></span>
-<p>Soize, C., &amp; Ghanem, R. (2016). Data-driven probability concentration and sampling on manifold. Journal of Computational Physics, 321, 242-258.</p>
 </div>
-<div class="citation" id="soizeghanem2020" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">SoizeGhanem2020</a><span class="fn-bracket">]</span></span>
-<p>Soize, C., &amp; Ghanem, R. (2020). Physics-constrained non-Gaussian probabilistic learning on manifolds. International Journal for Numerical Methods in Engineering, 121(1), 110-145.</p>
+<dl class="citation">
+<dt class="label" id="soizeghanem2016"><span class="brackets"><a class="fn-backref" href="#id1">SoizeGhanem2016</a></span></dt>
+<dd><p>Soize, C., &amp; Ghanem, R. (2016). Data-driven probability concentration and sampling on manifold. Journal of Computational Physics, 321, 242-258.</p>
+</dd>
+<dt class="label" id="soizeghanem2020"><span class="brackets"><a class="fn-backref" href="#id2">SoizeGhanem2020</a></span></dt>
+<dd><p>Soize, C., &amp; Ghanem, R. (2020). Physics-constrained non-Gaussian probabilistic learning on manifolds. International Journal for Numerical Methods in Engineering, 121(1), 110-145.</p>
+</dd>
+<dt class="label" id="zhonggualgovindjee2021"><span class="brackets"><a class="fn-backref" href="#id3">ZhongGualGovindjee2021</a></span></dt>
+<dd><p>Zhong, K., Gual, J., and Govindjee, S., PLoM python package v1.0, <a class="reference external" href="https://github.com/sanjayg0/PLoM">https://github.com/sanjayg0/PLoM</a> (2021).</p>
+</dd>
+</dl>
 </div>
-<div class="citation" id="zhonggualgovindjee2021" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">ZhongGualGovindjee2021</a><span class="fn-bracket">]</span></span>
-<p>Zhong, K., Gual, J., and Govindjee, S., PLoM python package v1.0, <a class="reference external" href="https://github.com/sanjayg0/PLoM">https://github.com/sanjayg0/PLoM</a> (2021).</p>
 </div>
-</div>
-</section>
-</section>
 
 
            </div>
+           
           </div>
           <footer>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2018-2025, The Regents of the University of California.</p>
-  </div>
+    <p>
+        &#169; Copyright 2018-2026, The Regents of the University of California.
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
         </div>
       </div>
+
     </section>
+
   </div>
-  <script>
+  
+
+  <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-    <!-- Theme Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158130480-4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-158130480-4', {
-          'anonymize_ip': false,
-      });
-    </script>  
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-158130480-4', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+    
 
   <style>
          .wy-nav-content { max-width: none; }
